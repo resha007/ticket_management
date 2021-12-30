@@ -1,0 +1,178 @@
+CRITICAL - 2021-12-27 02:43:19 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\microfin\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\microfin\public\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2021-12-27 02:43:21 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\microfin\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\microfin\public\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2021-12-27 02:43:22 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\microfin\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\microfin\public\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2021-12-27 02:43:28 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\microfin\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\microfin\public\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2021-12-27 02:46:09 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\microfin\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\microfin\public\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2021-12-27 02:46:10 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\microfin\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\microfin\public\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2021-12-27 02:47:02 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\microfin\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\microfin\public\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2021-12-27 03:01:58 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\microfin\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\microfin\public\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2021-12-27 03:02:00 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\microfin\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\microfin\public\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2021-12-27 03:02:03 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\microfin\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\microfin\public\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2021-12-27 03:02:09 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\microfin\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\microfin\public\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2021-12-27 06:01:39 --> Undefined variable: conn
+#0 C:\xampp\htdocs\microfin\app\Views\payments.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 118, Array)
+#1 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('payments', Array, true)
+#4 C:\xampp\htdocs\microfin\app\Controllers\Payment.php(9): view('payments')
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->index()
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-27 06:04:30 --> Undefined variable: conn
+#0 C:\xampp\htdocs\microfin\app\Views\payments.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 118, Array)
+#1 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('payments', Array, true)
+#4 C:\xampp\htdocs\microfin\app\Controllers\Payment.php(9): view('payments')
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->index()
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-27 06:06:38 --> Undefined variable: conn
+#0 C:\xampp\htdocs\microfin\app\Views\payments.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 118, Array)
+#1 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('payments', Array, true)
+#4 C:\xampp\htdocs\microfin\app\Controllers\Payment.php(9): view('payments')
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->index()
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-27 06:06:40 --> Undefined variable: conn
+#0 C:\xampp\htdocs\microfin\app\Views\payments.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 118, Array)
+#1 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('payments', Array, true)
+#4 C:\xampp\htdocs\microfin\app\Controllers\Payment.php(9): view('payments')
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->index()
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-27 06:09:34 --> mysqli_num_rows() expects parameter 1 to be mysqli_result, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli_num_rows...', 'C:\\xampp\\htdocs...', 122, Array)
+#1 C:\xampp\htdocs\microfin\app\Views\payments.php(122): mysqli_num_rows(Object(CodeIgniter\Database\MySQLi\Connection))
+#2 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('payments', Array, true)
+#5 C:\xampp\htdocs\microfin\app\Controllers\Payment.php(9): view('payments')
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->index()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-27 06:09:49 --> Undefined variable: sql
+#0 C:\xampp\htdocs\microfin\app\Views\payments.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 122, Array)
+#1 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('payments', Array, true)
+#4 C:\xampp\htdocs\microfin\app\Controllers\Payment.php(9): view('payments')
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->index()
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-27 06:11:12 --> Undefined variable: row
+#0 C:\xampp\htdocs\microfin\app\Views\payments.php(125): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 125, Array)
+#1 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('payments', Array, true)
+#4 C:\xampp\htdocs\microfin\app\Controllers\Payment.php(9): view('payments')
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->index()
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-27 06:11:52 --> mysqli_num_rows() expects parameter 1 to be mysqli_result, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli_num_rows...', 'C:\\xampp\\htdocs...', 122, Array)
+#1 C:\xampp\htdocs\microfin\app\Views\payments.php(122): mysqli_num_rows(Object(CodeIgniter\Database\MySQLi\Connection))
+#2 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('payments', Array, true)
+#5 C:\xampp\htdocs\microfin\app\Controllers\Payment.php(9): view('payments')
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->index()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-27 06:18:56 --> Undefined variable: db
+#0 C:\xampp\htdocs\microfin\app\Views\payments.php(120): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 120, Array)
+#1 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('payments', Array, true)
+#4 C:\xampp\htdocs\microfin\app\Controllers\Payment.php(9): view('payments')
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->index()
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-27 06:25:19 --> Undefined variable: db
+#0 C:\xampp\htdocs\microfin\app\Views\payments.php(120): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 120, Array)
+#1 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('payments', Array, true)
+#4 C:\xampp\htdocs\microfin\app\Controllers\Payment.php(9): view('payments')
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->index()
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

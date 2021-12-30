@@ -98,7 +98,7 @@
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Employee</h1>
+				<h1 class="page-header">Loan Payments</h1>
 			</div>
 		</div><!--/.row-->
 		
@@ -106,41 +106,46 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
-					<div class="panel-heading">Employee Details</div>
+					<div class="panel-heading">Payment Details</div>
 						<div class="panel-body">
 							<div class="col-md-12">
 								<form role="form">
+
+								<div class="form-group col-md-6">
+										<label>Line Number</label>
+										<input class="form-control" name="line_number" id="line_number">
+									</div>
 								
+									<div class="form-group col-md-6">
+										<label>Loan Number</label>
+										<input class="form-control" name="loan_number" id="loan_number">
+									</div>
+																	
 									<div class="form-group col-md-6">
 										<label>First Name</label>
 										<input class="form-control" name="first_name" id="first_name">
 									</div>
-																	
 									<div class="form-group col-md-6">
-										<label>Last Name</label>
+										<label>Last Name </label>
 										<input class="form-control" name="last_name" id="last_name">
-									</div>
-									<div class="form-group col-md-6">
-										<label>Address</label>
-										<input class="form-control" name="address" id="address">
 									</div>					
 									<div class="form-group col-md-6">
-										<label>City</label>
-										<input class="form-control" name="city" id="city">
+										<label>Loan Amount</label>
+										<input class="form-control" name="loan_amount" id="loan_amount">
 									</div>
 									<div class="form-group col-md-4">
-										<label>DoB</label>
-										<input type="date" class="form-control" name="dob" id="dob">
+										<label>Payment Date</label>
+										<input type="name" class="form-control" value ='<?php echo date("Y-m-d"); ?>' name="payment_date" id="payment_date">
 									</div>
 									<div class="form-group col-md-4">
-										<label>NIC</label>
-										<input class="form-control" name="nic" id="nic">
+										<label>Amount</label>
+										<input class="form-control" name="amount" id="amount">
 									</div>
 									<div class="form-group col-md-4">
-										<label>Gender</label>
+										<label>Payment Type </label>
 										<select class="form-control" name="gender" id="gender">
-											<option value="1">Male</option>
-											<option value="2">Female</option>
+											<option value="1">Customer</option>
+											<option value="2">Rider</option>
 										</select>
 									</div>
 									<div class="form-group col-md-4">
