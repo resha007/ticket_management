@@ -109,9 +109,10 @@
 					<div class="panel-heading">Payment Details</div>
 						<div class="panel-body">
 							<div class="col-md-12">
-								<form role="form">
 
-								<div class="form-group col-md-6">
+								<form method="post" role="form" id="paymForm">
+
+								   <div class="form-group col-md-6">
 										<label>Line Number</label>
 										<input class="form-control" name="line_number" id="line_number">
 									</div>
@@ -168,14 +169,17 @@
 										</select>
 									</div>
 
-
 									<div class="form-group col-md-12">
-										<button type="submit" class="btn btn-primary">Submit Button</button>
-										<button type="reset" class="btn btn-default">Reset Button</button>
+										<button type="submit" class="btn btn-primary" id="add"><span class="">Add</button>
+										<button type="submit" class="btn btn-success" id="update">Update</button>
+										<button type="submit" class="btn btn-danger" id="delete">Delete</button>
+										<button type="reset" class="btn btn-default" id="reset">Reset</button>
 									</div>
+								
+								
 							</div>
-							
-					</div>
+						</div>
+					
 				</div>
 			</div><!-- /.col-->
 		</div><!-- /.row -->
@@ -184,15 +188,20 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
-					<div class="panel-heading">Current Employees</div>
+					<div class="panel-heading">Payments</div>
 					<div class="panel-body">
 						<table data-toggle="table" data-url="tables/data1.json"  data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
 								<thead>
 								<tr>
-									<th data-field="state" data-checkbox="true" >Item ID</th>
-									<th data-field="id" data-sortable="true">Item ID</th>
-									<th data-field="name"  data-sortable="true">Item Name</th>
-									<th data-field="price" data-sortable="true">Item Price</th>
+									<th data-field="state" data-checkbox="true" >Customer ID</th>
+									<th data-field="id" data-sortable="true">Customer First Name</th>
+									<th data-field="name"  data-sortable="true">Customer Last Name</th>
+									<th data-field="price" data-sortable="true">Loan Amount</th>
+									<th data-field="name"  data-sortable="true">Loan Due</th>
+									<th data-field="price" data-sortable="true">Date</th>
+									<th data-field="name"  data-sortable="true">Payment</th>
+									<th data-field="price" data-sortable="true">Paid By</th>
+
 								</tr>
 								</thead>
 								<tr>
@@ -219,6 +228,13 @@
 	<script src="js/easypiechart-data.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/bootstrap-table.js"></script>
+
+
+	<script src="js/custom/payment.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+
 	<script>
 		!function ($) {
 			$(document).on("click","ul.nav li.parent > a > span.icon", function(){		  

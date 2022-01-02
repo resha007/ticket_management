@@ -177,6 +177,7 @@
 										<button type="submit" class="btn btn-danger" id="delete">Delete</button>
 										<button type="reset" class="btn btn-default" id="reset">Reset</button>
 									</div>
+									
 							</div>
 							
 					</div>
