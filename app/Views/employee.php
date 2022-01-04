@@ -109,8 +109,8 @@
 					<div class="panel-heading">Employee Details</div>
 						<div class="panel-body">
 							<div class="col-md-12">
-								<form method="post" role="form" id="empForm">
-								
+								<form method="post" role="form" id="dataForm">
+									<input type="hidden" class="form-control" name="id" id="id">
 									<div class="form-group col-md-6">
 										<label>First Name</label>
 										<input class="form-control" name="first_name" id="first_name" required>
@@ -124,7 +124,7 @@
 										<label>Address</label>
 										<input class="form-control" name="address" id="address" required>
 									</div>					
-									<!-- <div class="form-group col-md-6">
+									<div class="form-group col-md-6">
 										<label>City</label>
 										<input class="form-control" name="city" id="city" required>
 									</div>
@@ -168,13 +168,13 @@
 											<option value="1">Active</option>
 											<option value="2">Inactive</option>
 										</select>
-									</div> -->
+									</div>
 
 
 									<div class="form-group col-md-12">
-										<button type="submit" class="btn btn-primary" id="add"><span class="">Add</button>
-										<button type="submit" class="btn btn-success" id="update">Update</button>
-										<button type="submit" class="btn btn-danger" id="delete">Delete</button>
+										<button type="button" class="btn btn-primary" id="add"><span class="">Add</button>
+										<button type="button" class="btn btn-success" id="update">Update</button>
+										<button type="button" class="btn btn-danger" id="delete">Delete</button>
 										<button type="reset" class="btn btn-default" id="reset">Reset</button>
 									</div>
 							</div>
@@ -190,10 +190,10 @@
 				<div class="panel panel-default">
 					<div class="panel-heading">Current Employees</div>
 					<div class="panel-body">
-						<table data-toggle="table" data-url="employee/get"  data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
+						<table id="dataTable" data-click-to-select="true" data-show-export="true"  data-toggle="table" data-url="employee/get"  data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
 								<thead>
 								<tr>
-									<th data-field="state" data-checkbox="true" >Item ID</th>
+									<th data-field="state" data-checkbox="true"></th>
 									<th data-field="id" data-sortable="true">Emp ID</th>
 									<th data-field="first_name"  data-sortable="true">Fisrt Name</th>
 									<th data-field="last_name" data-sortable="true">Last Name</th>
@@ -235,6 +235,9 @@
 
 
 	<script>
+		var $table = $('#dataTable');
+		var $remove = $('#remove');
+		
 		!function ($) {
 			$(document).on("click","ul.nav li.parent > a > span.icon", function(){		  
 				$(this).find('em:first').toggleClass("glyphicon-minus");	  
@@ -248,6 +251,13 @@
 		$(window).on('resize', function () {
 		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
 		})
+
+		function getIdSelections() {
+			return $.map($table.bootstrapTable('getSelections'), function (row) {
+				return row.id
+			})
+		}
+
 	</script>	
 </body>
 

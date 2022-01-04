@@ -145,7 +145,7 @@
         idField: undefined,
         cardView: false,
         clickToSelect: false,
-        singleSelect: false,
+        singleSelect: true,
         toolbar: undefined,
         checkboxHeader: true,
         sortable: true,

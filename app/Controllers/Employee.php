@@ -23,7 +23,8 @@ class Employee extends Controller
     function get(){ 
         $EmployeeModel = new EmployeeModel();
 
-		$data = $EmployeeModel->where("status='1' OR status='2'")->orderBy('id', 'ASC')->paginate(10);
+		//$data = $EmployeeModel->where("status='1' OR status='2'")->orderBy('id', 'ASC')->paginate(10);
+        $data = $EmployeeModel->get_data();
 
         //set numbers to names
         for($i=0;$i<sizeof($data);$i++){
@@ -57,17 +58,17 @@ class Employee extends Controller
         
         $data = [
             'first_name'	=>	$this->request->getPost('first_name'),
-            // 'last_name'	    =>	$this->request->getPost('last_name'),
-            // 'address'        =>	$this->request->getPost('address'),
-            // 'city'	=>	$this->request->getVar('city'),
-            // 'dob'	    =>	$this->request->getVar('dob'),
-            // 'nic'        =>	$this->request->getVar('nic'),
-            // 'gender'	=>	$this->request->getVar('gender'),
-            // 'contact_no'	    =>	$this->request->getVar('contact_no'),
-            // 'email'        =>	$this->request->getVar('email'),
-            // 'username'	=>	$this->request->getVar('username'),
-            // 'type'	    =>	$this->request->getVar('type'),
-            // 'status'        =>	$this->request->getVar('status')
+            'last_name'	    =>	$this->request->getPost('last_name'),
+            'address'        =>	$this->request->getPost('address'),
+            'city'	=>	$this->request->getVar('city'),
+            'dob'	    =>	$this->request->getVar('dob'),
+            'nic'        =>	$this->request->getVar('nic'),
+            'gender'	=>	$this->request->getVar('gender'),
+            'contact_no'	    =>	$this->request->getVar('contact_no'),
+            'email'        =>	$this->request->getVar('email'),
+            'username'	=>	$this->request->getVar('username'),
+            'type'	    =>	$this->request->getVar('type'),
+            'status'        =>	$this->request->getVar('status')
         ];
 
         $save_data = $model->insert_data($data);
@@ -78,6 +79,79 @@ class Employee extends Controller
         }else{
             echo json_encode(array("status" => false , 'data' => $data));
         }
+    }
+
+    function update(){
+        helper(['form', 'url']);
+        
+        $model = new EmployeeModel();
+
+        $id = $this->request->getPost('id');
+        
+        $data = [
+            'first_name'	=>	$this->request->getPost('first_name'),
+            'last_name'	    =>	$this->request->getPost('last_name'),
+            'address'        =>	$this->request->getPost('address'),
+            'city'	=>	$this->request->getVar('city'),
+            'dob'	    =>	$this->request->getVar('dob'),
+            'nic'        =>	$this->request->getVar('nic'),
+            'gender'	=>	$this->request->getVar('gender'),
+            'contact_no'	    =>	$this->request->getVar('contact_no'),
+            'email'        =>	$this->request->getVar('email'),
+            'username'	=>	$this->request->getVar('username'),
+            'type'	    =>	$this->request->getVar('type'),
+            'status'        =>	$this->request->getVar('status')
+        ];
+
+        $result = $model->update_data($id, $data);
+
+        if($result != false){
+            //$data = $model->where('id', $save_data)->first();
+            echo json_encode(array("status" => true , 'data' => $data));
+        }else{
+            echo json_encode(array("status" => false , 'data' => $data));
+        }
+        
+    }
+
+    function delete(){
+        helper(['form', 'url']);
+        
+        $model = new EmployeeModel();
+
+        $id = $this->request->getPost('id');
+        
+        $data = [
+            'status'        =>	3
+        ];
+
+        $result = $model->delete_data($id, $data);
+
+        if($result != false){
+            //$data = $model->where('id', $save_data)->first();
+            echo json_encode(array("status" => true , 'data' => $data));
+        }else{
+            echo json_encode(array("status" => false , 'data' => $data));
+        }
+        
+    }
+
+    function by_id(){
+        helper(['form', 'url']);
+        
+        $model = new EmployeeModel();
+
+        $id = $this->request->getPost('id');
+
+        $result = $model->get_data_by_id($id);
+
+        if($result != false){
+            //$data = $model->where('id', $save_data)->first();
+            echo json_encode(array("status" => true , 'data' => $result));
+        }else{
+            echo json_encode(array("status" => false , 'data' => $result));
+        }
+        
     }
 
 	
