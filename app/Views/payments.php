@@ -98,7 +98,7 @@
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Employee</h1>
+				<h1 class="page-header">Loan Payments</h1>
 			</div>
 		</div><!--/.row-->
 		
@@ -106,46 +106,52 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
-					<div class="panel-heading">Employee Details</div>
+					<div class="panel-heading">Payment Details</div>
 						<div class="panel-body">
 							<div class="col-md-12">
-								<form method="post" role="form" id="dataForm">
-									<input type="hidden" class="form-control" name="id" id="id">
+
+								<form method="post" role="form" id="paymForm">
+
+								   <div class="form-group col-md-6">
+										<label>Line Number</label>
+										<input class="form-control" name="line_number" id="line_number">
+									</div>
+								
 									<div class="form-group col-md-6">
-										<label>First Name</label>
-										<input class="form-control" name="first_name" id="first_name" required>
+										<label>Loan Number</label>
+										<input class="form-control" name="loan_number" id="loan_number">
 									</div>
 																	
 									<div class="form-group col-md-6">
-										<label>Last Name</label>
-										<input class="form-control" name="last_name" id="last_name" required>
+										<label>First Name</label>
+										<input class="form-control" name="first_name" id="first_name">
 									</div>
 									<div class="form-group col-md-6">
-										<label>Address</label>
-										<input class="form-control" name="address" id="address" required>
+										<label>Last Name </label>
+										<input class="form-control" name="last_name" id="last_name">
 									</div>					
 									<div class="form-group col-md-6">
-										<label>City</label>
-										<input class="form-control" name="city" id="city" required>
+										<label>Loan Amount</label>
+										<input class="form-control" name="loan_amount" id="loan_amount">
 									</div>
 									<div class="form-group col-md-4">
-										<label>DoB</label>
-										<input type="date" class="form-control" name="dob" id="dob" required>
+										<label>Payment Date</label>
+										<input type="name" class="form-control" value ='<?php echo date("Y-m-d"); ?>' name="payment_date" id="payment_date">
 									</div>
 									<div class="form-group col-md-4">
-										<label>NIC</label>
-										<input class="form-control" name="nic" id="nic" required>
+										<label>Amount</label>
+										<input class="form-control" name="amount" id="amount">
 									</div>
 									<div class="form-group col-md-4">
-										<label>Gender</label>
-										<select class="form-control" name="gender" id="gender" required>
-											<option value="1">Male</option>
-											<option value="2">Female</option>
+										<label>Payment Type </label>
+										<select class="form-control" name="gender" id="gender">
+											<option value="1">Customer</option>
+											<option value="2">Rider</option>
 										</select>
 									</div>
 									<div class="form-group col-md-4">
 										<label>Contact Number</label>
-										<input class="form-control" name="contact_no" id="contact_no" required>
+										<input class="form-control" name="contact_no" id="contact_no">
 									</div>
 									<div class="form-group col-md-4">
 										<label>Email</label>
@@ -153,34 +159,27 @@
 									</div>
 									<div class="form-group col-md-4">
 										<label>Username</label>
-										<input class="form-control" name="username" id="username" required>
+										<input class="form-control" name="username" id="username">
 									</div>
 									<div class="form-group col-md-4">
 										<label>Type</label>
-										<select class="form-control" name="type" id="type" required>
+										<select class="form-control" name="type" id="type">
 											<option value="1">Employee</option>
 											<option value="2">Rider</option>
 										</select>
 									</div>
-									<div class="form-group col-md-4">
-										<label>Status</label>
-										<select class="form-control" name="status" id="status" required>
-											<option value="1">Active</option>
-											<option value="2">Inactive</option>
-										</select>
-									</div>
-
 
 									<div class="form-group col-md-12">
-										<button type="button" class="btn btn-primary" id="add"><span class="">Add</button>
-										<button type="button" class="btn btn-success" id="update">Update</button>
-										<button type="button" class="btn btn-danger" id="delete">Delete</button>
+										<button type="submit" class="btn btn-primary" id="add"><span class="">Add</button>
+										<button type="submit" class="btn btn-success" id="update">Update</button>
+										<button type="submit" class="btn btn-danger" id="delete">Delete</button>
 										<button type="reset" class="btn btn-default" id="reset">Reset</button>
 									</div>
-									
+								
+								
 							</div>
-							
-					</div>
+						</div>
+					
 				</div>
 			</div><!-- /.col-->
 		</div><!-- /.row -->
@@ -189,28 +188,28 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
-					<div class="panel-heading">Current Employees</div>
+					<div class="panel-heading">Payments</div>
 					<div class="panel-body">
-						<table id="dataTable" data-click-to-select="true" data-show-export="true"  data-toggle="table" data-url="employee/get"  data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
+						<table data-toggle="table" data-url="tables/data1.json"  data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
 								<thead>
 								<tr>
-									<th data-field="state" data-checkbox="true"></th>
-									<th data-field="id" data-sortable="true">Emp ID</th>
-									<th data-field="first_name"  data-sortable="true">Fisrt Name</th>
-									<th data-field="last_name" data-sortable="true">Last Name</th>
-									<th data-field="address"  data-sortable="true">Address</th>
-									<th data-field="city" data-sortable="true">City</th>
-									<th data-field="dob"  data-sortable="true">DoB</th>
-									<th data-field="nic" data-sortable="true">NIC</th>
-									<th data-field="gender"  data-sortable="true">Gender</th>
-									<th data-field="contact_no" data-sortable="true">Contact No</th>
-									<th data-field="email" data-sortable="true">Email</th>
-									<th data-field="username"  data-sortable="true">Username</th>
-									<th data-field="type" data-sortable="true">Type</th>
-									<th data-field="status" data-sortable="true">Status</th>
+									<th data-field="state" data-checkbox="true" >Customer ID</th>
+									<th data-field="id" data-sortable="true">Customer First Name</th>
+									<th data-field="name"  data-sortable="true">Customer Last Name</th>
+									<th data-field="price" data-sortable="true">Loan Amount</th>
+									<th data-field="name"  data-sortable="true">Loan Due</th>
+									<th data-field="price" data-sortable="true">Date</th>
+									<th data-field="name"  data-sortable="true">Payment</th>
+									<th data-field="price" data-sortable="true">Paid By</th>
+
 								</tr>
 								</thead>
-								
+								<tr>
+									<td>11</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+								</tr>
 								
 								
 							</table>
@@ -230,15 +229,13 @@
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/bootstrap-table.js"></script>
 
-	<script src="js/custom/employee.js"></script>
+
+	<script src="js/custom/payment.js"></script>
 
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 
 
 	<script>
-		var $table = $('#dataTable');
-		var $remove = $('#remove');
-		
 		!function ($) {
 			$(document).on("click","ul.nav li.parent > a > span.icon", function(){		  
 				$(this).find('em:first').toggleClass("glyphicon-minus");	  
@@ -252,13 +249,6 @@
 		$(window).on('resize', function () {
 		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
 		})
-
-		function getIdSelections() {
-			return $.map($table.bootstrapTable('getSelections'), function (row) {
-				return row.id
-			})
-		}
-
 	</script>	
 </body>
 

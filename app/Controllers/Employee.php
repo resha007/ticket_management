@@ -7,7 +7,6 @@ use CodeIgniter\Controller;
 
 class Employee extends Controller
 {
-    
 
     public function index()
     {
