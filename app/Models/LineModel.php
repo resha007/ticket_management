@@ -24,13 +24,12 @@ class LineModel extends Model
         if($id === false) {
             $this->join('employee', 'employee.id = line.rider_id', 'LEFT');
             $this->join('employee emp', 'emp.id = line.opt_rider_id', 'LEFT');
-            //$this->where('status', 1);
             $this->select('line.*');
             $this->select("CONCAT(employee.first_name, ' ', employee.last_name) as rider");
             $this->select("CONCAT(emp.first_name, ' ', emp.last_name) as opt_rider");
-            //$this->where('status', 1);
+            $this->where('line.status', 1);
+            $this->orWhere('line.status', 2);
             return $this->findAll();
-            //return $this->where('status', 1)->orWhere('status', 2)->findAll();
         } else {
             return $this->where('status', 1)->findAll();
         }
