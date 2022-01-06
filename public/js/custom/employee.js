@@ -155,7 +155,7 @@ $(document).ready(function() {//alert("test123");
                 if(elem[i].value == '' || elem[i].value == '0'){
                     Toast.fire({
                         type: 'warning',
-                        title: 'This field is required'+elem[i].id
+                        title: 'This field is required'
                         });
                         $("#"+elem[i].id).focus();
                     err = 1;
