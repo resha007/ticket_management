@@ -50,6 +50,32 @@ class Employee extends Controller
 		echo json_encode($data);
 	}
 
+    function get_by_type(){ 
+        $EmployeeModel = new EmployeeModel();
+
+        $type = $this->request->getPost('type');
+
+        if($type == 1){
+            $data = $EmployeeModel->get_data_by_type(1);
+        }else if($type == 2){
+            $data = $EmployeeModel->get_data_by_type(2);
+        }
+
+        //set numbers to names
+        for($i=0;$i<sizeof($data);$i++){
+            
+            if($data[$i]["status"] == 1){
+                $data[$i]["status"] = "Active";
+            }else if($data[$i]["status"] == 2){
+                $data[$i]["status"] = "Inactive";
+            }
+        }
+        
+
+		echo json_encode($data);
+	}
+
+
 	function save(){
         helper(['form', 'url']);
         
