@@ -84,7 +84,7 @@ $(document).ready(function() {//alert("test123");
             async : true,
             headers: {'X-Requested-With': 'XMLHttpRequest'},
             data	: $('form').serialize(),
-            success: function(data) {alert(data["status"]);
+            success: function(data) {//alert(data["status"]);
                 if(data){
                     Toast.fire({
                         type: 'success',
