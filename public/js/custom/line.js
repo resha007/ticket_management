@@ -3,6 +3,7 @@
 $(document).ready(function() {//alert("test123");
     $("#update").prop("disabled",true);
     $("#delete").prop("disabled",true);
+    $("#opt_rider").prop("disabled",true);
     var action,data = '';
 
     const Toast = Swal.mixin({
@@ -13,11 +14,63 @@ $(document).ready(function() {//alert("test123");
     });
     //alert("test123");
 
+    //load employees as riders
+    $.ajax({
+        type : "POST",
+        url		: "employee/get_by_type",
+        dataType : 'json',
+        async : true,
+        headers: {'X-Requested-With': 'XMLHttpRequest'},
+        data	: { type: 2 },
+        success: function(data) {//alert(data);
+            if(data){
+                $('#rider').empty();
+                $('#rider').html('<option value="0" selected="selected" disabled="disabled">Select a Rider</option>');
+                for(var a=0; a<data.length; a++){
+                    $('#rider').append($("<option></option>").attr("value",data[a]['id']).text(data[a]['first_name']+' '+data[a]['last_name']));
+                }
+            }else{
+                
+            }
+        }
+    });
+
+    //load employees as opt riders
+    $( "#rider" ).change(function() {
+        $("#opt_rider").prop("disabled",false);
+
+        $.ajax({
+            type : "POST",
+            url		: "employee/get_by_type",
+            dataType : 'json',
+            async : true,
+            headers: {'X-Requested-With': 'XMLHttpRequest'},
+            data	: { type: 2 },
+            success: function(data) {//alert(data);
+                if(data){
+                    $('#opt_rider').empty();
+                    $('#opt_rider').html('<option value="0" selected="selected" disabled="disabled">Select a Optional Rider</option>');
+                    for(var a=0; a<data.length; a++){
+                        if($("#rider").val() == data[a]['id']){
+                            $('#opt_rider').append($("<option disabled></option>").attr("value",data[a]['id']).text(data[a]['first_name']+' '+data[a]['last_name']+"- Rider"));
+                        }else{
+                            $('#opt_rider').append($("<option></option>").attr("value",data[a]['id']).text(data[a]['first_name']+' '+data[a]['last_name']));
+                        }
+                        
+                    }
+                }else{
+                    
+                }
+            }
+        });
+    });
+
+
     $( "#add" ).click(function() {
         if(validate() != '1'){
             $.ajax({
                 type : "POST",
-                url		: "employee/save",
+                url		: "line/save",
                 dataType : 'json',
                 async : true,
                 headers: {'X-Requested-With': 'XMLHttpRequest'},
@@ -34,6 +87,7 @@ $(document).ready(function() {//alert("test123");
                         $("#update").prop("disabled",true);
                         $("#delete").prop("disabled",true);
                         $("#add").prop("disabled",false);
+                        $("#opt_rider").prop("disabled",true);
                     }else{
                         Toast.fire({
                             type: 'error',
@@ -63,7 +117,7 @@ $(document).ready(function() {//alert("test123");
             if (result.value) {
                 $.ajax({
                     type : "POST",
-                    url		: "employee/update",
+                    url		: "line/update",
                     dataType : 'json',
                     async : true,
                     headers: {'X-Requested-With': 'XMLHttpRequest'},
@@ -80,6 +134,7 @@ $(document).ready(function() {//alert("test123");
                             $("#update").prop("disabled",true);
                             $("#delete").prop("disabled",true);
                             $("#add").prop("disabled",false);
+                            $("#opt_rider").prop("disabled",true);
                         }else{
                             Toast.fire({
                                 type: 'error',
@@ -89,7 +144,6 @@ $(document).ready(function() {//alert("test123");
                     }
                 });
             }
-                    //$("#reset").click();
         })
         
     });
@@ -111,7 +165,7 @@ $(document).ready(function() {//alert("test123");
             if (result.value) {
                 $.ajax({
                     type : "POST",
-                    url		: "employee/delete",
+                    url		: "line/delete",
                     dataType : 'json',
                     async : true,
                     headers: {'X-Requested-With': 'XMLHttpRequest'},
@@ -125,9 +179,10 @@ $(document).ready(function() {//alert("test123");
                             $table.bootstrapTable('refresh');
                             $("#reset").click();
         
-                            $("#update").prop("disabled",true);
+                            $("#elete").prop("disabled",true);
                             $("#delete").prop("disabled",true);
                             $("#add").prop("disabled",false);
+                            $("#opt_rider").prop("disabled",true);
                         }else{
                             Toast.fire({
                                 type: 'error',
@@ -137,7 +192,6 @@ $(document).ready(function() {//alert("test123");
                     }
                 });
             }
-                    
         })
         
     });
@@ -148,27 +202,46 @@ $(document).ready(function() {//alert("test123");
         $("#update").prop("disabled",false);
         $("#delete").prop("disabled",false);
         $("#add").prop("disabled",true);
+        $("#opt_rider").prop("disabled",false);
 
         $.ajax({
             type : "POST",
-            url		: "employee/by_id",
+            url		: "employee/get_by_type",
+            dataType : 'json',
+            async : true,
+            headers: {'X-Requested-With': 'XMLHttpRequest'},
+            data	: { type: 2 },
+            success: function(data) {//alert(data);
+                if(data){
+                    $('#opt_rider').empty();
+                    $('#opt_rider').html('<option value="0" selected="selected" disabled="disabled">Select a Optional Rider</option>');
+                    for(var a=0; a<data.length; a++){$('#opt_rider').append($("<option></option>").attr("value",data[a]['id']).text(data[a]['first_name']+' '+data[a]['last_name']));
+                        // if($("#rider").val() == data[a]['id']){
+                        //     $('#opt_rider').append($("<option disabled></option>").attr("value",data[a]['id']).text(data[a]['first_name']+' '+data[a]['last_name']+"- Rider"));
+                        // }else{
+                        //     $('#opt_rider').append($("<option></option>").attr("value",data[a]['id']).text(data[a]['first_name']+' '+data[a]['last_name']));
+                        // }
+                        
+                    }
+                }else{
+                    
+                }
+            }
+        });
+
+        $.ajax({
+            type : "POST",
+            url		: "line/by_id",
             dataType : 'json',
             async : true,
             data	: { id: id },
             success: function(data) {//alert(data["data"]["first_name"]);
                 if(data){
                     $("#id").val(data["data"]["id"]);
-                    $("#first_name").val(data["data"]["first_name"]);
-                    $("#last_name").val(data["data"]["last_name"]);
-                    $("#address").val(data["data"]["address"]);
-                    $("#city").val(data["data"]["city"]);
-                    $("#dob").val(data["data"]["dob"]);
-                    $("#nic").val(data["data"]["nic"]);
-                    $("#gender").val(data["data"]["gender"]);
-                    $("#contact_no").val(data["data"]["contact_no"]);
-                    $("#email").val(data["data"]["email"]);
-                    $("#username").val(data["data"]["username"]);
-                    $("#type").val(data["data"]["type"]);
+                    $("#code").val(data["data"]["code"]);
+                    $("#name").val(data["data"]["name"]);
+                    $("#rider").val(data["data"]["rider_id"]);
+                    $("#opt_rider").val(data["data"]["opt_rider_id"]);
                     $("#status").val(data["data"]["status"]);
                 }else{
                     Toast.fire({
