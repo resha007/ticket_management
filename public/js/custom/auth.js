@@ -27,12 +27,41 @@ $(document).ready(function() {//alert("test123");
                             title: 'Username or password is incorrect. Please try again.'
                         });
                         $("#reset").click();
+                        $("#username").focus();
                     }
 
                 }
             });
         }
         
+    });
+
+    $("#password").on('keypress',function(e) {
+        if(e.which == 13) {
+            if(validate() != '1'){
+                $.ajax({
+                    type : "POST",
+                    url		: "employee/login",
+                    dataType : 'json',
+                    async : true,
+                    headers: {'X-Requested-With': 'XMLHttpRequest'},
+                    data	: $('form').serialize(),
+                    success: function(data) {//alert(data["status"]);
+                        if(data["status"]){
+                            window.location.href = "home";
+                        }else{
+                            Toast.fire({
+                                type: 'error',
+                                title: 'Username or password is incorrect. Please try again.'
+                            });
+                            $("#reset").click();
+                            $("#username").focus();
+                        }
+    
+                    }
+                });
+            }
+        }
     });
 
     // //validations
