@@ -7,6 +7,11 @@ use CodeIgniter\Controller;
 
 class Employee extends Controller
 {
+    function __construct()
+    {
+        $this->session = \Config\Services::session();
+        $this->session->start();
+    }
 
     public function index()
     {
@@ -92,6 +97,7 @@ class Employee extends Controller
             'contact_no'	    =>	$this->request->getVar('contact_no'),
             'email'        =>	$this->request->getVar('email'),
             'username'	=>	$this->request->getVar('username'),
+            'password' => password_hash("test123",PASSWORD_DEFAULT),
             'type'	    =>	$this->request->getVar('type'),
             'status'        =>	$this->request->getVar('status')
         ];
@@ -177,6 +183,32 @@ class Employee extends Controller
             echo json_encode(array("status" => false , 'data' => $result));
         }
         
+    }
+
+    function login(){
+        helper(['form', 'url']);
+        
+        $model = new EmployeeModel();
+
+        $username = $this->request->getPost('username');
+        $password = password_hash($this->request->getPost('password'),PASSWORD_DEFAULT);
+
+        $result = $model->auth($username);
+
+        if(password_verify($this->request->getPost('password'), $result[0]["password"])){
+            //$data = $model->where('id', $save_data)->first();
+            $newdata = [
+                'username'  => $result[0]["username"],
+                'email'     => $result[0]["email"],
+                'logged_in' => TRUE
+            ];
+
+            $this->session->set($newdata); // setting session data
+
+            echo json_encode(array("status" => true));
+        }else{
+            echo json_encode(array("status" => false));
+        }
     }
 
 	
