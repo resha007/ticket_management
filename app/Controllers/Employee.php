@@ -211,5 +211,11 @@ class Employee extends Controller
         }
     }
 
+    function logout(){
+        $this->session->destroy();
+
+        echo json_encode(array("status" => true));
+    }
+
 	
 }
