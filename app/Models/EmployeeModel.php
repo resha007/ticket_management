@@ -28,6 +28,17 @@ class EmployeeModel extends Model
         }
     }
 
+    public function auth($username) {
+        $data = $this->where('username', $username)->where('status', 1)->findAll();
+
+
+        if(!empty($data)) {
+            return $data;
+        } else {
+            return false;
+        }
+    }
+
     public function get_data_by_type($type = false) {//$id=1;
         if($type === false) {
             return $this->where('type', 1)->orWhere('type', 2)->findAll();
