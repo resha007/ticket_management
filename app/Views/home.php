@@ -76,7 +76,7 @@
 			</div>
 		</form>
 		<ul class="nav menu">
-			<li><a href="<?=base_url()?>/employee" target="pageContent"><svg class="glyph stroked user"><use xlink:href="#stroked-dashboard-dial"></use></svg> Employee</a></li>
+			<li><a href="<?=base_url()?>/employee" target="pageContent"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Employee</a></li>
 			<li><a href="<?=base_url()?>/line" target="pageContent"><svg class="glyph stroked user"><use xlink:href="#stroked-dashboard-dial"></use></svg> Line</a></li>
 			<li><a href="<?=base_url()?>/customer" target="pageContent"><svg class="glyph stroked user"><use xlink:href="#stroked-dashboard-dial"></use></svg> Customer</a></li>
 			<hr>
