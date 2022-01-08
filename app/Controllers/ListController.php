@@ -12,9 +12,9 @@ class ListController extends Controller
     {
         $LoanModel = new LoanModel();
 
-		// $data['user_data'] = $LoanModel->orderBy('id', 'DESC')->paginate(10);
+		$data['user_data'] = $LoanModel->orderBy('id', 'DESC')->paginate(10);
 
-		// $data['pagination_link'] = $LoanModel->pager;
+		$data['pagination_link'] = $LoanModel->pager;
 
 		 return view('loan_list', $data);
     }

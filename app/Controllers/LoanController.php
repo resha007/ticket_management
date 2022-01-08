@@ -62,7 +62,7 @@ class LoanController extends Controller
             // }else if($data[$i]["status"] == 2){
             //     $data[$i]["status"] = "Inactive";
             // }
-        }
+       // }
         
 
 		echo json_encode($data);
