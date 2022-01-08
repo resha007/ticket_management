@@ -128,7 +128,7 @@
 									</div>
 									<div class="form-group col-md-4">
 										<label>Optional Rider</label>
-										<select class="form-control" name="opt_rider" id="opt_rider" required>
+										<select class="form-control" name="opt_rider" id="opt_rider">
 											<option value="0" selected disabled>Select a Optional Rider</option>
 										</select>
 									</div>

@@ -11,9 +11,9 @@ class Payment extends Controller
     {
         $PaymentModel = new PaymentModel();
 
-		$data['user_data'] = $PaymentModel->orderBy('id', 'DESC')->paginate(10);
+        $data['user_data'] = $PaymentModel->orderBy('id', 'DESC')->paginate(10);
 
-		$data['pagination_link'] = $PaymentModel->pager;
+        $data['pagination_link'] = $PaymentModel->pager;
 
         return view('payments', $data);
     }
@@ -21,40 +21,69 @@ class Payment extends Controller
     function get(){ 
         $PaymentModel = new PaymentModel();
 
-		$data = $PaymentModel->where("status='1' OR status='2'")->orderBy('id', 'ASC')->paginate(10);
+		//$data = $CustomerModel->where("status='1' OR status='2'")->orderBy('id', 'ASC')->paginate(10);
+        $data = $PaymentModel->get_data();
 
         //set numbers to names
-        // for($i=0;$i<sizeof($data);$i++){
-        //     if($data[$i]["gender"] == 1){
-        //         $data[$i]["gender"] = "Male";
-        //     }else{
-        //         $data[$i]["gender"] = "Female";
-        //     }
+        for($i=0;$i<sizeof($data);$i++){
+            if($data[$i]["gender"] == 1){
+                $data[$i]["gender"] = "Male";
+            }else{
+                $data[$i]["gender"] = "Female";
+            }
 
-        //     if($data[$i]["type"] == 1){
-        //         $data[$i]["type"] = "Employee";
-        //     }else if($data[$i]["type"] == 2){
-        //         $data[$i]["type"] = "Rider";
-        //     }
-
-        //     if($data[$i]["status"] == 1){
-        //         $data[$i]["status"] = "Active";
-        //     }else if($data[$i]["status"] == 2){
-        //         $data[$i]["status"] = "Inactive";
-        //     }
-        // }
+            if($data[$i]["status"] == 1){
+                $data[$i]["status"] = "Active";
+            }else if($data[$i]["status"] == 2){
+                $data[$i]["status"] = "Inactive";
+            }
+        }
         
 
 		echo json_encode($data);
 	}
 
-    function save(){
+
+    //$data = $PaymentModel->where("status='1' OR status='2'")->orderBy('id', 'ASC')->paginate(10);
+
+    //set numbers to names
+    //for($i=0;$i<sizeof($data);$i++){
+    //     if($data[$i]["gender"] == 1){
+    //         $data[$i]["gender"] = "Male";
+    //     }else{
+    //         $data[$i]["gender"] = "Female";
+    //     }
+
+    //     if($data[$i]["type"] == 1){
+    //         $data[$i]["type"] = "Employee";
+    //     }else if($data[$i]["type"] == 2){
+    //         $data[$i]["type"] = "Rider";
+    //     }
+
+    //     if($data[$i]["status"] == 1){
+    //         $data[$i]["status"] = "Active";
+    //     }else if($data[$i]["status"] == 2){
+    //         $data[$i]["status"] = "Inactive";
+    //     }
+    // }
+
+
+
+
+    // function getline(){
+    //     $data['line'] = $this->PaymentModel->get_category()->result();
+    //     $this->load->view('payments', $data);
+    // }
+
+
+    function save()
+    {
         helper(['form', 'url']);
-        
+
         $model = new PaymentModel();
-        
+
         $data = [
-            'loan_id'	=>	$this->request->getPost('line_number'),
+            'loan_id'    =>    $this->request->getPost('line_number'),
             //'loan_number'	    =>	$this->request->getPost('repayment_id'),
             // 'first_name'        =>	$this->request->getPost('type'),
             // 'last_name'	=>	$this->request->getVar('rider_id'),
@@ -69,13 +98,31 @@ class Payment extends Controller
         ];
 
         $save_data = $model->insert_data($data);
-        echo($data);
+        echo ($data);
 
-        if($save_data != false){
+        if ($save_data != false) {
             //$data = $model->where('id', $save_data)->first();
-            echo json_encode(array("status" => true , 'data' => $data));
-        }else{
-            echo json_encode(array("status" => false , 'data' => $data));
+            echo json_encode(array("status" => true, 'data' => $data));
+        } else {
+            echo json_encode(array("status" => false, 'data' => $data));
+        }
+    }
+
+    function by_id()
+    {
+        helper(['form', 'url']);
+
+        $model = new PaymentModel();
+
+        $id = $this->request->getPost('id');
+
+        $result = $model->get_data_by_id($id);
+
+        if ($result != false) {
+            //$data = $model->where('id', $save_data)->first();
+            echo json_encode(array("status" => true, 'data' => $result));
+        } else {
+            echo json_encode(array("status" => false, 'data' => $result));
         }
     }
 }

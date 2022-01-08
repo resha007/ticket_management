@@ -20,12 +20,12 @@ class LineModel extends Model
         $builder = $db->table('line');
     }
 
-    public function get_data($id = false) {//$id=1;
+    public function get_data($id = false) {//$id=1; 
         if($id === false) {
             $this->join('employee', 'employee.id = line.rider_id', 'LEFT');
             $this->join('employee emp', 'emp.id = line.opt_rider_id', 'LEFT');
             $this->select('line.*');
-            $this->select("CONCAT(employee.first_name, ' ', employee.last_name) as rider");
+            $this->select("CONCAT(line.id, ' ', line.name) as rider");
             $this->select("CONCAT(emp.first_name, ' ', emp.last_name) as opt_rider");
             $this->where('line.status', 1);
             $this->orWhere('line.status', 2);

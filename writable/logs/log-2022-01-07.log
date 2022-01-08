@@ -1,0 +1,67 @@
+CRITICAL - 2022-01-07 01:06:59 --> Call to undefined method App\Models\EmployeeModel::auth
+#0 C:\xampp\htdocs\microfin\app\Controllers\Employee.php(196): CodeIgniter\Model->__call('auth', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Employee->login()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-07 03:39:06 --> Unknown table 'microfin.customer'
+CRITICAL - 2022-01-07 03:39:06 --> Unknown table 'microfin.customer'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `custome...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `custome...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `custome...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `custome...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\microfin\app\Models\PaymentModel.php(39): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\microfin\app\Controllers\Payment.php(25): App\Models\PaymentModel->get_data()
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->get()
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-01-07 03:40:06 --> Unknown table 'microfin.customer'
+CRITICAL - 2022-01-07 03:40:06 --> Unknown table 'microfin.customer'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `custome...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `custome...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `custome...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `custome...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\microfin\app\Models\PaymentModel.php(27): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\microfin\app\Controllers\Payment.php(25): App\Models\PaymentModel->get_data()
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->get()
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-01-07 03:42:21 --> Unknown table 'microfin.customer'
+CRITICAL - 2022-01-07 03:42:21 --> Unknown table 'microfin.customer'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `custome...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `custome...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `custome...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `custome...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\microfin\app\Models\PaymentModel.php(27): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\microfin\app\Controllers\Payment.php(25): App\Models\PaymentModel->get_data()
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->get()
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-01-07 03:46:11 --> Unknown table 'microfin.customer'
+CRITICAL - 2022-01-07 03:46:11 --> Unknown table 'microfin.customer'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `custome...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `custome...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `custome...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `custome...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\microfin\app\Models\PaymentModel.php(27): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\microfin\app\Controllers\Payment.php(25): App\Models\PaymentModel->get_data()
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->get()
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}

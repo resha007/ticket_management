@@ -112,9 +112,11 @@
 
 								<form method="post" role="form" id="paymForm">
 
-								   <div class="form-group col-md-6">
+								   <div class="form-group col-md-6" id ="filters">
 										<label>Line Number</label>
-										<input class="form-control" name="line_number" id="line_number">
+										<select class="form-control" name="line_number" id="line_number">
+										<option value="0" selected disabled>Select a Line</option>
+										</select>
 									</div>
 								
 									<div class="form-group col-md-6">
