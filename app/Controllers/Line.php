@@ -16,8 +16,12 @@ class Line extends Controller
     function get(){ 
         $LineModel = new LineModel();
 
-		//$data = $LineModel->where("status='1' OR status='2'")->orderBy('id', 'ASC')->paginate(10);
-        $data = $LineModel->get_data();
+        if($this->request->getPost('id') == 1){
+            $data = $LineModel->get_data(1);
+        }else{
+            $data = $LineModel->get_data();
+        }
+        
 
         //set numbers to names
         for($i=0;$i<sizeof($data);$i++){

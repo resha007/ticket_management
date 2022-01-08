@@ -35,6 +35,26 @@ $(document).ready(function() {//alert("test123");
         }
     });
 
+    $.ajax({
+        type : "POST",
+        url		: "employee/get_by_type",
+        dataType : 'json',
+        async : true,
+        headers: {'X-Requested-With': 'XMLHttpRequest'},
+        data	: { type: 2 },
+        success: function(data) {//alert(data);
+            if(data){
+                $('#opt_rider').empty();
+                $('#opt_rider').html('<option value="0" selected="selected" disabled="disabled">Select a Optional Rider</option>');
+                for(var a=0; a<data.length; a++){
+                    $('#opt_rider').append($("<option></option>").attr("value",data[a]['id']).text(data[a]['first_name']+' '+data[a]['last_name']));
+                }
+            }else{
+                
+            }
+        }
+    });
+
     //load employees as opt riders
     $( "#rider" ).change(function() {
         $("#opt_rider").prop("disabled",false);
@@ -204,30 +224,30 @@ $(document).ready(function() {//alert("test123");
         $("#add").prop("disabled",true);
         $("#opt_rider").prop("disabled",false);
 
-        $.ajax({
-            type : "POST",
-            url		: "employee/get_by_type",
-            dataType : 'json',
-            async : true,
-            headers: {'X-Requested-With': 'XMLHttpRequest'},
-            data	: { type: 2 },
-            success: function(data) {//alert(data);
-                if(data){
-                    $('#opt_rider').empty();
-                    $('#opt_rider').html('<option value="0" selected="selected" disabled="disabled">Select a Optional Rider</option>');
-                    for(var a=0; a<data.length; a++){$('#opt_rider').append($("<option></option>").attr("value",data[a]['id']).text(data[a]['first_name']+' '+data[a]['last_name']));
-                        // if($("#rider").val() == data[a]['id']){
-                        //     $('#opt_rider').append($("<option disabled></option>").attr("value",data[a]['id']).text(data[a]['first_name']+' '+data[a]['last_name']+"- Rider"));
-                        // }else{
-                        //     $('#opt_rider').append($("<option></option>").attr("value",data[a]['id']).text(data[a]['first_name']+' '+data[a]['last_name']));
-                        // }
+        // $.ajax({
+        //     type : "POST",
+        //     url		: "employee/get_by_type",
+        //     dataType : 'json',
+        //     async : true,
+        //     headers: {'X-Requested-With': 'XMLHttpRequest'},
+        //     data	: { type: 2 },
+        //     success: function(data) {//alert(data);
+        //         if(data){
+        //             $('#opt_rider').empty();
+        //             for(var a=0; a<data.length; a++){
+        //                 $('#opt_rider').append($("<option></option>").attr("value",data[a]['id']).text(data[a]['first_name']+' '+data[a]['last_name']+' '+data[a]['id']));
+        //                 // if($("#rider").val() == data[a]['id']){
+        //                 //     $('#opt_rider').append($("<option disabled></option>").attr("value",data[a]['id']).text(data[a]['first_name']+' '+data[a]['last_name']+"- Rider"));
+        //                 // }else{
+        //                 //     $('#opt_rider').append($("<option></option>").attr("value",data[a]['id']).text(data[a]['first_name']+' '+data[a]['last_name']));
+        //                 // }
                         
-                    }
-                }else{
+        //             }
+        //         }else{
                     
-                }
-            }
-        });
+        //         }
+        //     }
+        // });
 
         $.ajax({
             type : "POST",
@@ -235,7 +255,7 @@ $(document).ready(function() {//alert("test123");
             dataType : 'json',
             async : true,
             data	: { id: id },
-            success: function(data) {//alert(data["data"]["first_name"]);
+            success: function(data) {//alert(data["data"]["opt_rider_id"]);
                 if(data){
                     $("#id").val(data["data"]["id"]);
                     $("#code").val(data["data"]["code"]);

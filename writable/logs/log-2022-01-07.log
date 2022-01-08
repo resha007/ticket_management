@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2022-01-07 01:06:59 --> Call to undefined method App\Models\EmployeeModel::auth
 #0 C:\xampp\htdocs\microfin\app\Controllers\Employee.php(196): CodeIgniter\Model->__call('auth', Array)
 #1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Employee->login()
@@ -65,3 +66,187 @@ CRITICAL - 2022-01-07 03:46:11 --> Unknown table 'microfin.customer'
 #10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #12 {main}
+=======
+ERROR - 2022-01-07 01:50:08 --> Unknown column 'cus_name' in 'field list'
+CRITICAL - 2022-01-07 01:50:08 --> Unknown column 'cus_name' in 'field list'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(52): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(89): App\Models\LoanModel->insert_data(Array)
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->save()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-07 01:51:50 --> Unknown column 'cus_name' in 'field list'
+CRITICAL - 2022-01-07 01:51:50 --> Unknown column 'cus_name' in 'field list'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(52): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(89): App\Models\LoanModel->insert_data(Array)
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->save()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-07 01:52:58 --> Unknown column 'approved_date' in 'field list'
+CRITICAL - 2022-01-07 01:52:58 --> Unknown column 'approved_date' in 'field list'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(52): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(89): App\Models\LoanModel->insert_data(Array)
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->save()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-07 02:12:52 --> Unknown column 'approved_date' in 'field list'
+CRITICAL - 2022-01-07 02:12:52 --> Unknown column 'approved_date' in 'field list'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(52): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(89): App\Models\LoanModel->insert_data(Array)
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->save()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-07 02:24:52 --> Unknown column 'approved_date' in 'field list'
+CRITICAL - 2022-01-07 02:24:52 --> Unknown column 'approved_date' in 'field list'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(52): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(89): App\Models\LoanModel->insert_data(Array)
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->save()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-07 02:31:53 --> Unknown column 'approved_date' in 'field list'
+CRITICAL - 2022-01-07 02:31:53 --> Unknown column 'approved_date' in 'field list'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(52): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(89): App\Models\LoanModel->insert_data(Array)
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->save()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-07 02:33:00 --> Unknown column 'approved_date' in 'field list'
+CRITICAL - 2022-01-07 02:33:00 --> Unknown column 'approved_date' in 'field list'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(52): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(89): App\Models\LoanModel->insert_data(Array)
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->save()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-07 02:36:55 --> Unknown column 'approved_date' in 'field list'
+CRITICAL - 2022-01-07 02:36:55 --> Unknown column 'approved_date' in 'field list'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(52): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(89): App\Models\LoanModel->insert_data(Array)
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->save()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-07 02:50:04 --> Unknown column 'approved_date' in 'field list'
+CRITICAL - 2022-01-07 02:50:04 --> Unknown column 'approved_date' in 'field list'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(52): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(89): App\Models\LoanModel->insert_data(Array)
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->save()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-07 02:50:34 --> Unknown column 'approved_date' in 'field list'
+CRITICAL - 2022-01-07 02:50:34 --> Unknown column 'approved_date' in 'field list'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(52): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(89): App\Models\LoanModel->insert_data(Array)
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->save()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-07 03:12:19 --> Unknown column 'approved_date' in 'field list'
+CRITICAL - 2022-01-07 03:12:19 --> Unknown column 'approved_date' in 'field list'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(52): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(89): App\Models\LoanModel->insert_data(Array)
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->save()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-07 04:34:50 --> Unknown column 'approved_date' in 'field list'
+CRITICAL - 2022-01-07 04:34:50 --> Unknown column 'approved_date' in 'field list'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(52): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(89): App\Models\LoanModel->insert_data(Array)
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->save()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-07 05:31:39 --> Unknown column 'approved_date' in 'field list'
+CRITICAL - 2022-01-07 05:31:39 --> Unknown column 'approved_date' in 'field list'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(52): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(89): App\Models\LoanModel->insert_data(Array)
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->save()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-01-07 05:42:27 --> Unknown column 'approved_date' in 'field list'
+CRITICAL - 2022-01-07 05:42:27 --> Unknown column 'approved_date' in 'field list'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(52): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(89): App\Models\LoanModel->insert_data(Array)
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->save()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+>>>>>>> e2c9c847b9640ade5e01615b925e7daeabf8772f

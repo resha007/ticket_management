@@ -98,6 +98,14 @@ h3, h4 {
 	color: #30a5ff;
 }
 
+/*Vertical Line*/
+/* .vertical {
+	border-left: 6px solid black;
+	height: 200px;
+	position:absolute;
+	left: 50%;
+} */
+
 /*Buttons*/
 
 a.btn:hover,
