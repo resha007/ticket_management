@@ -250,3 +250,31 @@ CRITICAL - 2022-01-07 05:42:27 --> Unknown column 'approved_date' in 'field list
 #9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #10 {main}
 >>>>>>> e2c9c847b9640ade5e01615b925e7daeabf8772f
+CRITICAL - 2022-01-07 22:04:40 --> syntax error, unexpected 'echo' (T_ECHO), expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\microfin\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('loanController')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('loanController')
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-07 22:07:04 --> syntax error, unexpected 'echo' (T_ECHO), expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\microfin\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('loancontroller')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('loancontroller')
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-07 22:07:10 --> syntax error, unexpected 'echo' (T_ECHO), expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\microfin\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('loanController')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('loanController')
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-07 22:56:01 --> Undefined variable: data
+#0 C:\xampp\htdocs\microfin\app\Controllers\ListController.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\ListController->index()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListController))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

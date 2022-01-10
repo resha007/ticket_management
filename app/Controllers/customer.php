@@ -128,7 +128,7 @@ class Customer extends Controller
         
         $model = new CustomerModel();
 
-        $id = $this->request->getPost('id');
+        $id = $this->request->getPost('id'); 
 
         $result = $model->get_data_by_id($id);
 

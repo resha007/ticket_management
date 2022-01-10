@@ -17,19 +17,28 @@ class PaymentModel extends Model
         parent::__construct();
     }
 
-    public function get_data($id = false) {//$id=1;
-        if($id === false) {
-            // $this->join('line', 'line.id = customer.line_id', 'LEFT');
-            // $this->select('customer.*');
-            // $this->select("CONCAT(line.code, ' - ', line.name) as line");
-            // //$this->where('status', 1);
-            // return $this->findAll();
-            return $this->join('line', 'line.id = customer.line_id', 'LEFT')->select('customer.*')->select("CONCAT(line.code, ' - ', line.name) as line")->where('customer.status', 1)->orWhere('customer.status', 2)->findAll();
-            //return $this->where('status', 1)->orWhere('status', 2)->findAll();
-        } else {
-            return $this->where('status', 1)->findAll();
-        }
-    }
+    // public function get_data($id = false) {//$id=1;
+    //     if($id === false) {
+            
+    //         $this->join('line', 'line.id = customer.line_id', 'LEFT');
+    //         $this->join('loan', 'customer.id = loan.customer_id', 'LEFT');
+    //         //$this->select('line.line_code','line.name','loan.id','loan.amount','customer.first_name','customer.last_name');
+    //         //$this->select('line.*');
+    //         $this->select("CONCAT(line.id, ' ', line.name) as line");
+    //         $this->select("CONCAT(customer.first_name, ' ', customer.last_name) as customer");
+    //         $this->select("CONCAT(loan.id, ' ', loan.amount) as customer");
+    //         $this->where('loan.status', 1);
+    //         return $this->findAll();
+    //         // $this->select('customer.*');
+    //         // $this->select("CONCAT(line.code, ' - ', line.name) as line");
+    //         // //$this->where('status', 1);
+    //         // return $this->findAll();
+    //         //return $this->join('line', 'line.id = customer.line_id', 'LEFT')->select('customer.*')->select("CONCAT(line.code, ' - ', line.name) as line")->where('customer.status', 1)->orWhere('customer.status', 2)->findAll();
+    //         //return $this->where('status', 1)->orWhere('status', 2)->findAll();
+    //     } else {
+    //         return $this->where('status', 1)->findAll();
+    //     }
+    // }
 
     public function insert_data($data) {
         if($this->insert($data)){

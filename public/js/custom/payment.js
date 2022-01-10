@@ -51,4 +51,37 @@ $(document).ready(function() {//alert("test123");
         }
     });
 
+
+    //load employees as opt riders
+    $( "#line_number" ).change(function() {
+        var lineid = $("#line_number :selected").val();
+        $("loan_number").val(); 
+        //alert(lineid); 
+
+        $.ajax({
+            type : "POST",
+            url		: "loan/byline",
+            dataType : 'json',
+            async : true,
+            headers: {'X-Requested-With': 'XMLHttpRequest'},
+            data	: { lineid: lineid },
+            success: function(data) {alert(data["customer"]);
+                // if(data){
+                //     $('#opt_rider').empty();
+                //     $('#opt_rider').html('<option value="0" selected="selected" disabled="disabled">Select a Optional Rider</option>');
+                //     for(var a=0; a<data.length; a++){
+                //         if($("#rider").val() == data[a]['id']){
+                //             $('#opt_rider').append($("<option disabled></option>").attr("value",data[a]['id']).text(data[a]['first_name']+' '+data[a]['last_name']+"- Rider"));
+                //         }else{
+                //             $('#opt_rider').append($("<option></option>").attr("value",data[a]['id']).text(data[a]['first_name']+' '+data[a]['last_name']));
+                //         }
+                        
+                //     }
+                // }else{
+                    
+                //}
+            }
+        });
+    });
+
 });
