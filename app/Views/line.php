@@ -110,6 +110,7 @@
 						<div class="panel-body">
 							<div class="col-md-12">
 								<form method="post" role="form" id="dataForm">
+									<!-- hiddn -->
 									<input type="hidden" class="form-control" name="id" id="id">
 									<div class="form-group col-md-6">
 										<label>Code</label>

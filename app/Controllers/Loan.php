@@ -62,11 +62,7 @@ class Loan extends Controller
             // }else if($data[$i]["status"] == 2){
             //     $data[$i]["status"] = "Inactive";
             // }
-<<<<<<< HEAD:app/Controllers/Loan.php
         //}
-=======
-       // }
->>>>>>> c05319a5d5c92dce5918df4b055e27ee1ec8af2e:app/Controllers/LoanController.php
         
 		echo json_encode($data);
 	}
@@ -142,15 +138,15 @@ class Loan extends Controller
         
         $model = new LoanModel();
 
-        $lineid = $this->request->getPost('line_id');
+        $id = $this->request->getPost('line_id');
 
-        $result = $model->get_data_by_line($lineid);
+        $result = $model->get_data_by_line($id);
 
         if($result != false){
-            //$data = $model->where('id', $save_data)->first();
+            //$data = $model->where('id', $id->first();
             echo json_encode(array("status" => true , 'data' => $result));
         }else{
-            echo json_encode(array("status" => false , 'data' => $result));
+            echo json_encode(array("status" => false , 'data' => "empty"));
         }
         
     }

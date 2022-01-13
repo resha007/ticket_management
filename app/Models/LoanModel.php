@@ -54,28 +54,15 @@ class LoanModel extends Model
     // }
 
     //Imal- For Payment Implementation 
-    public function get_data_by_line($id) {//$id=1;
-       
-            
-            $this->join('line', 'line.id = customer.line_id', 'LEFT');
-            $this->join('customer', 'customer.id = loan.customer_id', 'LEFT');
-            //$this->select('line.line_code','line.name','loan.id','loan.amount','customer.first_name','customer.last_name');
-            //$this->select('line.*');
-            $this->select("CONCAT(line.id, ' ', line.name) as line");
-            $this->select("CONCAT(customer.first_name, ' ', customer.last_name) as customer");
-            $this->select("CONCAT(loan.id, ' ', loan.amount) as loan");
-            $this->where('line.id', $id) ;
-            $this->where('loan.status', 1) ;
-            
-            return true;
-            // $this->select('customer.*');
-            // $this->select("CONCAT(line.code, ' - ', line.name) as line");
-            // //$this->where('status', 1);
-            // return $this->findAll();
-            //return $this->join('line', 'line.id = customer.line_id', 'LEFT')->select('customer.*')->select("CONCAT(line.code, ' - ', line.name) as line")->where('customer.status', 1)->orWhere('customer.status', 2)->findAll();
-            //return $this->where('status', 1)->orWhere('status', 2)->findAll();
-        
-        
+    public function get_data_by_line($id) {
+        $this->join('customer', 'customer.id = loan.customer_id', 'LEFT');
+        $this->join('line', 'line.id = customer.line_id', 'LEFT');
+        $this->select("CONCAT(line.code, ' ', line.name) as line");
+        $this->select("CONCAT(customer.first_name, ' ', customer.last_name) as customer");
+        $this->select("CONCAT(loan.id) as loanid");
+        $this->select("CONCAT(loan.loan_amount) as loanamount");
+        $this->where('customer.line_id', $id);
+        return $this->findAll();
     }
 
     // public function get_data_by_line($lineid) {
@@ -87,5 +74,3 @@ class LoanModel extends Model
 
 
 }
-
-?>
