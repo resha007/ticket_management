@@ -20,13 +20,8 @@ class LoanModel extends Model
         $builder = $db->table('loan');
     }
     
-    // function get_customername(){
-    //     $db = \Config\Database::connect();
-    //     $query = $db->query("SELECT id, CONCAT((first_name),(' '),(last_name)) as name from customer where  ");
-    //      return $query->getresult(); 
-    // }
 
-    //get gautnters in the db
+    //get guartntors in the db
     function getguarntorlist() {
 
         // $query = $db->query('YOUR QUERY HERE');
@@ -38,6 +33,21 @@ class LoanModel extends Model
 
     }
 
+    //get customer loans by loan id
+    public function get_data($id = false) {//$id=1;
+        if($id === false) {
+            // $this->join('line', 'line.id = customer.line_id', 'LEFT');
+            // $this->select('customer.*');
+            // $this->select("CONCAT(line.code, ' - ', line.name) as line");
+            // //$this->where('status', 1);
+            // return $this->findAll();
+            return $this->join('customer', 'customer.id = loan.customer_id', 'LEFT')->select('loan.*')->select("CONCAT(customer.first_name, ' ', customer.last_name) as customer_id")->where('loan.status', 1)->orWhere('loan.status',2)->findAll();
+            //return $this->where('status', 1)->orWhere('status', 2)->findAll();
+        } else {
+            return $this->where('status', 1)->findAll();
+        }
+    }
+
     public function insert_data($data) {
         if($this->db->table($this->table)->insert($data)){
                 return true;
@@ -46,12 +56,31 @@ class LoanModel extends Model
                 return false;
             }
     }
-    
-    //get the customer id for the current customer to display the name
-    // public function get_data_by_id($id) {
-    //     return $this->where('id', $id)->first();
 
-    // }
+    public function update_data($id,$data) {
+        if($this->update($id,$data)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public function delete_data($id,$data) {
+        if($this->update($id,$data)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    //add pending loans to the data table
+    public function get_loan_data_by_id($id) {
+        return $this->where('id', $id)->first();
+
+    }
+
 
     //Imal- For Payment Implementation 
     public function get_data_by_line($id) {
@@ -74,3 +103,4 @@ class LoanModel extends Model
 
 
 }
+?>

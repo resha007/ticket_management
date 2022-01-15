@@ -13,12 +13,10 @@ class Loan extends Controller
     {
         $LoanModel = new LoanModel();
 
-		//$data['user_data'] = $LoanModel->orderBy('id', 'DESC')->paginate(10);
-
-		//$data['pagination_link'] = $LoanModel->pager;
 
         //get guarntor names from the customer table
         $data['guarantordata'] = $LoanModel->getguarntorlist();
+
 
 		return view('loan_new', $data);
     }
@@ -26,44 +24,25 @@ class Loan extends Controller
     function get(){ 
         $LoanModel = new LoanModel();
 
-		$data = $LoanModel->where("status='1' OR status='2'")->orderBy('id', 'ASC')->paginate(10);
+		//$data = $CustomerModel->where("status='1' OR status='2'")->orderBy('id', 'ASC')->paginate(10);
+        $data = $LoanModel->get_data();
 
-        //approvels
-        // for($i=0;$i<sizeof($data);$i++){
-        //     if($data[$i]["approved_by"] == 1){
-        //         $data[$i]["approved_by"] = "Admin";
-        //     }else{
-        //         $data[$i]["approved_by"] = "Rider";
-        //     }
+        //set numbers to names
+        for($i=0;$i<sizeof($data);$i++){
+            if($data[$i]["created_by"] == 1){
+                $data[$i]["created_by"] = "Admin";
+            }else{
+                $data[$i]["created_by"] = "Rider";
+            }
 
-            // if($data[$i]["approved_by"] == 2) && ($data[$i]["approved_by"] == 2) {
-            //     $data[$i]["approved_by"] = "Admin";
-            // }else{
-            //     $data[$i]["approved_by"] = "Rider";
-            // }
-
-
-            //status
-
-            // if($data[$i]["status"] == 1){
-            //     $data[$i]["status"] = "Pending";
-            // }else if($data[$i]["status"] == 3){
-            //     $data[$i]["status"] = "Refused";
-            // }else if($data[$i]["status"] == 4){
-            //     $data[$i]["status"] = "Abandoned";
-            // }else if($data[$i]["status"] == 5){
-            //     $data[$i]["status"] = "Cleared";
-            // }else{
-            //     $data[$i]["status"] = "Approved";
-            // }
-
-            // if($data[$i]["status"] == 1){
-            //     $data[$i]["status"] = "Active";
-            // }else if($data[$i]["status"] == 2){
-            //     $data[$i]["status"] = "Inactive";
-            // }
-        //}
+            if($data[$i]["status"] == 1){
+                $data[$i]["status"] = "Pending";
+            }else if($data[$i]["status"] == 2){
+                $data[$i]["status"] = "Approved";
+            }
+        }
         
+
 		echo json_encode($data);
 	}
 
@@ -73,19 +52,15 @@ class Loan extends Controller
         $model = new LoanModel();
         
         $data = [
-            //'customer_id'	=>	$this->request->getPost('customer_id'),
+            'customer_id'	=>	$this->request->getVar('customer_id'),
             'reason'	    =>	$this->request->getPost('reason'),
             'guarantor_1'   =>	$this->request->getVar('guarantor_1'),
             'guarantor_2'	=>	$this->request->getVar('guarantor_2'),
             'loan_amount'	=>	$this->request->getPost('loan_amount'),
             'loan_period'   =>	$this->request->getVar('loan_period'),
             'loan_interest'	=>	$this->request->getVar('loan_interest'),
-            // 'created_date'	=>	$this->request->getVar('created_date'),
             'created_by'    =>	$this->request->getVar('created_by'),
-            'status'	    =>	$this->request->getVar('status'),
-            //'approved_date'	    =>	$this->request->getVar('approved_date'),
-            'approved_by'   =>	$this->request->getVar('approved_by')
-            // 'effective_date'=>	$this->request->getVar('effective_date')
+            'status'	    =>	$this->request->getVar('status')
         ];
 
         $save_data = $model->insert_data($data);
@@ -98,24 +73,76 @@ class Loan extends Controller
         }
     }
 
+    function update(){
+        helper(['form', 'url']);
+        
+        $model = new LoanModel();
+
+        $id = $this->request->getPost('id');
+        
+        $data = [
+            'customer_id'	=>	$this->request->getVar('customer_id'),
+            'reason'	    =>	$this->request->getPost('reason'),
+            'guarantor_1'        =>	$this->request->getVar('guarantor_1'),
+            'guarantor_2'	=>	$this->request->getVar('guarantor_2'),
+            'loan_amount'	    =>	$this->request->getPost('loan_amount'),
+            // 'loan_period'        =>	$this->request->getVar('loan_period'),
+            // 'loan_interest'	=>	$this->request->getVar('loan_interest'),
+            'created_by'	    =>	$this->request->getVar('created_by'),
+            'status'        =>	$this->request->getVar('status')
+        ];
+
+        $result = $model->update_data($id, $data);
+
+        if($result != false){
+            //$data = $model->where('id', $save_data)->first();
+            echo json_encode(array("status" => true , 'data' => $data));
+        }else{
+            echo json_encode(array("status" => false , 'data' => $data));
+        }
+        
+    }
+
+    function delete(){
+        helper(['form', 'url']);
+        
+        $model = new LoanModel();
+
+        $id = $this->request->getPost('id');
+        
+        $data = [
+            'status'        =>	3
+        ];
+
+        $result = $model->delete_data($id, $data);
+
+        if($result != false){
+            //$data = $model->where('id', $save_data)->first();
+            echo json_encode(array("status" => true , 'data' => $data));
+        }else{
+            echo json_encode(array("status" => false , 'data' => $data));
+        }
+        
+    }
+
     //get the customer id for current customer
-    // function customer_by_id(){
-    //     helper(['form', 'url']);
+    function loan_by_id(){
+        helper(['form', 'url']);
         
-    //     $model = new LoanModel();
+        $model = new LoanModel();
 
-    //     $id = $this->request->getPost('id');
+        $id = $this->request->getPost('id');
 
-    //     $result = $model->get_data_by_id($id);
+        $result = $model->get_loan_data_by_id($id);
 
-    //     if($result != false){
-    //         //$data = $model->where('id', $save_data)->first();
-    //         echo json_encode(array("status" => true , 'data' => $result));
-    //     }else{
-    //         echo json_encode(array("status" => false , 'data' => $result));
-    //     }
+        if($result != false){
+            //$data = $model->where('id', $save_data)->first();
+            echo json_encode(array("status" => true , 'data' => $result));
+        }else{
+            echo json_encode(array("status" => false , 'data' => $result));
+        }
         
-    // }
+    }
 
 
     // function calculate total_amount_per_day(){
@@ -152,4 +179,5 @@ class Loan extends Controller
     }
 }
 
+?>
 
