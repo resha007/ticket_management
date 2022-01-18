@@ -79,6 +79,8 @@
 			<li><a href="<?=base_url()?>/employee" target="pageContent"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Employee</a></li>
 			<li><a href="<?=base_url()?>/line" target="pageContent"><svg class="glyph stroked user"><use xlink:href="#stroked-dashboard-dial"></use></svg> Line</a></li>
 			<li><a href="<?=base_url()?>/customer" target="pageContent"><svg class="glyph stroked user"><use xlink:href="#stroked-dashboard-dial"></use></svg> Customer</a></li>
+			<li><a href="<?=base_url()?>/loan" target="pageContent"><svg class="glyph stroked user"><use xlink:href="#stroked-dashboard-dial"></use></svg> Loan</a></li>
+			<li><a href="<?=base_url()?>/payment" target="pageContent"><svg class="glyph stroked user"><use xlink:href="#stroked-dashboard-dial"></use></svg> Payment</a></li>
 			<hr>
 			
 			
