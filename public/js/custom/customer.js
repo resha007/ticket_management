@@ -200,6 +200,25 @@ $(document).ready(function() {//alert("test123");
         //alert(id);
     });
 
+    $( "#dataTable" ).click(function() {
+        var id = getIdSelections();
+
+        $.ajax({
+            type : "POST",
+            url		: "customer/customer_session", 
+            dataType : 'json',
+            async : true,
+            data	: { id: id },
+            success: function(data) {
+                if(data["status"]){
+                    window.location.href = "profile";
+                }else{
+                    
+                }
+            }
+        });
+    });
+
     // //validations
     function validate(){
         var err = 0;

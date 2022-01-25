@@ -7,6 +7,11 @@ use CodeIgniter\Controller;
 
 class Customer extends Controller
 {
+    function __construct()
+    {
+        $this->session = \Config\Services::session();
+        $this->session->start();
+    }
 
     public function index()
     {
@@ -138,6 +143,21 @@ class Customer extends Controller
         }else{
             echo json_encode(array("status" => false , 'data' => $result));
         }
+        
+    }
+
+    function customer_session(){
+        helper(['form', 'url']);
+
+        $id = $this->request->getPost('id'); 
+
+        $cust_data = [
+            'id'  => $id
+        ];
+
+        $this->session->set($cust_data); // setting session data
+
+        echo json_encode(array("status" => true ));
         
     }
 
