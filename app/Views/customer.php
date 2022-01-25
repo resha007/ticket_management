@@ -225,6 +225,7 @@
 	<script src="js/bootstrap-table.js"></script>
 
 	<script src="js/custom/customer.js"></script>
+	
 
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 

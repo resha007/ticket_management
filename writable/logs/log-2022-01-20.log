@@ -1,0 +1,20 @@
+CRITICAL - 2022-01-20 00:27:08 --> Call to undefined method App\Models\CustomerModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\Customer.php(133): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Customer->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-20 00:27:11 --> Call to undefined method App\Models\CustomerModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\Customer.php(133): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Customer->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-20 08:27:18 --> Class 'App\Controllers\LoanModel' not found
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->index()
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

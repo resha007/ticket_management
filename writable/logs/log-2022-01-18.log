@@ -1,0 +1,104 @@
+CRITICAL - 2022-01-18 06:25:11 --> Invalid file: customers.php
+#0 C:\xampp\htdocs\microfin\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('customers.php')
+#1 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('customers', Array, true)
+#2 C:\xampp\htdocs\microfin\app\Controllers\customer.php(14): view('customers')
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Customer->index()
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-18 06:25:18 --> Invalid file: customers.php
+#0 C:\xampp\htdocs\microfin\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('customers.php')
+#1 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('customers', Array, true)
+#2 C:\xampp\htdocs\microfin\app\Controllers\customer.php(14): view('customers')
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Customer->index()
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-18 06:25:23 --> Invalid file: customers.php
+#0 C:\xampp\htdocs\microfin\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('customers.php')
+#1 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('customers', Array, true)
+#2 C:\xampp\htdocs\microfin\app\Controllers\customer.php(14): view('customers')
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Customer->index()
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-18 20:03:31 --> Undefined variable: guarantordata
+#0 C:\xampp\htdocs\microfin\app\Views\profile.php(231): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 231, Array)
+#1 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('profile', Array, true)
+#4 C:\xampp\htdocs\microfin\app\Controllers\Profile.php(14): view('profile')
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Profile->index()
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-18 20:04:04 --> Undefined variable: guarantordata
+#0 C:\xampp\htdocs\microfin\app\Views\profile.php(231): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 231, Array)
+#1 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('profile', Array, true)
+#4 C:\xampp\htdocs\microfin\app\Controllers\Profile.php(14): view('profile')
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Profile->index()
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-18 20:04:52 --> Undefined variable: guarantordata
+#0 C:\xampp\htdocs\microfin\app\Views\profile.php(231): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 231, Array)
+#1 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('profile', Array, true)
+#4 C:\xampp\htdocs\microfin\app\Controllers\Profile.php(14): view('profile')
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Profile->index()
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-18 20:10:52 --> Undefined variable: guarantordata
+#0 C:\xampp\htdocs\microfin\app\Views\profile.php(231): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 231, Array)
+#1 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('profile', Array, true)
+#4 C:\xampp\htdocs\microfin\app\Controllers\Profile.php(14): view('profile')
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Profile->index()
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-18 20:10:53 --> Undefined variable: guarantordata
+#0 C:\xampp\htdocs\microfin\app\Views\profile.php(231): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 231, Array)
+#1 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('profile', Array, true)
+#4 C:\xampp\htdocs\microfin\app\Controllers\Profile.php(14): view('profile')
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Profile->index()
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-18 20:15:20 --> Undefined variable: guarantordata
+#0 C:\xampp\htdocs\microfin\app\Views\profile.php(231): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 231, Array)
+#1 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('profile', Array, true)
+#4 C:\xampp\htdocs\microfin\app\Controllers\Profile.php(14): view('profile')
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Profile->index()
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-18 20:17:36 --> Undefined variable: guarantordata
+#0 C:\xampp\htdocs\microfin\app\Views\profile.php(231): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 231, Array)
+#1 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('profile', Array, true)
+#4 C:\xampp\htdocs\microfin\app\Controllers\Profile.php(14): view('profile')
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Profile->index()
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

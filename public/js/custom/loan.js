@@ -149,7 +149,7 @@ $(document).ready(function () {//alert("test123");
 
         $.ajax({
             type: "POST",
-            url: "loan/loan_by_id",
+            url: "loan/loan_by_id", 
             dataType: 'json',
             async: true,
             data: { id: id },

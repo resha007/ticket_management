@@ -144,6 +144,10 @@ class Loan extends Controller
         
     }
 
+    
+
+
+
 
     // function calculate total_amount_per_day(){
     //     $model = new LoanModel();
