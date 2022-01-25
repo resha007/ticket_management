@@ -13,7 +13,7 @@ class CustomerModel extends Model
     
     protected $allowedFields = ['id','first_name', 'last_name','address','city','dob','nic','gender','contact_no','email','line_id','password','status'];
 
-    public function __construct() {
+    public function __construct() { 
         parent::__construct();
     }
 

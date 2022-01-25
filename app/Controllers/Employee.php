@@ -56,7 +56,7 @@ class Employee extends Controller
 	}
 
     function get_by_type(){ 
-        $EmployeeModel = new EmployeeModel();
+        $EmployeeModel = new EmployeeModel(); 
 
         $type = $this->request->getPost('type');
 

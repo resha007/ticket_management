@@ -1,0 +1,25 @@
+CRITICAL - 2022-01-15 08:48:04 --> Undefined variable: totalTime
+#0 C:\xampp\htdocs\microfin\system\Debug\Toolbar\Views\toolbar.tpl.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 40, Array)
+#1 C:\xampp\htdocs\microfin\system\Debug\Toolbar.php(497): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\system\Debug\Toolbar.php(460): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 C:\xampp\htdocs\microfin\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#4 C:\xampp\htdocs\microfin\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(300): CodeIgniter\Events\Events::trigger('pre_system')
+#6 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-15 10:51:52 --> Argument 2 passed to CodeIgniter\BaseModel::delete() must be of the type bool, array given, called in C:\xampp\htdocs\microfin\app\Models\LoanModel.php on line 70
+#0 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(70): CodeIgniter\BaseModel->delete('30', Array)
+#1 C:\xampp\htdocs\microfin\app\Controllers\Loan.php(125): App\Models\LoanModel->delete_data('30', Array)
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Loan->delete()
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-15 10:52:00 --> Argument 2 passed to CodeIgniter\BaseModel::delete() must be of the type bool, array given, called in C:\xampp\htdocs\microfin\app\Models\LoanModel.php on line 70
+#0 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(70): CodeIgniter\BaseModel->delete('30', Array)
+#1 C:\xampp\htdocs\microfin\app\Controllers\Loan.php(125): App\Models\LoanModel->delete_data('30', Array)
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Loan->delete()
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

@@ -23,7 +23,7 @@ $(document).ready(function() {//alert("test123");
         headers: {'X-Requested-With': 'XMLHttpRequest'},
         data	: { type: 2 },
         success: function(data) {//alert(data);
-            if(data){
+            if(data){ 
                 $('#rider').empty();
                 $('#rider').html('<option value="0" selected="selected" disabled="disabled">Select a Rider</option>');
                 for(var a=0; a<data.length; a++){

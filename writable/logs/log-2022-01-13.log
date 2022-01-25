@@ -1,0 +1,98 @@
+ERROR - 2022-01-13 00:15:56 --> Column 'type' cannot be null
+CRITICAL - 2022-01-13 00:15:56 --> Column 'type' cannot be null
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\microfin\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\microfin\app\Models\PaymentModel.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\microfin\app\Controllers\Payment.php(105): App\Models\PaymentModel->insert_data(Array)
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->save()
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#11 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-01-13 00:17:36 --> Column 'loan_id' cannot be null
+CRITICAL - 2022-01-13 00:17:36 --> Column 'loan_id' cannot be null
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\microfin\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\microfin\app\Models\PaymentModel.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\microfin\app\Controllers\Payment.php(105): App\Models\PaymentModel->insert_data(Array)
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->save()
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#11 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-01-13 00:41:42 --> Column 'loan_id' cannot be null
+CRITICAL - 2022-01-13 00:41:42 --> Column 'loan_id' cannot be null
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\microfin\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\microfin\app\Models\PaymentModel.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\microfin\app\Controllers\Payment.php(105): App\Models\PaymentModel->insert_data(Array)
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->save()
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#11 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-01-13 01:57:13 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getVal()
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->save()
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-13 01:57:26 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getVal()
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->save()
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-13 01:57:54 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getVal()
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->save()
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-01-13 01:59:18 --> Column 'loan_id' cannot be null
+CRITICAL - 2022-01-13 01:59:18 --> Column 'loan_id' cannot be null
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\microfin\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\microfin\app\Models\PaymentModel.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\microfin\app\Controllers\Payment.php(105): App\Models\PaymentModel->insert_data(Array)
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->save()
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#11 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-01-13 01:59:36 --> Column 'loan_id' cannot be null
+CRITICAL - 2022-01-13 01:59:36 --> Column 'loan_id' cannot be null
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\microfin\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\microfin\app\Models\PaymentModel.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\microfin\app\Controllers\Payment.php(105): App\Models\PaymentModel->insert_data(Array)
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->save()
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#11 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}

@@ -1,0 +1,379 @@
+<<<<<<< HEAD
+CRITICAL - 2022-01-02 22:23:50 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file
+#0 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('payments', Array, true)
+#2 C:\xampp\htdocs\microfin\app\Controllers\Payment.php(18): view('payments', Array)
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Payment->index()
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+=======
+CRITICAL - 2022-01-02 01:48:23 --> syntax error, unexpected 'total_amount_per_day' (T_STRING), expecting '('
+#0 C:\xampp\htdocs\microfin\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('LoanController')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('LoanController')
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-02 01:48:45 --> syntax error, unexpected 'total_amount_per_day' (T_STRING), expecting '('
+#0 C:\xampp\htdocs\microfin\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('LoanController')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('LoanController')
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-02 01:49:04 --> syntax error, unexpected 'total_amount_per_day' (T_STRING), expecting '('
+#0 C:\xampp\htdocs\microfin\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('LoanController')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('LoanController')
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-02 01:49:07 --> syntax error, unexpected 'total_amount_per_day' (T_STRING), expecting '('
+#0 C:\xampp\htdocs\microfin\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('LoanController')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('LoanController')
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-02 01:49:13 --> syntax error, unexpected 'total_amount_per_day' (T_STRING), expecting '('
+#0 C:\xampp\htdocs\microfin\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('LoanController')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('LoanController')
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-02 01:49:21 --> syntax error, unexpected 'total_amount_per_day' (T_STRING), expecting '('
+#0 C:\xampp\htdocs\microfin\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('LoanController')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('LoanController')
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-02 01:49:49 --> syntax error, unexpected 'total_amount_per_day' (T_STRING), expecting '('
+#0 C:\xampp\htdocs\microfin\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('LoanController')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('LoanController')
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-02 01:50:19 --> syntax error, unexpected 'total_amount_per_day' (T_STRING), expecting '('
+#0 C:\xampp\htdocs\microfin\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('LoanController')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('LoanController')
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-02 01:50:20 --> syntax error, unexpected 'total_amount_per_day' (T_STRING), expecting '('
+#0 C:\xampp\htdocs\microfin\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('LoanController')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('LoanController')
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-02 01:50:20 --> syntax error, unexpected 'total_amount_per_day' (T_STRING), expecting '('
+#0 C:\xampp\htdocs\microfin\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('LoanController')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('LoanController')
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-02 01:50:36 --> syntax error, unexpected 'total_amount_per_day' (T_STRING), expecting '('
+#0 C:\xampp\htdocs\microfin\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('LoanController')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('LoanController')
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-02 01:50:37 --> syntax error, unexpected 'total_amount_per_day' (T_STRING), expecting '('
+#0 C:\xampp\htdocs\microfin\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('LoanController')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('LoanController')
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-02 01:50:40 --> syntax error, unexpected 'total_amount_per_day' (T_STRING), expecting '('
+#0 C:\xampp\htdocs\microfin\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('LoanController')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('LoanController')
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-02 01:50:57 --> syntax error, unexpected 'total_amount_per_day' (T_STRING), expecting '('
+#0 C:\xampp\htdocs\microfin\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('LoanController')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('LoanController')
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-02 01:50:58 --> syntax error, unexpected 'total_amount_per_day' (T_STRING), expecting '('
+#0 C:\xampp\htdocs\microfin\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('LoanController')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('LoanController')
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-02 02:11:07 --> Unknown column 'approved_date' in 'field list'
+CRITICAL - 2022-01-02 02:11:07 --> Unknown column 'approved_date' in 'field list'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(24): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(86): App\Models\LoanModel->insert_data(Array)
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->save()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-02 04:25:12 --> Undefined property: App\Controllers\LoanController::$LoanModel
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-02 04:25:48 --> Argument 1 passed to CodeIgniter\Database\BaseConnection::query() must be of the type string, object given, called in C:\xampp\htdocs\microfin\app\Models\LoanModel.php on line 25
+#0 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(25): CodeIgniter\Database\BaseConnection->query(Object(CodeIgniter\Database\MySQLi\Result))
+#1 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(21): App\Models\LoanModel->get_guardings()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-02 04:27:11 --> Argument 1 passed to CodeIgniter\Database\BaseConnection::query() must be of the type string, object given, called in C:\xampp\htdocs\microfin\app\Models\LoanModel.php on line 26
+#0 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(26): CodeIgniter\Database\BaseConnection->query(Object(CodeIgniter\Database\MySQLi\Result))
+#1 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(21): App\Models\LoanModel->get_guardings()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-02 07:13:37 --> Argument 1 passed to CodeIgniter\Database\BaseConnection::query() must be of the type string, object given, called in C:\xampp\htdocs\microfin\app\Models\LoanModel.php on line 26
+#0 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(26): CodeIgniter\Database\BaseConnection->query(Object(CodeIgniter\Database\MySQLi\Result))
+#1 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(21): App\Models\LoanModel->getallguarntors()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-02 07:55:31 --> syntax error, unexpected ')', expecting variable (T_VARIABLE)
+#0 C:\xampp\htdocs\microfin\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\microfin\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Loan...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Loan...')
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(14): spl_autoload_call('App\\Models\\Loan...')
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-02 08:07:05 --> Undefined variable: guarntordata
+#0 C:\xampp\htdocs\microfin\app\Views\loan_new.php(135): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 135, Array)
+#1 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('loan_new', Array, true)
+#4 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(23): view('loan_new', Array)
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-02 08:08:21 --> Undefined variable: guarantordata
+#0 C:\xampp\htdocs\microfin\app\Views\loan_new.php(135): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 135, Array)
+#1 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('loan_new', Array, true)
+#4 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(23): view('loan_new', Array)
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-02 08:11:20 --> Undefined property: App\Controllers\LoanController::$LoanModel
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-02 08:11:53 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(21): App\Models\LoanModel->getguarntorlist()
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-02 08:12:28 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(21): App\Models\LoanModel->getguarntorlist()
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-02 08:14:07 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(21): App\Models\LoanModel->getguarntorlist()
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-02 08:55:43 --> Undefined variable: db
+#0 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 36, Array)
+#1 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(21): App\Models\LoanModel->getguarntorlist()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-02 08:57:00 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+#0 C:\xampp\htdocs\microfin\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('loan_new', Array, true)
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(24): view('loan_new', Array)
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-02 09:01:01 --> Undefined variable: db
+#0 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 42, Array)
+#1 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(21): App\Models\LoanModel->getguarntorlist()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-01-02 09:01:18 --> Not unique table/alias: 'customer'
+CRITICAL - 2022-01-02 09:01:18 --> Not unique table/alias: 'customer'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id`, `f...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `f...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `f...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `f...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(21): App\Models\LoanModel->getguarntorlist()
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-02 09:02:19 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+#0 C:\xampp\htdocs\microfin\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('loan_new', Array, true)
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(24): view('loan_new', Array)
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-02 09:03:21 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('loan_new', Array, true)
+#2 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(24): view('loan_new', Array)
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-02 09:03:59 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+#0 C:\xampp\htdocs\microfin\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('loan_new', Array, true)
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(24): view('loan_new', Array)
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-02 09:04:25 --> Function name must be a string
+#0 C:\xampp\htdocs\microfin\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('loan_new', Array, true)
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(24): view('loan_new', Array)
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-02 09:05:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+#0 C:\xampp\htdocs\microfin\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('loan_new', Array, true)
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(24): view('loan_new', Array)
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-02 09:11:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+#0 C:\xampp\htdocs\microfin\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('loan_new', Array, true)
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(24): view('loan_new', Array)
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-02 09:14:39 --> Call to a member function result() on null
+#0 C:\xampp\htdocs\microfin\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('loan_new', Array, true)
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(24): view('loan_new', Array)
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-02 09:22:11 --> Call to a member function result() on null
+#0 C:\xampp\htdocs\microfin\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('loan_new', Array, true)
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(24): view('loan_new', Array)
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-02 23:01:00 --> Call to a member function result() on null
+#0 C:\xampp\htdocs\microfin\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('loan_new', Array, true)
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(24): view('loan_new', Array)
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-02 23:37:03 --> Call to a member function getguarntorlist() on null
+#0 C:\xampp\htdocs\microfin\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('loan_new', Array, true)
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(24): view('loan_new', Array)
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-02 23:40:37 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getguarntorlist()
+#0 C:\xampp\htdocs\microfin\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('loan_new', Array, true)
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(24): view('loan_new', Array)
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-02 23:41:06 --> Call to a member function getguarntorlist() on null
+#0 C:\xampp\htdocs\microfin\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('loan_new', Array, true)
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanController.php(24): view('loan_new', Array)
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanController->index()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+>>>>>>> e2c9c847b9640ade5e01615b925e7daeabf8772f

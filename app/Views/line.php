@@ -110,6 +110,7 @@
 						<div class="panel-body">
 							<div class="col-md-12">
 								<form method="post" role="form" id="dataForm">
+									<!-- hiddn -->
 									<input type="hidden" class="form-control" name="id" id="id">
 									<div class="form-group col-md-6">
 										<label>Code</label>
@@ -128,7 +129,7 @@
 									</div>
 									<div class="form-group col-md-4">
 										<label>Optional Rider</label>
-										<select class="form-control" name="opt_rider" id="opt_rider" required>
+										<select class="form-control" name="opt_rider" id="opt_rider">
 											<option value="0" selected disabled>Select a Optional Rider</option>
 										</select>
 									</div>
