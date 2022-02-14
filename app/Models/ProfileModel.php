@@ -64,6 +64,8 @@ class ProfileModel extends Model
 
     }
 
+    
+
 }
 
 ?>

@@ -16,7 +16,7 @@ $(document).ready(function() {//alert("test123");
     $( "#loanForm" ).submit(function() {
         $.ajax({
             type : "POST",
-            url		: "loancontroller/save",
+            url		: "loan/save",
             dataType : 'json',
             async : true,
             headers: {'X-Requested-With': 'XMLHttpRequest'},

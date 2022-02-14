@@ -148,7 +148,7 @@
 					<div class="panel-body">
 						<div class="col-md-12">
 							<form method="post" role="form" id="dataForm">
-								<input type="hidden" class="form-control" name="id" id="id">
+								<input type="hidden" class="form-control" name="id" id="id" >
 								<div class="form-group col-md-6">
 									<label>First Name</label>
 									<input class="form-control" name="first_name" id="first_name" required>
@@ -211,47 +211,47 @@
 									<button type="reset" class="btn btn-default" id="reset">Reset</button>
 								</div>
 
+							</form>
+
 						</div>
 
 					</div>
 				</div>
 			</div><!-- /.col-->
+
+
 			<div class="col-lg-6">
 				<div class="panel panel-default">
 					<div class="panel-heading">Active Loan Details</div>
 					<div class="panel-body">
 						<div class="col-md-12">
 						<form role="form" form method="post" id="loanForm">
-								<input type="hidden" class="form-control" name="id" id="id">
-								<div class="form-group col-md-6">
+								<input type="hidden" class="form-control" name="lid" id="lid">
+								<!-- <div class="form-group col-md-6">
 									<label>Customer Name</label>
-									<!-- <input class="form-control" name="customer_name" id="customer_id"> -->
+									<input class="form-control" name="customer_name" id="customer_id">
 									<select class="form-control" name="customer_id" id="customer_id" required>
 										<option value="">Select here</option>
 									</select>
+								</div> -->
+								<div class="form-group col-md-4">
+									<label>Loan Amount</label>
+									<input class="form-control" name="loan_amount" id="loan_amount" required readonly="readonly">
 								</div>
+
 								<div class="form-group col-md-6">
 									<label>Reason</label>
-									<input class="form-control" name="reason" id="reason" required>
+									<input class="form-control" name="reason" id="reason" required readonly="readonly">
 								</div>
 								<div class="form-group col-md-6">
 									<label>Guarantor 01</label>
-									<select class="form-control" name="guarantor_1" id="guarantor_1" required>
-										<option value="">Select here</option>
-										
-									</select>
+									<input class="form-control" name="guarantor_1" id="guarantor_1" required readonly="readonly">
 								</div>
 								<div class="form-group col-md-6">
 									<label>Guarantor 02</label>
-									<select class="form-control" name="guarantor_2" id="guarantor_2" required>
-										<option value="">Select here</option>
-										
-									</select>
+									<input class="form-control" name="guarantor_2" id="guarantor_2" required readonly="readonly">
 								</div>
-								<div class="form-group col-md-4">
-									<label>Loan Amount</label>
-									<input class="form-control" name="loan_amount" id="loan_amount" required>
-								</div>
+								
 								<div class="form-group col-md-4">
 									<label>Period</label>
 									<input class="form-control" name="loan_period" id="loan_period" placeholder="65" value="65" readonly="readonly">
@@ -268,7 +268,7 @@
 								</div>
 								<div class="form-group col-md-4">
 									<label>Created By</label>
-									<select class="form-control" name="created_by" id="created_by" required>
+									<select class="form-control" name="created_by" id="created_by" required readonly="readonly">
 										<option value=""></option>
 										<option value="1">Admin</option>
 										<option value="2">Rider</option>
@@ -276,10 +276,10 @@
 								</div>
 								<div class="form-group col-md-4">
 									<label>Loan Status</label>
-									<select class="form-control" name="status" id="status" required>
-										<option value="">Select here</option>
+									<select class="form-control" name="lstatus" id="lstatus" required readonly="readonly">
+										<option value=""></option>
 										<option value="1">Pending</option>
-										<!-- <option value="2">Approved</option> -->
+										<option value="2">Approved</option>
 										<option value="3">Refused</option>
 										<option value="4">Abandoned</option>
 										<option value="5">Cleared</option>
@@ -317,7 +317,7 @@
 		</div><!-- /.row -->
 
 
-		<div class="row">
+		<!-- <div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">Current Customers</div>
@@ -346,10 +346,10 @@
 						</table>
 					</div>
 				</div>
-			</div><!-- /.col-->
-		</div><!-- /.row -->
+			</div>
+		</div>
 
-	</div>
+	</div> -->
 	<!--/.main-->
 
 	<script src="js/jquery-1.11.1.min.js"></script>

@@ -121,11 +121,11 @@ class Customer extends Controller
 
         if($result != false){
             //$data = $model->where('id', $save_data)->first();
-            echo json_encode(array("status" => true , 'data' => $data));
+            echo json_encode(array("status" => true , 'data' => $data)); //$id
         }else{
             echo json_encode(array("status" => false , 'data' => $data));
         }
-        
+        //echo json_encode($id); //$id
     }
 
     function by_id(){
@@ -134,7 +134,7 @@ class Customer extends Controller
         $model = new CustomerModel();
 
         $id = $this->request->getPost('id'); 
-
+        
         $result = $model->get_data_by_id($id);
 
         if($result != false){
