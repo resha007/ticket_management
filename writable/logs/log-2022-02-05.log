@@ -1,0 +1,7 @@
+CRITICAL - 2022-02-05 03:44:15 --> syntax error, unexpected '$result' (T_VARIABLE)
+#0 C:\xampp\htdocs\microfin\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('LoanApproval')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('LoanApproval')
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

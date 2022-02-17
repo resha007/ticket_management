@@ -1,0 +1,21 @@
+CRITICAL - 2022-01-31 03:48:59 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-31 03:49:11 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-31 03:50:48 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

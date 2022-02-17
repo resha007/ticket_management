@@ -1,0 +1,245 @@
+CRITICAL - 2022-02-06 00:00:10 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 00:00:58 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 00:23:03 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 00:28:11 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 00:30:26 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 00:31:22 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 00:34:34 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 00:37:35 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 00:38:34 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 00:40:03 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 00:41:19 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 00:42:46 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 00:42:46 --> file_get_contents(): read of 8192 bytes failed with errno=13 Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'file_get_conten...', 'C:\\xampp\\htdocs...', 460, Array)
+#1 C:\xampp\htdocs\microfin\system\Debug\Toolbar.php(460): file_get_contents('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#3 C:\xampp\htdocs\microfin\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(300): CodeIgniter\Events\Events::trigger('pre_system')
+#5 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-06 00:48:26 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 03:36:20 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 03:41:48 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 03:46:59 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 03:53:26 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 03:53:26 --> file_get_contents(): read of 8192 bytes failed with errno=13 Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'file_get_conten...', 'C:\\xampp\\htdocs...', 460, Array)
+#1 C:\xampp\htdocs\microfin\system\Debug\Toolbar.php(460): file_get_contents('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#3 C:\xampp\htdocs\microfin\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(300): CodeIgniter\Events\Events::trigger('pre_system')
+#5 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-06 04:08:56 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 04:08:59 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 04:10:30 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-02-06 04:10:59 --> Unknown column 'customer_id' in 'field list'
+CRITICAL - 2022-02-06 04:10:59 --> Unknown column 'customer_id' in 'field list'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(82): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\microfin\app\Controllers\Loan.php(102): App\Models\LoanApproveModel->insert_repayment_data(Array)
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Loan->save_repayemnt_data()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-06 04:14:09 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 04:14:12 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-02-06 04:14:34 --> Unknown column 'customer_id' in 'field list'
+CRITICAL - 2022-02-06 04:14:34 --> Unknown column 'customer_id' in 'field list'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(82): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\microfin\app\Controllers\Loan.php(102): App\Models\LoanApproveModel->insert_repayment_data(Array)
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Loan->save_repayemnt_data()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-06 06:19:27 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 06:26:27 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 06:28:31 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 06:35:35 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 07:04:22 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 07:37:11 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-06 07:46:23 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\LoanModel;
+use App\Models\LoanApproveModel;
 use CodeIgniter\Controller;
 
 class Loan extends Controller
@@ -37,7 +38,13 @@ class Loan extends Controller
 
             if($data[$i]["status"] == 1){
                 $data[$i]["status"] = "Pending";
-            }else if($data[$i]["status"] == 2){
+            }else if($data[$i]["status"] == 3){
+                $data[$i]["status"] = "Refused";
+            }else if($data[$i]["status"] == 4){
+                $data[$i]["status"] = "Abandoned";
+            }else if($data[$i]["status"] == 5){
+                $data[$i]["status"] = "Cleared";
+            }else{
                 $data[$i]["status"] = "Approved";
             }
         }
@@ -73,6 +80,29 @@ class Loan extends Controller
         }
     }
 
+    //save data to repayemnt table
+    function save_repayment_data(){
+        helper(['form', 'url']);
+        
+        $model = new LoanApproveModel();
+        
+        $data = [
+            'loan_id'	=>	$this->request->getVar('loan_id'),
+            'date'      =>	$this->request->getVar('effective_date'),
+            'amount'	=>	$this->request->getPost('loan_amount'),
+            'status'	=>	$this->request->getVar('status')
+        ];
+
+        $save_data = $model->insert_repayment_data($data);
+
+        if($save_data != false){
+            
+            echo json_encode(array("status" => true , 'data' => $data));
+        }else{
+            echo json_encode(array("status" => false , 'data' => $data));
+        }
+    }
+
     function update(){
         helper(['form', 'url']);
         
@@ -83,12 +113,16 @@ class Loan extends Controller
         $data = [
             'customer_id'	=>	$this->request->getVar('customer_id'),
             'reason'	    =>	$this->request->getPost('reason'),
-            'guarantor_1'        =>	$this->request->getVar('guarantor_1'),
+            'guarantor_1'   =>	$this->request->getVar('guarantor_1'),
             'guarantor_2'	=>	$this->request->getVar('guarantor_2'),
-            'loan_amount'	    =>	$this->request->getPost('loan_amount'),
+            'loan_amount'	=>	$this->request->getPost('loan_amount'),
             // 'loan_period'        =>	$this->request->getVar('loan_period'),
             // 'loan_interest'	=>	$this->request->getVar('loan_interest'),
-            'created_by'	    =>	$this->request->getVar('created_by'),
+            'status'	    =>	$this->request->getVar('status'),
+            'approved_date'	=>	$this->request->getPost('approved_date'),
+            'approved_by'   =>	$this->request->getPost('approved_by'),
+            'effective_date'=>	$this->request->getVar('effective_date'),
+            'created_by'	=>	$this->request->getVar('created_by'),
             'status'        =>	$this->request->getVar('status')
         ];
 
@@ -146,21 +180,72 @@ class Loan extends Controller
 
     
 
-
-
-
-    // function calculate total_amount_per_day(){
-    //     $model = new LoanModel();
+    //calculation
+    function save_amount_per_day(){
+        helper(['form', 'url']);
         
-            // $loan_interest_rate=$this->request->getVar('loan_interest')/100
-            // $total_interast_amount=$this->request->getPost('loan_amount')*$loan_interest_rate
-            // $total_amount=$this->request->getPost('loan_amount') + $total_interast_amount
-            // $repay_per_day=$total_amount/65
-            /*loan_interest_rate = 30/100 = 0.3
+        $model = new LoanApproveModel();
+
+
+        $data = [
+            
+            'loan_amount'	=>	$this->request->getPost('loan_amount')
+           
+        ];
+
+        $loan_interest_rate=30/100
+        $total_interast_amount=$data*$loan_interest_rate
+        $total_amount=$data+ $total_interast_amount
+        $repay_per_day=$total_amount/65
+         /*loan_interest_rate = 30/100 = 0.3
             To get the interest to the principal amount(total_interast_amount)= principal amount*0.3
             Total payeble amount=principal amount + total_interast_amount
             Amount to pay in 65 days = total payable amount/65 */
-    // }
+
+       
+        <?php
+        for($x = 0; $x <= 65; $x+=1){
+        $save_data = $model->insert_repayment_data($repay_per_day);
+        }
+        ?>
+    
+
+        if($save_data != false){
+            //$data = $model->where('id', $save_data)->first();
+            echo json_encode(array("status" => true , 'data' => $repay_per_day));
+        }else{
+            echo json_encode(array("status" => false , 'data' => $repay_per_day));
+        }
+    }
+
+    //save dates
+    function save_loan_days(){
+        helper(['form', 'url']);
+        
+        $model = new LoanApproveModel();
+
+
+        $data = [
+           
+            'effective_date'=>	$this->request->getVar('effective_date')
+            
+        ];
+       
+        <?php
+        for($x = 0; $x <= 65; $x+=1){
+        $save_data = $model->insert_repayment_data($data);
+        }
+        ?>
+    
+
+        if($save_data != false){
+            //$data = $model->where('id', $save_data)->first();
+            echo json_encode(array("status" => true , 'data' => $data));
+        }else{
+            echo json_encode(array("status" => false , 'data' => $data));
+        }
+    }
+
 
 	//Imal - for Payment Implementation
     function byline(){

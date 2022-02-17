@@ -1,0 +1,369 @@
+CRITICAL - 2022-02-03 05:27:14 --> syntax error, unexpected 'protected' (T_PROTECTED), expecting ';' or ','
+#0 C:\xampp\htdocs\microfin\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\microfin\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Loan...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Loan...')
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(14): spl_autoload_call('App\\Models\\Loan...')
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->index()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-03 05:29:26 --> syntax error, unexpected 'protected' (T_PROTECTED), expecting ';' or ','
+#0 C:\xampp\htdocs\microfin\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\microfin\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Loan...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Loan...')
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(14): spl_autoload_call('App\\Models\\Loan...')
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->index()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-03 05:31:56 --> Cannot redeclare App\Models\LoanApproveModel::$primaryKey
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-03 05:32:54 --> Cannot redeclare App\Models\LoanApproveModel::$primaryKey
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-03 05:34:34 --> Cannot redeclare App\Models\LoanApproveModel::$allowedFields
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-03 05:34:48 --> Cannot redeclare App\Models\LoanApproveModel::__construct()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-03 07:43:11 --> syntax error, unexpected ''status'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 C:\xampp\htdocs\microfin\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('Loan')
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('Loan')
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-02-03 07:44:08 --> Column 'approved_date' cannot be null
+CRITICAL - 2022-02-03 07:44:08 --> Column 'approved_date' cannot be null
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(52): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\microfin\app\Controllers\Loan.php(69): App\Models\LoanModel->insert_data(Array)
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Loan->save()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-02-03 07:47:08 --> Column 'approved_date' cannot be null
+CRITICAL - 2022-02-03 07:47:08 --> Column 'approved_date' cannot be null
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanModel.php(52): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\microfin\app\Controllers\Loan.php(69): App\Models\LoanModel->insert_data(Array)
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Loan->save()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-02-03 08:00:54 --> Unknown table 'microfin.loan'
+CRITICAL - 2022-02-03 08:00:54 --> Unknown table 'microfin.loan'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `loan`.*...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `loan`.*...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `loan`.*...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `loan`.*...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-02-03 08:05:59 --> Unknown table 'microfin.loan'
+CRITICAL - 2022-02-03 08:05:59 --> Unknown table 'microfin.loan'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `loan`.*...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `loan`.*...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `loan`.*...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `loan`.*...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-02-03 08:07:28 --> Unknown table 'microfin.loan'
+CRITICAL - 2022-02-03 08:07:28 --> Unknown table 'microfin.loan'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `loan`.*...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `loan`.*...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `loan`.*...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `loan`.*...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-02-03 08:08:51 --> Unknown table 'microfin.loan'
+CRITICAL - 2022-02-03 08:08:51 --> Unknown table 'microfin.loan'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `loan`.*...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `loan`.*...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `loan`.*...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `loan`.*...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-02-03 08:23:30 --> Unknown table 'microfin.loan'
+CRITICAL - 2022-02-03 08:23:30 --> Unknown table 'microfin.loan'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `loan`.*...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `loan`.*...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `loan`.*...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `loan`.*...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-02-03 08:25:01 --> Unknown table 'microfin.loan'
+CRITICAL - 2022-02-03 08:25:01 --> Unknown table 'microfin.loan'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `loan`.*...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `loan`.*...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `loan`.*...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `loan`.*...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-02-03 08:25:48 --> Unknown table 'microfin.loan'
+CRITICAL - 2022-02-03 08:25:48 --> Unknown table 'microfin.loan'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `loan`.*...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `loan`.*...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `loan`.*...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `loan`.*...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-02-03 08:33:08 --> Unknown table 'microfin.loan'
+CRITICAL - 2022-02-03 08:33:08 --> Unknown table 'microfin.loan'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `loan`.*...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `loan`.*...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `loan`.*...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `loan`.*...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-02-03 08:34:13 --> Unknown table 'microfin.loan'
+CRITICAL - 2022-02-03 08:34:13 --> Unknown table 'microfin.loan'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `loan`.*...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `loan`.*...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `loan`.*...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `loan`.*...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-02-03 08:38:34 --> Unknown table 'microfin.loan'
+CRITICAL - 2022-02-03 08:38:34 --> Unknown table 'microfin.loan'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `loan`.*...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `loan`.*...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `loan`.*...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `loan`.*...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-02-03 08:43:22 --> Unknown table 'microfin.loan'
+CRITICAL - 2022-02-03 08:43:22 --> Unknown table 'microfin.loan'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `loan`.*...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `loan`.*...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `loan`.*...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `loan`.*...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-02-03 08:47:26 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\microfin\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\microfin\system\Model.php(717): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(55): CodeIgniter\Model->__call('join', Array)
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-03 08:48:48 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\microfin\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\microfin\system\Model.php(717): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(55): CodeIgniter\Model->__call('join', Array)
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-03 08:50:08 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\microfin\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\microfin\system\Model.php(717): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(55): CodeIgniter\Model->__call('join', Array)
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-03 08:50:54 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\microfin\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\microfin\system\Model.php(717): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(55): CodeIgniter\Model->__call('join', Array)
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-03 08:51:45 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\microfin\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\microfin\system\Model.php(717): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(55): CodeIgniter\Model->__call('join', Array)
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-03 08:53:20 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\microfin\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\microfin\system\Model.php(717): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(56): CodeIgniter\Model->__call('join', Array)
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-03 08:54:10 --> Cannot redeclare App\Models\LoanApproveModel::$table
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-03 08:54:41 --> syntax error, unexpected 'protected' (T_PROTECTED)
+#0 C:\xampp\htdocs\microfin\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\microfin\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Loan...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Loan...')
+#3 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(15): spl_autoload_call('App\\Models\\Loan...')
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->index()
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-03 08:57:21 --> Cannot redeclare App\Models\LoanApproveModel::$table
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-02-03 08:57:32 --> Unknown table 'microfin.loan'
+CRITICAL - 2022-02-03 08:57:32 --> Unknown table 'microfin.loan'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `loan`.*...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `loan`.*...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `loan`.*...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `loan`.*...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-02-03 08:58:04 --> Unknown table 'microfin.loan'
+CRITICAL - 2022-02-03 08:58:04 --> Unknown table 'microfin.loan'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `loan`.*...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `loan`.*...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `loan`.*...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `loan`.*...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-02-03 09:01:41 --> Unknown table 'microfin.loan'
+CRITICAL - 2022-02-03 09:01:41 --> Unknown table 'microfin.loan'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `loan`.*...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `loan`.*...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `loan`.*...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `loan`.*...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-02-03 09:03:15 --> Unknown table 'microfin.loan'
+CRITICAL - 2022-02-03 09:03:15 --> Unknown table 'microfin.loan'
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `loan`.*...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `loan`.*...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `loan`.*...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `loan`.*...', Array, false)
+#4 C:\xampp\htdocs\microfin\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\microfin\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): App\Models\LoanApproveModel->get_data()
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#9 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#10 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-02-03 09:05:58 --> Cannot redeclare App\Models\LoanApproveModel::$table
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

@@ -1,0 +1,211 @@
+CRITICAL - 2022-02-01 04:31:50 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 04:32:45 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 04:33:54 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 04:34:27 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 04:35:33 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 04:37:50 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 04:38:24 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 04:52:45 --> Undefined variable: guarantordata
+#0 C:\xampp\htdocs\microfin\app\Views\loan_approve.php(157): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 157, Array)
+#1 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('loan_approve', Array, true)
+#4 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(22): view('loan_approve')
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->index()
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 04:54:00 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 04:54:41 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 04:54:59 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 04:56:33 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 04:56:54 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 04:58:20 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 05:00:50 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 05:01:03 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 05:01:06 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 05:11:35 --> Trying to get property 'id' of non-object
+#0 C:\xampp\htdocs\microfin\app\Views\loan_approve.php(154): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 154, Array)
+#1 C:\xampp\htdocs\microfin\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\microfin\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\microfin\system\Common.php(1097): CodeIgniter\View\View->render('loan_approve', Array, true)
+#4 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(21): view('loan_approve', Array)
+#5 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->index()
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 05:15:48 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 05:17:09 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 05:18:07 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(132): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 07:54:18 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(138): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 07:55:47 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(138): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 08:03:06 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(138): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 08:03:18 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(138): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 10:59:10 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(138): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 11:03:19 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(138): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 11:03:26 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(138): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 11:03:56 --> Call to undefined method App\Models\LoanApproveModel::get_data_by_id
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(138): CodeIgniter\Model->__call('get_data_by_id', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->by_id()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

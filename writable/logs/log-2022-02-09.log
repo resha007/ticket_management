@@ -1,0 +1,7 @@
+CRITICAL - 2022-02-09 06:17:59 --> Call to undefined method App\Models\LoanApproveModel::get_data
+#0 C:\xampp\htdocs\microfin\app\Controllers\LoanApproval.php(29): CodeIgniter\Model->__call('get_data', Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\LoanApproval->get()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanApproval))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
