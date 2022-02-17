@@ -3,10 +3,16 @@
 namespace App\Controllers;
 
 use App\Models\CustomerModel;
+use App\Models\LoanModel;
 use CodeIgniter\Controller;
 
 class Profile extends Controller
 {
+    function __construct()
+    {
+        $this->session = \Config\Services::session();
+        $this->session->start();
+    }
 
     public function index()
     {
@@ -128,9 +134,29 @@ class Profile extends Controller
         
         $model = new CustomerModel();
 
-        $id = $this->request->getPost('id'); 
+        $id = $this->session->get('id'); 
+        //$id = 2;
 
         $result = $model->get_data_by_id($id);
+
+        if($result != false){
+            //$data = $model->where('id', $save_data)->first();
+            echo json_encode(array("status" => true , 'data' => $result));
+        }else{
+            echo json_encode(array("status" => false , 'data' => $result));
+        }
+        
+    }
+
+    function loan_data_by_customer_id(){
+        helper(['form', 'url']);
+          
+        $model = new LoanModel();
+
+        $id = $this->session->get('id'); 
+        //$id = 2;
+
+        $result = $model->get_loan_data_by_customer_id($id);
 
         if($result != false){
             //$data = $model->where('id', $save_data)->first();

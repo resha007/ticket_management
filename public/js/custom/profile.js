@@ -1,8 +1,8 @@
 
 
 $(document).ready(function() {//alert("test123");
-    $("#update").prop("disabled",true);
-    $("#delete").prop("disabled",true);
+    // $("#update").prop("disabled",true);
+    // $("#delete").prop("disabled",true);
     var action,data = '';
 
     const Toast = Swal.mixin({
@@ -18,7 +18,7 @@ $(document).ready(function() {//alert("test123");
         type : "POST",
         url		: "line/get",
         dataType : 'json',
-        async : true,
+        async : false,
         headers: {'X-Requested-With': 'XMLHttpRequest'},
         data	: { id: 1 },
         success: function(data) {//alert(data);
@@ -67,7 +67,7 @@ $(document).ready(function() {//alert("test123");
         
     });
 
-    $( "#update" ).click(function() {//alert(getIdSelections());
+    $( "#update" ).click(function() {
         Swal.fire({
             width:'400px',
             padding:null,
@@ -87,8 +87,8 @@ $(document).ready(function() {//alert("test123");
                     dataType : 'json',
                     async : true,
                     headers: {'X-Requested-With': 'XMLHttpRequest'},
-                    data	: $('form').serialize(),
-                    success: function(data) {
+                    data	: $('#dataForm').serialize(),
+                    success: function(data) {//alert(data["status"]);
                         if(data){
                             Toast.fire({
                                 type: 'success',
@@ -135,8 +135,8 @@ $(document).ready(function() {//alert("test123");
                     dataType : 'json',
                     async : true,
                     headers: {'X-Requested-With': 'XMLHttpRequest'},
-                    data	: $('form').serialize(),
-                    success: function(data) {//alert(data["status"]);
+                    data	: $('#dataForm').serialize(),
+                    success: function(data) {//alert(data);
                         if(data){
                             Toast.fire({
                                 type: 'success',
@@ -169,36 +169,64 @@ $(document).ready(function() {//alert("test123");
         $("#delete").prop("disabled",false);
         $("#add").prop("disabled",true);
 
-        $.ajax({
-            type : "POST",
-            url		: "profile/by_id", 
-            dataType : 'json',
-            async : true,
-            data	: { id: id },
-            success: function(data) {//alert(data["data"]["first_name"]);
-                if(data){
-                    $("#id").val(data["data"]["id"]);
-                    $("#first_name").val(data["data"]["first_name"]);
-                    $("#last_name").val(data["data"]["last_name"]);
-                    $("#address").val(data["data"]["address"]);
-                    $("#city").val(data["data"]["city"]);
-                    $("#dob").val(data["data"]["dob"]);
-                    $("#nic").val(data["data"]["nic"]);
-                    $("#gender").val(data["data"]["gender"]);
-                    $("#contact_no").val(data["data"]["contact_no"]);
-                    $("#email").val(data["data"]["email"]);
-                    $("#line").val(data["data"]["line_id"]);
-                    $("#status").val(data["data"]["status"]);
-                }else{
-                    Toast.fire({
-                        type: 'error',
-                        title: 'Something went wrong. Please try again.'
-                    });
-                }
-            }
-        });
+      
         //alert(id);
     });
+
+    //var id = getIdSelections();
+
+    $.ajax({
+        type : "POST",
+        url		: "profile/by_id", 
+        dataType : 'json',
+        async : true,
+        //data	: { id: id },
+        success: function(data) {//alert(data["data"]["id"]);
+            if(data){
+                $("#id").val(data["data"]["id"]);
+                $("#first_name").val(data["data"]["first_name"]);
+                $("#last_name").val(data["data"]["last_name"]);
+                $("#address").val(data["data"]["address"]);
+                $("#city").val(data["data"]["city"]);
+                $("#dob").val(data["data"]["dob"]);
+                $("#nic").val(data["data"]["nic"]);
+                $("#gender").val(data["data"]["gender"]);
+                $("#contact_no").val(data["data"]["contact_no"]);
+                $("#email").val(data["data"]["email"]);
+                $("#line").val(data["data"]["line_id"]);
+                $("#status").val(data["data"]["status"]);
+            }else{
+                Toast.fire({
+                    type: 'error',
+                    title: 'Something went wrong. Please try again.'
+                });
+            }
+        }
+    });
+
+    $.ajax({
+        type : "POST",
+        url		: "profile/loan_data_by_customer_id", 
+        dataType : 'json',
+        async : true,
+        success: function(data) {//alert(data["data"][0]["status"]);
+            if(data){
+                $("#loan_amount").val(data["data"][0]["loan_amount"]);
+                $("#guarantor_1").val(data["data"][0]["name"]);
+                $("#guarantor_2").val(data["data"][0]["name2"]);
+                $("#reason").val(data["data"][0]["reason"]);
+                $("#created_by").val(data["data"][0]["created_by"]);
+                $("#lstatus").val(data["data"][0]["status"]);
+                
+            }else{
+                Toast.fire({
+                    type: 'error',
+                    title: 'Something went wrong. Please try again.'
+                });
+            }
+        }
+    });
+    
 
     // //validations
     function validate(){

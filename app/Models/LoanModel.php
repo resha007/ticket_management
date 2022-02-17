@@ -101,6 +101,29 @@ class LoanModel extends Model
 
     // }
 
+    public function get_loan_data_by_customer_id($id) {
+        
+        // $this->join('line', 'line.id = customer.line_id', 'LEFT');
+        // $this->select('customer.*');
+        // $this->select("CONCAT(line.code, ' - ', line.name) as line");
+        // //$this->where('status', 1);
+        // return $this->findAll();
+        $this->join('customer', 'customer.id = loan.customer_id', 'LEFT');
+        $this->join('customer cust', 'cust.id = loan.guarantor_1', 'LEFT');
+        $this->join('customer cust1', 'cust1.id = loan.guarantor_2', 'LEFT');
+        $this->select('loan.*');
+        $this->select('customer.*');
+        $this->select("CONCAT(cust.first_name) as name");
+        $this->select("CONCAT(cust1.first_name) as name2");
+        $this->where('customer.id', $id);
+        $this->orwhere('loan.status', 1);
+        $this->Where('loan.status', 2);
+        return $this->findAll();
+        //return $this->where('status', 1)->orWhere('status', 2)->findAll();
+        
+    
+}
+
 
 }
 ?>
