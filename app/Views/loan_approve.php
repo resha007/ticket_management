@@ -242,7 +242,7 @@
 									<button type="button" class="btn btn-danger" id="delete">Delete</button>
 									<button type="reset" class="btn btn-default" id="reset">Reset</button>
 									<button type="button" class="btn btn-primary" id="show">Process the repayment summary</button>
-									<button type="button" class="btn btn-primary" id="hide">Hide the repayment summary</button>
+									<!-- <button type="button" class="btn btn-primary" id="hide">Hide the repayment summary</button> -->
 								</div>
 							</form>
 						</div>
@@ -309,7 +309,7 @@
 			</div>
 		</div>
 
-	</div> --> 
+	</div>  -->
 	<!--/.main-->
 
 
@@ -325,7 +325,7 @@
 	<script src="js/bootstrap-table.js"></script>
 
 	<script src="js/custom/loanlist.js"></script>
-	<script src="js/custom/loan.js"></script>
+	<!-- <script src="js/custom/loan.js"></script> -->
 
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 
@@ -342,14 +342,14 @@
 
 		
 		//show,hide the repayment table data
-		$(document).ready(function(){
-			$("#hide").click(function(){
-				$("#repaymentTable").hide();
-			});
-			$("#show").click(function(){
-				$("#repaymentTable").show();
-			});
-		});
+		// $(document).ready(function(){
+		// 	$("#hide").click(function(){
+		// 		$("#repaymentTable").hide();
+		// 	});
+		// 	$("#show").click(function(){
+		// 		$("#repaymentTable").show();
+		// 	});
+		// });
 
 
 		$(window).on('resize', function() {

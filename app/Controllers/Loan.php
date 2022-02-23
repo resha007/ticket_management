@@ -22,6 +22,7 @@ class Loan extends Controller
 		return view('loan_new', $data);
     }
 
+
     function get(){ 
         $LoanModel = new LoanModel();
 
@@ -80,29 +81,7 @@ class Loan extends Controller
         }
     }
 
-    //save data to repayemnt table
-    function save_repayment_data(){
-        helper(['form', 'url']);
-        
-        $model = new LoanApproveModel();
-        
-        $data = [
-            'loan_id'	=>	$this->request->getVar('loan_id'),
-            'date'      =>	$this->request->getVar('effective_date'),
-            'amount'	=>	$this->request->getPost('loan_amount'),
-            'status'	=>	$this->request->getVar('status')
-        ];
-
-        $save_data = $model->insert_repayment_data($data);
-
-        if($save_data != false){
-            
-            echo json_encode(array("status" => true , 'data' => $data));
-        }else{
-            echo json_encode(array("status" => false , 'data' => $data));
-        }
-    }
-
+    
     function update(){
         helper(['form', 'url']);
         
@@ -178,64 +157,44 @@ class Loan extends Controller
         
     }
 
-    
-
-    //calculation
-    function save_amount_per_day(){
+    //save data with calculation-repayment
+    function save_repayment_data(){
         helper(['form', 'url']);
         
         $model = new LoanApproveModel();
-
-
-        $data = [
             
-            'loan_amount'	=>	$this->request->getPost('loan_amount')
-           
-        ];
+        $loan_amount	=	$this->request->getPost('loan_amount');
+        $loan_period    =	$this->request->getVar('loan_period');
+        $loan_interest	=	$this->request->getVar('loan_interest');
+        $effective_date  =  $this->request->getVar('effective_date');
 
-        $loan_interest_rate=30/100
-        $total_interast_amount=$data*$loan_interest_rate
-        $total_amount=$data+ $total_interast_amount
-        $repay_per_day=$total_amount/65
-         /*loan_interest_rate = 30/100 = 0.3
+        $loan_interest_rate=$loan_interest/100;
+        $total_interast_amount=$loan_amount*$loan_interest_rate;
+        $total_amount=$loan_amount + $total_interast_amount;
+        $repay_per_day=$total_amount/$loan_period; 
+        $newDate = $effective_date;  
+
+        /*loan_interest_rate = 30/100 = 0.3
             To get the interest to the principal amount(total_interast_amount)= principal amount*0.3
             Total payeble amount=principal amount + total_interast_amount
             Amount to pay in 65 days = total payable amount/65 */
 
-       
-        <?php
-        for($x = 0; $x <= 65; $x+=1){
-        $save_data = $model->insert_repayment_data($repay_per_day);
-        }
-        ?>
-    
+            $data = [
+                'loan_id'	=>	$this->request->getVar('id'),
+            //  'date'      =>	$this->request->getVar('effective_date'),
+                'date'      =>	"",
+                'amount'	=>	$repay_per_day,
+                'status'	=>	$this->request->getVar('status')
+            ];
+          
 
-        if($save_data != false){
-            //$data = $model->where('id', $save_data)->first();
-            echo json_encode(array("status" => true , 'data' => $repay_per_day));
-        }else{
-            echo json_encode(array("status" => false , 'data' => $repay_per_day));
+        for($x = 0; $x < $loan_period; $x++){
+            $newDatein = date('Y-m-d',strtotime($newDate. '+1 day'));
+            $newDate = $newDatein; 
+            $data['date'] =  $newDatein;
+            $save_data = $model->insert_repayment_data($data);
         }
-    }
-
-    //save dates
-    function save_loan_days(){
-        helper(['form', 'url']);
         
-        $model = new LoanApproveModel();
-
-
-        $data = [
-           
-            'effective_date'=>	$this->request->getVar('effective_date')
-            
-        ];
-       
-        <?php
-        for($x = 0; $x <= 65; $x+=1){
-        $save_data = $model->insert_repayment_data($data);
-        }
-        ?>
     
 
         if($save_data != false){
@@ -244,6 +203,7 @@ class Loan extends Controller
         }else{
             echo json_encode(array("status" => false , 'data' => $data));
         }
+    //echo json_encode($newDate);
     }
 
 

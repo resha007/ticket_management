@@ -1,9 +1,9 @@
 
 
-$(document).ready(function() {//alert("test123");
-    $("#update").prop("disabled",false);
-    $("#delete").prop("disabled",false);
-    var action,data = '';
+$(document).ready(function () {//alert("test123");
+    $("#update").prop("disabled", false);
+    $("#delete").prop("disabled", false);
+    var action, data = '';
 
     const Toast = Swal.mixin({
         toast: true,
@@ -13,45 +13,11 @@ $(document).ready(function() {//alert("test123");
     });
     //alert("test123");
 
-    // $( "#update" ).click(function() {
-    //    // if(validate() != '1'){
-    //         $.ajax({
-    //             type : "POST",
-    //             url		: "loan/save_repayment_data",
-    //             dataType : 'json',
-    //             async : true,
-    //             headers: {'X-Requested-With': 'XMLHttpRequest'},
-    //             data	: $('form').serialize(),
-    //             success: function(data) {
-    //                 if(data){
-    //                     Toast.fire({
-    //                         type: 'success',
-    //                         title: 'Successfully added'
-    //                     });
-    //                     $table.bootstrapTable('refresh');
-    //                     $("#reset").click();
-
-    //                     $("#update").prop("disabled",false);
-    //                     $("#delete").prop("disabled",false);
-    //                     //$("#add").prop("disabled",false);
-    //                 }else{
-    //                     Toast.fire({
-    //                         type: 'error',
-    //                         title: 'Something went wrong. Please try again.'
-    //                     });
-    //                 }
-    //             }
-    //         });
-    //    // }
-        
-    // });
-
-    
-    // update-loan tbl
-    $( "#update" ).click(function() {//alert(getIdSelections());
+    // update-loan tbl & save-repayment
+    $("#update").click(function () {//alert(getIdSelections());
         Swal.fire({
-            width:'400px',
-            padding:null,
+            width: '400px',
+            padding: null,
             title: 'Are you sure?',
             position: 'top-end',
             text: "You won't be able to revert this!",
@@ -63,100 +29,88 @@ $(document).ready(function() {//alert("test123");
         }).then((result) => {
             if (result.value) {
                 $.ajax({
-                    type : "POST",
-                    url		: "loan/update",
-                    dataType : 'json',
-                    async : true,
-                    headers: {'X-Requested-With': 'XMLHttpRequest'},
-                    data	: $('form').serialize(),
-                    success: function(data) {
-                        if(data){
-                           // Toast.fire({
-                                // type: 'success',
-                                // title: 'Successfully updated'
-                            $.ajax({
-                                    type : "POST",
-                                    url		: "loan/save_repayment_data",
-                                    dataType : 'json',
-                                    async : true,
-                                    headers: {'X-Requested-With': 'XMLHttpRequest'},
-                                    data	: $('form').serialize(),
-                                    success: function(data) {
-                                        if(data){
-                                            Toast.fire({
-                                                type: 'success',
-                                                title: 'Successfully added'
-                                            });
-                                        }else{
-                                            Toast.fire({
-                                                type: 'error',
-                                                title: 'Something went wrong. Please try again.'
-                                            });
-                                        }
-                                    }
-                                });
-                             //   });
-                           // });
-                            $table.bootstrapTable('refresh');
-                            $("#reset").click();
-        
-                            $("#update").prop("disabled",false);
-                            $("#delete").prop("disabled",false);
-                            // $("#add").prop("disabled",false);
-                        }else{
-                            Toast.fire({
-                                type: 'error',
-                                title: 'Something went wrong. Please try again.'
-                            });
-                        }
+                    type: "POST",
+                    url: "loan/update",
+                    dataType: 'json',
+                    async: true,
+                    headers: { 'X-Requested-With': 'XMLHttpRequest' },
+                    data: $('form').serialize(),
+                    success: function (data) { //alert (data);
+                        $.ajax({
+                            type: "POST",
+                            url: "loan/save_repayment_data",
+                            dataType: 'json',
+                            async: true,
+                            headers: { 'X-Requested-With': 'XMLHttpRequest' },
+                            data: $('form').serialize(),
+                            success: function (data) { //alert(data);
+                                if (data) {
+                                    Toast.fire({
+                                        type: 'success',
+                                        title: 'Successfully added'
+                                    });
+                                    $table.bootstrapTable('refresh');
+                                    $("#reset").click();
+
+                                    $("#update").prop("disabled", false);
+                                    $("#delete").prop("disabled", false);
+                                    //$("#show").prop("disabled",false);
+                                } else {
+                                    Toast.fire({
+                                        type: 'error',
+                                        title: 'Something went wrong. Please try again.'
+                                    });
+                                }
+                            }
+                        });
                     }
                 });
             }
-                    
+
         })
-        
+
     });
 
 
     //save the loan amount
-    $( "#update" ).click(function() {
-       // if(validate() != '1'){
-            $.ajax({
-                type : "POST",
-                url		: "loan/save_amount_per_day",
-                dataType : 'json',
-                async : true,
-                headers: {'X-Requested-With': 'XMLHttpRequest'},
-                data	: $('form').serialize(),
-                success: function(data) {
-                    if(data){
-                        Toast.fire({
-                            type: 'success',
-                            title: 'Successfully added'
-                        });
-                        $table.bootstrapTable('refresh');
-                        $("#reset").click();
+    // $( "#show").click(function() {
+    //    // if(validate() != '1'){
+    //         $.ajax({
+    //             type : "POST",
+    //             url		: "loan/save_repayment_data",
+    //             dataType : 'json',
+    //             async : true,
+    //             headers: {'X-Requested-With': 'XMLHttpRequest'},
+    //             data	: $('form').serialize(),
+    //             success: function(data) { //alert(data);
+    //                 if(data){
+    //                     Toast.fire({
+    //                         type: 'success',
+    //                         title: 'Successfully added'
+    //                     });
+    //                     $table.bootstrapTable('refresh');
+    //                     $("#reset").click();
 
-                        $("#update").prop("disabled",false);
-                        $("#delete").prop("disabled",false);
-                        //$("#add").prop("disabled",false);
-                    }else{
-                        Toast.fire({
-                            type: 'error',
-                            title: 'Something went wrong. Please try again.'
-                        });
-                    }
-                }
-            });
-       // }
-        
-    });
+    //                     $("#update").prop("disabled",true);
+    //                     $("#delete").prop("disabled",true);
+    //                     $("#show").prop("disabled",false);
+    //                 }else{
+    //                     Toast.fire({
+    //                         type: 'error',
+    //                         title: 'Something went wrong. Please try again.'
+    //                     });
+    //                 }
+    //             }
+    //         });
+    //    // }
 
-    
-    $( "#delete" ).click(function() {
+    // });
+
+
+    $("#delete").click(function () {
         Swal.fire({
-            width:'400px',
-            padding:null,
+            width: '400px',
+            padding: null,
             title: 'Are you sure?',
             position: 'top-end',
             text: "You won't be able to revert this!",
@@ -168,25 +122,25 @@ $(document).ready(function() {//alert("test123");
         }).then((result) => {
             if (result.value) {
                 $.ajax({
-                    type : "POST",
-                    url		: "loan/delete",
-                    dataType : 'json',
-                    async : true,
-                    headers: {'X-Requested-With': 'XMLHttpRequest'},
-                    data	: $('form').serialize(),
-                    success: function(data) {//alert(data["status"]);
-                        if(data){
+                    type: "POST",
+                    url: "loan/delete",
+                    dataType: 'json',
+                    async: true,
+                    headers: { 'X-Requested-With': 'XMLHttpRequest' },
+                    data: $('form').serialize(),
+                    success: function (data) {//alert(data["status"]);
+                        if (data) {
                             Toast.fire({
                                 type: 'success',
                                 title: 'Successfully deleted'
                             });
                             $table.bootstrapTable('refresh');
                             $("#reset").click();
-        
-                            $("#update").prop("disabled",false);
-                            $("#delete").prop("disabled",false);
+
+                            $("#update").prop("disabled", false);
+                            $("#delete").prop("disabled", false);
                             // $("#add").prop("disabled",false);
-                        }else{
+                        } else {
                             Toast.fire({
                                 type: 'error',
                                 title: 'Something went wrong. Please try again.'
@@ -195,26 +149,27 @@ $(document).ready(function() {//alert("test123");
                     }
                 });
             }
-                    //$("#reset").click();
+            //$("#reset").click();
         })
-        
+
     });
 
-    $( "#dataTable" ).click(function() {
+
+    $("#dataTable").click(function () {
         var id = getIdSelections();
 
-        $("#update").prop("disabled",false);
-        $("#delete").prop("disabled",false);
-        // $("#add").prop("disabled",false);
+        $("#update").prop("disabled", false);
+        $("#delete").prop("disabled", false);
+        // $("#add").prop("disabled", true);
 
         $.ajax({
-            type : "POST",
-            url		: "loan/loan_by_id", 
-            dataType : 'json',
-            async : true,
-            data	: { id: id },
-            success: function(data) {//alert(data["data"]["first_name"]);
-                if(data){
+            type: "POST",
+            url: "loan/loan_by_id",
+            dataType: 'json',
+            async: true,
+            data: { id: id },
+            success: function (data) {//alert(data["data"]["first_name"]);
+                if (data) {
                     $("#id").val(data["data"]["id"]);
                     $("#customer_id").val(data["data"]["customer_id"]);
                     $("#reason").val(data["data"]["reason"]);
@@ -224,7 +179,7 @@ $(document).ready(function() {//alert("test123");
                     $("#created_date").val(data["data"]["created_date"]);
                     $("#created_by").val(data["data"]["created_by"]);
                     $("#status").val(data["data"]["status"]);
-                }else{
+                } else {
                     Toast.fire({
                         type: 'error',
                         title: 'Something went wrong. Please try again.'
@@ -236,24 +191,24 @@ $(document).ready(function() {//alert("test123");
     });
 
     // //validations
-    function validate(){
+    function validate() {
         var err = 0;
 
         var elem = document.getElementById('dataForm').elements;
-        for(var i = 0; i < elem.length; i++){
-            if(elem[i].type != "button" && elem[i].type != "reset" && elem[i].id != "id"){
-                if(elem[i].value == '' || elem[i].value == '0'){
+        for (var i = 0; i < elem.length; i++) {
+            if (elem[i].type != "button" && elem[i].type != "reset" && elem[i].id != "id") {
+                if (elem[i].value == '' || elem[i].value == '0') {
                     Toast.fire({
                         type: 'warning',
                         title: 'This field is required'
-                        });
-                        $("#"+elem[i].id).focus();
+                    });
+                    $("#" + elem[i].id).focus();
                     err = 1;
                     return err;
                 }
             }
         }
     }
-    
-    
+
+
 });

@@ -1,0 +1,64 @@
+CRITICAL - 2022-02-20 07:14:20 --> Unsupported operand types
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Loan->save_amount_per_day()
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-20 07:15:41 --> Unsupported operand types
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Loan->save_amount_per_day()
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-20 07:16:19 --> Unsupported operand types
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Loan->save_amount_per_day()
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-20 07:16:23 --> Unsupported operand types
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Loan->save_amount_per_day()
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-20 08:16:22 --> Unsupported operand types
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Loan->save_amount_per_day()
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-20 08:17:14 --> Unsupported operand types
+#0 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Loan->save_amount_per_day()
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-20 08:23:17 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::insert() must be of the type array or null, float given, called in C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php on line 60
+#0 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(60): CodeIgniter\Database\BaseBuilder->insert(12)
+#1 C:\xampp\htdocs\microfin\app\Controllers\Loan.php(209): App\Models\LoanApproveModel->insert_repayment_data(12)
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Loan->save_amount_per_day()
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+#4 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-02-20 08:39:28 --> Column 'loan_id' cannot be null
+CRITICAL - 2022-02-20 08:39:28 --> Column 'loan_id' cannot be null
+#0 C:\xampp\htdocs\microfin\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\xampp\htdocs\microfin\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\xampp\htdocs\microfin\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\xampp\htdocs\microfin\app\Models\LoanApproveModel.php(60): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\microfin\app\Controllers\Loan.php(214): App\Models\LoanApproveModel->insert_repayment_data(Array)
+#6 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Loan->save_amount_per_day()
+#7 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+#8 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-20 08:48:24 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\microfin\app\Controllers\Loan.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 198, Array)
+#1 C:\xampp\htdocs\microfin\system\CodeIgniter.php(824): App\Controllers\Loan->save_amount_per_day()
+#2 C:\xampp\htdocs\microfin\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loan))
+#3 C:\xampp\htdocs\microfin\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\microfin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
