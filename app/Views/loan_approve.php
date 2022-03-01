@@ -43,7 +43,34 @@
 			</div>
 		</div>
 		<!--/.row-->
+		<!-- table view- for pending cases -->
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">Pending Loans</div>
+					<div class="panel-body">
+						<table id="dataTable" data-click-to-select="true" data-show-export="true" data-toggle="table" data-url="loan/get" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
+							<thead>
+								<tr>
+									<th data-field="state" data-checkbox="true"></th>
+									<th data-field="id" data-sortable="true">Loan ID</th>
+									<th data-field="customer_id" data-sortable="true">Customer Name</th>
+									<!-- <th data-field="guarantor_1" data-sortable="true">Gurantor 01</th>
+									<th data-field="guarantor_2" data-sortable="true">Gurantor 02</th>
+									<th data-field="reason" data-sortable="true">Reason</th> -->
+									<th data-field="created_date" data-sortable="true">Created Date</th>
+									<th data-field="loan_amount" data-sortable="true">Loan Amount</th>
+									<th data-field="created_by" data-sortable="true">Created By</th>
+									<th data-field="status" data-sortable="true">Status</th>
+								</tr>
+							</thead>
 
+
+						</table>
+					</div>
+				</div>
+			</div><!-- /.col-->
+		</div><!-- /.row -->
 
 		<div class="row">
 			<div class="col-lg-12">
@@ -156,34 +183,7 @@
 			</div><!-- /.col-->
 		</div><!-- /.row -->
 
-		<!-- table view- for pending cases -->
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="panel panel-default">
-					<div class="panel-heading">Pending Loans</div>
-					<div class="panel-body">
-						<table id="dataTable" data-click-to-select="true" data-show-export="true" data-toggle="table" data-url="loan/get" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
-							<thead>
-								<tr>
-									<th data-field="state" data-checkbox="true"></th>
-									<th data-field="id" data-sortable="true">Loan ID</th>
-									<th data-field="customer_id" data-sortable="true">Customer Name</th>
-									<!-- <th data-field="guarantor_1" data-sortable="true">Gurantor 01</th>
-									<th data-field="guarantor_2" data-sortable="true">Gurantor 02</th>
-									<th data-field="reason" data-sortable="true">Reason</th> -->
-									<th data-field="created_date" data-sortable="true">Created Date</th>
-									<th data-field="loan_amount" data-sortable="true">Loan Amount</th>
-									<th data-field="created_by" data-sortable="true">Created By</th>
-									<th data-field="status" data-sortable="true">Status</th>
-								</tr>
-							</thead>
-
-
-						</table>
-					</div>
-				</div>
-			</div><!-- /.col-->
-		</div><!-- /.row -->
+		
 
 		<!-- table view- for approved cases -->
 		<div class="row">
