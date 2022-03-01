@@ -30,7 +30,7 @@ $(document).ready(function () {//alert("test123");
             if (result.value) {
                 $.ajax({
                     type: "POST",
-                    url: "loan/update",
+                    url: "loanApproval/update",
                     dataType: 'json',
                     async: true,
                     headers: { 'X-Requested-With': 'XMLHttpRequest' },
@@ -38,7 +38,7 @@ $(document).ready(function () {//alert("test123");
                     success: function (data) { //alert (data);
                         $.ajax({
                             type: "POST",
-                            url: "loan/save_repayment_data",
+                            url: "loanApproval/save_repayment_data",
                             dataType: 'json',
                             async: true,
                             headers: { 'X-Requested-With': 'XMLHttpRequest' },
