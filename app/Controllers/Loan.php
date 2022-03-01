@@ -97,12 +97,12 @@ class Loan extends Controller
             'loan_amount'	=>	$this->request->getPost('loan_amount'),
             // 'loan_period'        =>	$this->request->getVar('loan_period'),
             // 'loan_interest'	=>	$this->request->getVar('loan_interest'),
-            'status'	    =>	$this->request->getVar('status'),
-            'approved_date'	=>	$this->request->getPost('approved_date'),
+
+            'approved_date'	=>	$this->request->getVar('approved_date'),
             'approved_by'   =>	$this->request->getPost('approved_by'),
             'effective_date'=>	$this->request->getVar('effective_date'),
-            'created_by'	=>	$this->request->getVar('created_by'),
-            'status'        =>	$this->request->getVar('status')
+             'created_by'	=>	$this->request->getVar('created_by'),
+             'status'        =>	$this->request->getVar('status')
         ];
 
         $result = $model->update_data($id, $data);
@@ -113,7 +113,7 @@ class Loan extends Controller
         }else{
             echo json_encode(array("status" => false , 'data' => $data));
         }
-        
+        //echo json_encode("tttttt");
     }
 
     function delete(){
