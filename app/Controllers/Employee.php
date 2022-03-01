@@ -198,6 +198,7 @@ class Employee extends Controller
         if(password_verify($this->request->getPost('password'), $result[0]["password"])){
             //$data = $model->where('id', $save_data)->first();
             $newdata = [
+                'id'        => $result[0]["id"],
                 'username'  => $result[0]["username"],
                 'email'     => $result[0]["email"],
                 'logged_in' => TRUE
