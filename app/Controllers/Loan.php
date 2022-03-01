@@ -8,7 +8,11 @@ use CodeIgniter\Controller;
 
 class Loan extends Controller
 {
-    
+    function __construct()
+    {
+        $this->session = \Config\Services::session();
+        $this->session->start();
+    }
 
     public function index()
     {
@@ -67,8 +71,8 @@ class Loan extends Controller
             'loan_amount'	=>	$this->request->getPost('loan_amount'),
             'loan_period'   =>	$this->request->getVar('loan_period'),
             'loan_interest'	=>	$this->request->getVar('loan_interest'),
-            'created_by'    =>	$this->request->getVar('created_by'),
-            'status'	    =>	$this->request->getVar('status')
+            'created_by'    =>	$this->session->get('id'),
+            'status'	    =>	'1'
         ];
 
         $save_data = $model->insert_data($data);
