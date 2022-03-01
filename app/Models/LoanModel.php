@@ -36,13 +36,8 @@ class LoanModel extends Model
     //get customer loans by loan id
     public function get_data($id = false) {//$id=1;
         if($id === false) {
-            // $this->join('line', 'line.id = customer.line_id', 'LEFT');
-            // $this->select('customer.*');
-            // $this->select("CONCAT(line.code, ' - ', line.name) as line");
-            // //$this->where('status', 1);
-            // return $this->findAll();
-            return $this->join('customer', 'customer.id = loan.customer_id', 'LEFT')->select('loan.*')->select("CONCAT(customer.first_name, ' ', customer.last_name) as customer_id")->where('loan.status', 1)->orWhere('loan.status',2)->findAll();
-            //return $this->where('status', 1)->orWhere('status', 2)->findAll();
+            return $this->join('customer', 'customer.id = loan.customer_id', 'LEFT')->select('loan.*')->select("CONCAT(customer.first_name, ' ', customer.last_name) as customer_id")->where('loan.status', 1)->findAll();
+            
         } else {
             return $this->where('status', 1)->findAll();
         }
