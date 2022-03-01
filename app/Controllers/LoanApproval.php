@@ -8,7 +8,11 @@ use CodeIgniter\Controller;
 
 class LoanApproval extends Controller
 {
-    
+    function __construct()
+    {
+        $this->session = \Config\Services::session();
+        $this->session->start();
+    }
 
     public function index()
     {
@@ -81,7 +85,7 @@ class LoanApproval extends Controller
             // 'loan_interest'	=>	$this->request->getVar('loan_interest'),
 
             'approved_date'	=>	$this->request->getVar('approved_date'),
-            'approved_by'   =>	$this->request->getPost('approved_by'),
+            'approved_by'   =>	$this->session->get('id'),
             'effective_date'=>	$this->request->getVar('effective_date'),
              'created_by'	=>	$this->request->getVar('created_by'),
              'status'        =>	$this->request->getVar('status')
