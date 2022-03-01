@@ -168,7 +168,7 @@
 
 								<div class="form-group col-md-12">
 									<button type="button" class="btn btn-success" id="update">Update</button>
-									<button type="button" class="btn btn-danger" id="delete">Delete</button>
+									<!-- <button type="button" class="btn btn-danger" id="delete">Delete</button> -->
 									<button type="reset" class="btn btn-default" id="reset">Reset</button>
 									<button type="button" class="btn btn-primary" id="show">Process the repayment summary</button>
 									<!-- <button type="button" class="btn btn-primary" id="hide">Hide the repayment summary</button> -->
