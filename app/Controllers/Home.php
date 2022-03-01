@@ -11,7 +11,7 @@ class Home extends BaseController
     }
 
     public function index()
-    {
+    {//return view('home');
         if($this->session->get('logged_in')){
             return view('home');
         }else{

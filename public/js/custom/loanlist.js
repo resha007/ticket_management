@@ -49,7 +49,8 @@ $(document).ready(function () {//alert("test123");
                                         type: 'success',
                                         title: 'Successfully added'
                                     });
-                                    $table.bootstrapTable('refresh');
+                                    $("#dataTable").bootstrapTable('refresh');
+                                    $("#dataTablenew").bootstrapTable('refresh');
                                     $("#reset").click();
 
                                     $("#update").prop("disabled", false);

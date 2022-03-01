@@ -10,8 +10,8 @@ class Loan extends Controller
 {
     function __construct()
     {
-        $this->session = \Config\Services::session();
-        $this->session->start();
+        //$this->session = \Config\Services::session();
+        //$this->session->start();
     }
 
     public function index()
@@ -58,6 +58,37 @@ class Loan extends Controller
 		echo json_encode($data);
 	}
 
+    function get_approved(){ 
+        $LoanModel = new LoanModel();
+
+		//$data = $CustomerModel->where("status='1' OR status='2'")->orderBy('id', 'ASC')->paginate(10);
+        $data = $LoanModel->get_approved();
+
+        //set numbers to names
+        for($i=0;$i<sizeof($data);$i++){
+            if($data[$i]["created_by"] == 1){
+                $data[$i]["created_by"] = "Admin";
+            }else{
+                $data[$i]["created_by"] = "Rider";
+            }
+
+            if($data[$i]["status"] == 1){
+                $data[$i]["status"] = "Pending";
+            }else if($data[$i]["status"] == 3){
+                $data[$i]["status"] = "Refused";
+            }else if($data[$i]["status"] == 4){
+                $data[$i]["status"] = "Abandoned";
+            }else if($data[$i]["status"] == 5){
+                $data[$i]["status"] = "Cleared";
+            }else{
+                $data[$i]["status"] = "Approved";
+            }
+        }
+        
+
+		echo json_encode($data);
+	}
+
 	function save(){
         helper(['form', 'url']);
         
@@ -71,7 +102,7 @@ class Loan extends Controller
             'loan_amount'	=>	$this->request->getPost('loan_amount'),
             'loan_period'   =>	$this->request->getVar('loan_period'),
             'loan_interest'	=>	$this->request->getVar('loan_interest'),
-            'created_by'    =>	$this->session->get('id'),
+            //'created_by'    =>	$this->session->get('id'),
             'status'	    =>	'1'
         ];
 
@@ -99,14 +130,10 @@ class Loan extends Controller
             'guarantor_1'   =>	$this->request->getVar('guarantor_1'),
             'guarantor_2'	=>	$this->request->getVar('guarantor_2'),
             'loan_amount'	=>	$this->request->getPost('loan_amount'),
-            // 'loan_period'        =>	$this->request->getVar('loan_period'),
-            // 'loan_interest'	=>	$this->request->getVar('loan_interest'),
-
-            'approved_date'	=>	$this->request->getVar('approved_date'),
-            'approved_by'   =>	$this->request->getPost('approved_by'),
-            'effective_date'=>	$this->request->getVar('effective_date'),
-             'created_by'	=>	$this->request->getVar('created_by'),
-             'status'        =>	$this->request->getVar('status')
+            'loan_period'   =>	$this->request->getVar('loan_period'),
+            'loan_interest'	=>	$this->request->getVar('loan_interest'),
+            //'created_by'    =>	$this->session->get('id'),
+            'status'	    =>	'1'
         ];
 
         $result = $model->update_data($id, $data);
