@@ -52,16 +52,15 @@
 						<table id="dataTable" data-click-to-select="true" data-show-export="true" data-toggle="table" data-url="loan/get" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
 							<thead>
 								<tr>
-									<th data-field="state" data-checkbox="true"></th>
+								<th data-field="state" data-checkbox="true"></th>
 									<th data-field="id" data-sortable="true">Loan ID</th>
 									<th data-field="customer_id" data-sortable="true">Customer Name</th>
 									<!-- <th data-field="guarantor_1" data-sortable="true">Gurantor 01</th>
-									<th data-field="guarantor_2" data-sortable="true">Gurantor 02</th>
-									<th data-field="reason" data-sortable="true">Reason</th> -->
-									<th data-field="created_date" data-sortable="true">Created Date</th>
+									<th data-field="guarantor_2" data-sortable="true">Gurantor 02</th>-->
 									<th data-field="loan_amount" data-sortable="true">Loan Amount</th>
+									<th data-field="reason" data-sortable="true">Reason</th> 
+									<th data-field="created_date" data-sortable="true">Created Date</th>
 									<th data-field="created_by" data-sortable="true">Created By</th>
-									<th data-field="status" data-sortable="true">Status</th>
 								</tr>
 							</thead>
 
@@ -143,8 +142,7 @@
 								<div class="form-group col-md-4">
 									<label>Loan Status</label>
 									<select class="form-control" name="status" id="status" required>
-										<option value="">Select here</option>
-										<option value="1">Pending</option>
+										<option value="" disabled selected>Select here</option>
 										<option value="2">Approved</option>
 										<option value="3">Refused</option>
 										<option value="4">Abandoned</option>
@@ -153,19 +151,19 @@
 								</div>
 								<div class="form-group col-md-4">
 										<label>Approved Date</label>
-										<input type="date" class="form-control" name="approved_date" id="approved_date" required>
+										<input type="date" class="form-control" name="approved_date" id="approved_date" value="<?php echo date('Y-m-d'); ?>" required>
 									</div>
-								<div class="form-group col-md-4">
+								<!-- <div class="form-group col-md-4">
 										<label>Approved By</label>
 										<select class="form-control" name="approved_by" id="approved_by" required>
 											<option value="0"></option>
 										    <option value="1">Admin</option>
 											<option value="2">Rider</option>
 										</select>
-									</div>
+									</div> -->
 								<div class="form-group col-md-4">
 										<label>Effective Date</label>
-										<input type="date" class="form-control" name="effective_date" id="effective_date" value="<?php echo date('Y-m-d'); ?>" required>
+										<input type="date" class="form-control" name="effective_date" id="effective_date"  required>
 									</div>
 
 								<div class="form-group col-md-12">
@@ -194,16 +192,15 @@
 						<table id="dataTable" data-click-to-select="true" data-show-export="true" data-toggle="table" data-url="loan/get_approved" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
 							<thead>
 								<tr>
-									<th data-field="state" data-checkbox="true"></th>
+								<th data-field="state" data-checkbox="true"></th>
 									<th data-field="id" data-sortable="true">Loan ID</th>
 									<th data-field="customer_id" data-sortable="true">Customer Name</th>
 									<!-- <th data-field="guarantor_1" data-sortable="true">Gurantor 01</th>
-									<th data-field="guarantor_2" data-sortable="true">Gurantor 02</th>
-									<th data-field="reason" data-sortable="true">Reason</th> -->
-									<th data-field="created_date" data-sortable="true">Created Date</th>
+									<th data-field="guarantor_2" data-sortable="true">Gurantor 02</th>-->
 									<th data-field="loan_amount" data-sortable="true">Loan Amount</th>
+									<th data-field="reason" data-sortable="true">Reason</th> 
+									<th data-field="created_date" data-sortable="true">Created Date</th>
 									<th data-field="created_by" data-sortable="true">Created By</th>
-									<th data-field="status" data-sortable="true">Status</th>
 								</tr>
 							</thead>
 
