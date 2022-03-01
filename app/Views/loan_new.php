@@ -164,12 +164,11 @@
 									<th data-field="id" data-sortable="true">Loan ID</th>
 									<th data-field="customer_id" data-sortable="true">Customer Name</th>
 									<!-- <th data-field="guarantor_1" data-sortable="true">Gurantor 01</th>
-									<th data-field="guarantor_2" data-sortable="true">Gurantor 02</th>
-									<th data-field="reason" data-sortable="true">Reason</th> -->
-									<th data-field="created_date" data-sortable="true">Created Date</th>
+									<th data-field="guarantor_2" data-sortable="true">Gurantor 02</th>-->
 									<th data-field="loan_amount" data-sortable="true">Loan Amount</th>
+									<th data-field="reason" data-sortable="true">Reason</th> 
+									<th data-field="created_date" data-sortable="true">Created Date</th>
 									<th data-field="created_by" data-sortable="true">Created By</th>
-									<th data-field="status" data-sortable="true">Status</th>
 								</tr>
 							</thead>
 
