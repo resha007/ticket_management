@@ -43,6 +43,16 @@ class LoanModel extends Model
         }
     }
 
+    //get approved loans
+    public function get_approved($id = false) {//$id=1;
+        if($id === false) {
+            return $this->join('customer', 'customer.id = loan.customer_id', 'LEFT')->select('loan.*')->select("CONCAT(customer.first_name, ' ', customer.last_name) as customer_id")->where('loan.status', 2)->findAll();
+            
+        } else {
+            return $this->where('status', 1)->findAll();
+        }
+    }
+
     public function insert_data($data) {
         if($this->db->table($this->table)->insert($data)){
                 return true;
