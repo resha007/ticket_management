@@ -89,37 +89,37 @@
 								</div>
 								<div class="form-group col-md-4">
 									<label>Period</label>
-									<input class="form-control" name="loan_period" id="loan_period" placeholder="65" value="65" readonly="readonly">
+									<input class="form-control" name="loan_period" id="loan_period" value="65">
 									<!-- <select class="form-control" name="loan_period" id="loan_period">
 										    <option value="1">65</option>
 										</select> -->
 								</div>
 								<div class="form-group col-md-4">
 									<label>Interest Rate</label>
-									<input class="form-control" name="loan_interest" id="loan_interest" placeholder="30" value="30" readonly="readonly">
+									<input class="form-control" name="loan_interest" id="loan_interest" value="30">
 									<!-- <select class="form-control" name="loan_interest" id="loan_interest">
 										    <option value="1">30</option>
 										</select> -->
 								</div>
-								<div class="form-group col-md-4">
+								<!-- <div class="form-group col-md-4">
 									<label>Created By</label>
 									<select class="form-control" name="created_by" id="created_by" required>
 										<option value=""></option>
 										<option value="1">Admin</option>
 										<option value="2">Rider</option>
 									</select>
-								</div>
+								</div> 
 								<div class="form-group col-md-4">
 									<label>Loan Status</label>
 									<select class="form-control" name="status" id="status" required>
 										<option value="">Select here</option>
 										<option value="1">Pending</option>
-										<!-- <option value="2">Approved</option> -->
+										<option value="2">Approved</option>
 										<option value="3">Refused</option>
 										<option value="4">Abandoned</option>
 										<option value="5">Cleared</option>
 									</select>
-								</div>
+								</div> -->
 								<!-- <div class="form-group col-md-4">
 										<label>Approved Date</label>
 										<input type="date" class="form-control" name="approved_date" id="approved_date" readonly="readonly">
