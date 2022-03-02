@@ -36,7 +36,7 @@ class LoanModel extends Model
     //get customer loans by loan id
     public function get_data($id = false) {//$id=1;
         if($id === false) {
-            return $this->join('customer', 'customer.id = loan.customer_id', 'LEFT')->select('loan.*')->select("CONCAT(customer.first_name, ' ', customer.last_name) as customer_id")->where('loan.status', 1)->findAll();
+            return $this->join('customer', 'customer.id = loan.customer_id', 'LEFT')->join('employee', 'employee.id = loan.created_by', 'LEFT')->select('loan.*')->select('employee.username as username')->select("CONCAT(customer.first_name, ' ', customer.last_name) as customer_id")->where('loan.status', 1)->findAll();
             
         } else {
             return $this->where('status', 1)->findAll();
@@ -46,8 +46,8 @@ class LoanModel extends Model
     //get approved loans
     public function get_approved($id = false) {//$id=1;
         if($id === false) {
-            return $this->join('customer', 'customer.id = loan.customer_id', 'LEFT')->select('loan.*')->select("CONCAT(customer.first_name, ' ', customer.last_name) as customer_id")->where('loan.status', 2)->findAll();
-            
+            return $this->join('customer', 'customer.id = loan.customer_id', 'LEFT')->join('employee', 'employee.id = loan.created_by', 'LEFT')->select('loan.*')->select('employee.username as username')->select("CONCAT(customer.first_name, ' ', customer.last_name) as customer_id")->where('loan.status', 2)->findAll();
+           
         } else {
             return $this->where('status', 1)->findAll();
         }
@@ -82,7 +82,9 @@ class LoanModel extends Model
 
     //add pending loans to the data table
     public function get_loan_data_by_id($id) {
-        return $this->where('id', $id)->first();
+        $this->join('employee', 'employee.id = loan.created_by', 'LEFT');
+        $this->select('employee.username as username');
+        return $this->where('loan.id', $id)->first();
 
     }
 
@@ -117,6 +119,7 @@ class LoanModel extends Model
         $this->join('customer cust', 'cust.id = loan.guarantor_1', 'LEFT');
         $this->join('customer cust1', 'cust1.id = loan.guarantor_2', 'LEFT');
         $this->select('loan.*');
+        $this->select("CONCAT(customer.first_name, ' ', customer.last_name) as customer");
         $this->select('customer.*');
         $this->select("CONCAT(cust.first_name) as name");
         $this->select("CONCAT(cust1.first_name) as name2");
@@ -127,7 +130,24 @@ class LoanModel extends Model
         //return $this->where('status', 1)->orWhere('status', 2)->findAll();
         
     
-}
+    }
+
+    public function get_loan_data_by_loan_id($id) {
+     
+        $this->join('customer', 'customer.id = loan.customer_id', 'LEFT');
+        $this->join('customer cust', 'cust.id = loan.guarantor_1', 'LEFT');
+        $this->join('customer cust1', 'cust1.id = loan.guarantor_2', 'LEFT');
+        $this->join('employee', 'employee.id = loan.created_by', 'LEFT');
+        $this->select('loan.*');
+        $this->select('loan.reason as reason');
+        $this->select("CONCAT(customer.first_name, ' ', customer.last_name) as customer");
+         $this->select('employee.username as username');
+        // $this->select('customer.*');
+        $this->select("CONCAT(cust.first_name, ' ', cust.last_name) as guarantor_1");
+        $this->select("CONCAT(cust1.first_name, ' ', cust1.last_name) as guarantor_2");
+        
+        return $this->where('loan.id', $id)->first();
+    }
 
 
 }

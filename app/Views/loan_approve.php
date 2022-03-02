@@ -60,7 +60,7 @@
 									<th data-field="loan_amount" data-sortable="true">Loan Amount</th>
 									<th data-field="reason" data-sortable="true">Reason</th> 
 									<th data-field="created_date" data-sortable="true">Created Date</th>
-									<th data-field="created_by" data-sortable="true">Created By</th>
+									<th data-field="username" data-sortable="true">Created By</th>
 								</tr>
 							</thead>
 
@@ -81,13 +81,13 @@
 								<input type="hidden" class="form-control" name="id" id="id">
 								<div class="form-group col-md-6">
 									<label>Customer Name</label>
-									<!-- <input class="form-control" name="customer_name" id="customer_id"  readonly='readonly'> -->
-									<select class="form-control" name="customer_id" id="customer_id" readonly="readonly">
+									<input class="form-control" name="customer_name" id="customer_name"  readonly='readonly'>
+									<!-- <select class="form-control" name="customer_id" id="customer_id" readonly="readonly">
 										<option value=""></option>
 										<?php foreach ($guarantordata as $guarantor) { ?>
 											<option value="<?php echo $guarantor->id ?>"><?php echo $guarantor->name ?></option>
 										<?php } ?>
-									</select>
+									</select> -->
 								</div>
 								<div class="form-group col-md-6">
 									<label>Reason</label>
@@ -95,23 +95,13 @@
 								</div>
 								<div class="form-group col-md-6">
 									<label>Guarantor 01</label>
-									<!-- <input class="form-control" name="guarantor_1" id="guarantor_1" readonly="readonly"> -->
-									<select class="form-control" name="guarantor_1" id="guarantor_1" readonly="readonly">
-										<option value=""></option>
-										<?php foreach ($guarantordata as $guarantor) { ?>
-											<option value="<?php echo $guarantor->id ?>"><?php echo $guarantor->name ?></option>
-										<?php } ?>
-									</select>
+									<input class="form-control" name="guarantor_1" id="guarantor_1" readonly="readonly">
+									
 								</div>
 								<div class="form-group col-md-6">
 									<label>Guarantor 02</label>
-									<!-- <input class="form-control" name="guarantor_2" id="guarantor_2"readonly="readonly"> -->
-									<select class="form-control" name="guarantor_2" id="guarantor_2" readonly="readonly">
-										<option value=""></option>
-										<?php foreach ($guarantordata as $guarantor) { ?>
-											<option value="<?php echo $guarantor->id ?>"><?php echo $guarantor->name ?></option>
-										<?php } ?>
-									</select>
+									<input class="form-control" name="guarantor_2" id="guarantor_2"readonly="readonly">
+									
 								</div>
 								<div class="form-group col-md-4">
 									<label>Loan Amount</label>
@@ -119,25 +109,18 @@
 								</div>
 								<div class="form-group col-md-4">
 									<label>Period</label>
-									<input class="form-control" name="loan_period" id="loan_period" placeholder="65" value="65" readonly="readonly">
-									<!-- <select class="form-control" name="loan_period" id="loan_period">
-										    <option value="1">65</option>
-										</select> -->
+									<input class="form-control" name="loan_period" id="loan_period" readonly="readonly">
+									
 								</div>
 								<div class="form-group col-md-4">
 									<label>Interest Rate</label>
-									<input class="form-control" name="loan_interest" id="loan_interest" placeholder="30" value="30" readonly="readonly">
-									<!-- <select class="form-control" name="loan_interest" id="loan_interest">
-										    <option value="1">30</option>
-										</select> -->
+									<input class="form-control" name="loan_interest" id="loan_interest" readonly="readonly">
+									
 								</div>
 								<div class="form-group col-md-4">
 									<label>Created By</label>
-									<select class="form-control" name="created_by" id="created_by" readonly='readonly'>
-										<option value=""></option>
-										<option value="1">Admin</option>
-										<option value="2">Rider</option>
-									</select>
+									<input class="form-control" name="created_by" id="created_by" readonly="readonly">
+									
 								</div>
 								<div class="form-group col-md-4">
 									<label>Loan Status</label>
@@ -200,7 +183,7 @@
 									<th data-field="loan_amount" data-sortable="true">Loan Amount</th>
 									<th data-field="reason" data-sortable="true">Reason</th> 
 									<th data-field="created_date" data-sortable="true">Created Date</th>
-									<th data-field="created_by" data-sortable="true">Created By</th>
+									<th data-field="username" data-sortable="true">Created By</th>
 								</tr>
 							</thead>
 
@@ -254,7 +237,7 @@
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/bootstrap-table.js"></script>
 
-	<script src="js/custom/loanlist.js"></script>
+	<script src="js/custom/loanApproval.js"></script>
 	<!-- <script src="js/custom/loan.js"></script> -->
 
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>

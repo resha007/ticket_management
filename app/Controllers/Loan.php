@@ -35,11 +35,11 @@ class Loan extends Controller
 
         //set numbers to names
         for($i=0;$i<sizeof($data);$i++){
-            if($data[$i]["created_by"] == 1){
-                $data[$i]["created_by"] = "Admin";
-            }else{
-                $data[$i]["created_by"] = "Rider";
-            }
+            // if($data[$i]["created_by"] == 1){
+            //     $data[$i]["created_by"] = "Admin";
+            // }else{
+            //     $data[$i]["created_by"] = "Rider";
+            // }
 
             if($data[$i]["status"] == 1){
                 $data[$i]["status"] = "Pending";
@@ -177,7 +177,7 @@ class Loan extends Controller
 
         $id = $this->request->getPost('id');
 
-        $result = $model->get_loan_data_by_id($id);
+        $result = $model->get_loan_data_by_loan_id($id);
 
         if($result != false){
             //$data = $model->where('id', $save_data)->first();

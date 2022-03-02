@@ -73,41 +73,6 @@ $(document).ready(function () {//alert("test123");
     });
 
 
-    //save the loan amount
-    // $( "#show").click(function() {
-    //    // if(validate() != '1'){
-    //         $.ajax({
-    //             type : "POST",
-    //             url		: "loan/save_repayment_data",
-    //             dataType : 'json',
-    //             async : true,
-    //             headers: {'X-Requested-With': 'XMLHttpRequest'},
-    //             data	: $('form').serialize(),
-    //             success: function(data) { //alert(data);
-    //                 if(data){
-    //                     Toast.fire({
-    //                         type: 'success',
-    //                         title: 'Successfully added'
-    //                     });
-    //                     $table.bootstrapTable('refresh');
-    //                     $("#reset").click();
-
-    //                     $("#update").prop("disabled",true);
-    //                     $("#delete").prop("disabled",true);
-    //                     $("#show").prop("disabled",false);
-    //                 }else{
-    //                     Toast.fire({
-    //                         type: 'error',
-    //                         title: 'Something went wrong. Please try again.'
-    //                     });
-    //                 }
-    //             }
-    //         });
-    //    // }
-
-    // });
-
-
     $("#delete").click(function () {
         Swal.fire({
             width: '400px',
@@ -169,16 +134,19 @@ $(document).ready(function () {//alert("test123");
             dataType: 'json',
             async: true,
             data: { id: id },
-            success: function (data) {//alert(data["data"]["first_name"]);
+            success: function (data) {//alert(data["data"]["loan_amount"]);
                 if (data) {
                     $("#id").val(data["data"]["id"]);
-                    $("#customer_id").val(data["data"]["customer_id"]);
+                    //$("#customer_id").val(data["data"]["customer_id"]);
+                    $("#customer_name").val(data["data"]["customer"]);
                     $("#reason").val(data["data"]["reason"]);
                     $("#guarantor_1").val(data["data"]["guarantor_1"]);
                     $("#guarantor_2").val(data["data"]["guarantor_2"]);
                     $("#loan_amount").val(data["data"]["loan_amount"]);
+                    $("#loan_period").val(data["data"]["loan_period"]);
+                    $("#loan_interest").val(data["data"]["loan_interest"]);
                     $("#created_date").val(data["data"]["created_date"]);
-                    $("#created_by").val(data["data"]["created_by"]);
+                    $("#created_by").val(data["data"]["username"]);
                     $("#status").val(data["data"]["status"]);
                 } else {
                     Toast.fire({
