@@ -168,7 +168,7 @@
 									<th data-field="loan_amount" data-sortable="true">Loan Amount</th>
 									<th data-field="reason" data-sortable="true">Reason</th> 
 									<th data-field="created_date" data-sortable="true">Created Date</th>
-									<th data-field="created_by" data-sortable="true">Created By</th>
+									<th data-field="username" data-sortable="true">Created By</th>
 								</tr>
 							</thead>
 
