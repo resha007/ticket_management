@@ -132,7 +132,7 @@ class Loan extends Controller
             'loan_amount'	=>	$this->request->getPost('loan_amount'),
             'loan_period'   =>	$this->request->getVar('loan_period'),
             'loan_interest'	=>	$this->request->getVar('loan_interest'),
-            //'created_by'    =>	$this->session->get('id'),
+            'created_by'    =>	$this->session->get('id'),
             'status'	    =>	'1'
         ];
 
