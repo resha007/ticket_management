@@ -134,13 +134,15 @@ $(document).ready(function () {//alert("test123");
             dataType: 'json',
             async: true,
             data: { id: id },
-            success: function (data) {//alert(data["data"]["loan_amount"]);
+            success: function (data) {//alert(data["data"]["guarantor_1_id"]);
                 if (data) {
                     $("#id").val(data["data"]["id"]);
-                    //$("#customer_id").val(data["data"]["customer_id"]);
+                    $("#customer_id").val(data["data"]["customer_id"]);
                     $("#customer_name").val(data["data"]["customer"]);
                     $("#reason").val(data["data"]["reason"]);
+                    $("#guarantor_1_id").val(data["data"]["guarantor_1_id"]);
                     $("#guarantor_1").val(data["data"]["guarantor_1"]);
+                    $("#guarantor_2_id").val(data["data"]["guarantor_2_id"]);
                     $("#guarantor_2").val(data["data"]["guarantor_2"]);
                     $("#loan_amount").val(data["data"]["loan_amount"]);
                     $("#loan_period").val(data["data"]["loan_period"]);

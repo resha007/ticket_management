@@ -81,6 +81,7 @@
 								<input type="hidden" class="form-control" name="id" id="id">
 								<div class="form-group col-md-6">
 									<label>Customer Name</label>
+									<!-- <input type="hidden" class="form-control" name="customer_id" id="customer_id"> -->
 									<input class="form-control" name="customer_name" id="customer_name"  readonly='readonly'>
 									<!-- <select class="form-control" name="customer_id" id="customer_id" readonly="readonly">
 										<option value=""></option>
@@ -95,11 +96,13 @@
 								</div>
 								<div class="form-group col-md-6">
 									<label>Guarantor 01</label>
+									<!-- <input type="hidden" class="form-control" name="guarantor_1_id" id="guarantor_1_id"> -->
 									<input class="form-control" name="guarantor_1" id="guarantor_1" readonly="readonly">
 									
 								</div>
 								<div class="form-group col-md-6">
 									<label>Guarantor 02</label>
+									<!-- <input type="hidden" class="form-control" name="guarantor_2_id" id="guarantor_2_id"> -->
 									<input class="form-control" name="guarantor_2" id="guarantor_2"readonly="readonly">
 									
 								</div>
