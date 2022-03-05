@@ -10,8 +10,8 @@ class Loan extends Controller
 {
     function __construct()
     {
-        //$this->session = \Config\Services::session();
-        //$this->session->start();
+        $this->session = \Config\Services::session();
+        $this->session->start();
     }
 
     public function index()
