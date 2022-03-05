@@ -48,17 +48,17 @@ class LoanApproval extends Controller
                 $data[$i]["status"] = "Approved";
             }
 
-            if($data[$i]["created_by"] == 1){
-                $data[$i]["created_by"] = "Admin";
-            }else{
-                $data[$i]["created_by"] = "Rider";
-            }
+            // if($data[$i]["created_by"] == 1){
+            //     $data[$i]["created_by"] = "Admin";
+            // }else{
+            //     $data[$i]["created_by"] = "Rider";
+            // }
 
-            if($data[$i]["approved_by"] == 1){
-                $data[$i]["approved_by"] = "Admin";
-            }else{
-                $data[$i]["approved_by"] = "Rider";
-            }
+            // if($data[$i]["approved_by"] == 1){
+            //     $data[$i]["approved_by"] = "Admin";
+            // }else{
+            //     $data[$i]["approved_by"] = "Rider";
+            // }
 
 
 
@@ -76,18 +76,18 @@ class LoanApproval extends Controller
         $id = $this->request->getPost('id');
         
         $data = [
-            'customer_id'	=>	$this->request->getVar('customer_id'),
-            'reason'	    =>	$this->request->getPost('reason'),
-            'guarantor_1'   =>	$this->request->getVar('guarantor_1'),
-            'guarantor_2'	=>	$this->request->getVar('guarantor_2'),
-            'loan_amount'	=>	$this->request->getPost('loan_amount'),
+            //'customer_id'	=>	$this->request->getVar('customer_id'),
+            //'reason'	    =>	$this->request->getPost('reason'),
+            //'guarantor_1'   =>	$this->request->getVar('guarantor_1_id'),
+            //'guarantor_2'	=>	$this->request->getVar('guarantor_2_id'),
+            //'loan_amount'	=>	$this->request->getPost('loan_amount'),
             // 'loan_period'        =>	$this->request->getVar('loan_period'),
             // 'loan_interest'	=>	$this->request->getVar('loan_interest'),
 
             'approved_date'	=>	$this->request->getVar('approved_date'),
             'approved_by'   =>	$this->session->get('id'),
             'effective_date'=>	$this->request->getVar('effective_date'),
-             'created_by'	=>	$this->request->getVar('created_by'),
+             //'created_by'	=>	$this->request->getVar('created_by'),
              'status'        =>	$this->request->getVar('status')
         ];
 
