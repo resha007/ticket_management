@@ -208,7 +208,7 @@ class Loan extends Controller
         /*loan_interest_rate = 30/100 = 0.3
             To get the interest to the principal amount(total_interast_amount)= principal amount*0.3
             Total payeble amount=principal amount + total_interast_amount
-            Amount to pay in 65 days = total payable amount/65 */
+            Amount to pay in 70 days = total payable amount/70 */
 
             $data = [
                 'loan_id'	=>	$this->request->getVar('id'),

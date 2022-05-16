@@ -89,7 +89,7 @@
 								</div>
 								<div class="form-group col-md-4">
 									<label>Period</label>
-									<input class="form-control" name="loan_period" id="loan_period" value="65">
+									<input class="form-control" name="loan_period" id="loan_period" value="70">
 									<!-- <select class="form-control" name="loan_period" id="loan_period">
 										    <option value="1">65</option>
 										</select> -->
