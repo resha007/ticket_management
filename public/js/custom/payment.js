@@ -59,6 +59,8 @@ $(document).ready(function () {
     },
   });
 
+
+
   //load employees as opt riders
   $("#line_number").change(function () {
     var id = $("#line_number :selected").val();
@@ -70,7 +72,7 @@ $(document).ready(function () {
       url: "loan/byline",
       dataType: "json",
       async: true,
-      headers: { "X-Requested-With": "XMLHttpRequest" },
+      headers: { "X-Requested-With": "XMLHttpRequest" }, 
       data: { line_id: id },
       success: function (data) {
         //alert(data["data"]);

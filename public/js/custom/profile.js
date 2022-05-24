@@ -247,6 +247,98 @@ $(document).ready(function() {//alert("test123");
             }
         }
     }
+
+ ///////////////////////////////////
+    //load employees as opt riders
+//   $("#line_number").change(function () {
+//     var id = $("#line_number :selected").val();
+//     //$("loan_number").val();
+//     //alert(lineid);
+
+//     $.ajax({
+//       type: "POST",
+//       url: "profile/get_payment_data_by_loan_id",
+//       dataType: "json",
+//       async: true,
+//       headers: { "X-Requested-With": "XMLHttpRequest" }, 
+//       data: { id: id },
+//       success: function (data) {
+//         //alert(data["data"]);
+
+//       }
+//     });
+//   });
     
-    
+  $( "#dataTable" ).click(function() {
+    var id = getIdSelections();
+
+    $("#update").prop("disabled",false);
+    $("#delete").prop("disabled",false);
+    $("#add").prop("disabled",true);
+
+    $.ajax({
+        type : "POST",
+        url		: "profile/get_payment_data_by_customer_id",
+        dataType : 'json',
+        async : true,
+        data	: { id: id },
+        success: function(data) {//alert(data["data"]["first_name"]);
+            if(data){
+                $("#id").val(data["data"]["id"]);
+                // $("#first_name").val(data["data"][""]);
+                // $("#last_name").val(data["data"]["last_name"]);
+                // $("#address").val(data["data"]["address"]);
+                // $("#city").val(data["data"]["city"]);
+                // $("#dob").val(data["data"]["dob"]);
+                // $("#nic").val(data["data"]["nic"]);
+                // $("#gender").val(data["data"]["gender"]);
+                // $("#contact_no").val(data["data"]["contact_no"]);
+                // $("#email").val(data["data"]["email"]);
+                // $("#username").val(data["data"]["username"]);
+                // $("#type").val(data["data"]["type"]);
+                // $("#status").val(data["data"]["status"]);
+            }else{
+                Toast.fire({
+                    type: 'error',
+                    title: 'Something went wrong. Please try again.'
+                });
+            }
+        }
+    });
+    //alert(id);
 });
+
+
+ //alert("ddd");
+  //load lines
+  $("#dataTable1").ajax({
+    type: "POST",
+    url: "payment/get",
+    dataType: "json",
+    async: true,
+    headers: { "X-Requested-With": "XMLHttpRequest" },
+    //data: { id: 1 },
+    success: function (data) {
+      alert(data);
+      
+    },
+  });
+
+  //alert("ddd");
+  //load lines
+  $("#dataTable2").ajax({
+    type: "POST",
+    url: "loanapproval/get_data",
+    dataType: "json",
+    async: true,
+    headers: { "X-Requested-With": "XMLHttpRequest" },
+    //data: { id: 1 },
+    success: function (data) {
+      alert(data);
+      
+    },
+  });
+
+});
+
+

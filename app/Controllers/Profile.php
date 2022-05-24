@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\CustomerModel;
 use App\Models\LoanModel;
+use App\Models\PaymentModel;
 use CodeIgniter\Controller;
 
 class Profile extends Controller
@@ -137,7 +138,7 @@ class Profile extends Controller
         $id = $this->session->get('id'); 
         //$id = 2;
 
-        $result = $model->get_data_by_id($id);
+        $result = $model->get_data_by_id($id); 
 
         if($result != false){
             //$data = $model->where('id', $save_data)->first();
@@ -157,6 +158,25 @@ class Profile extends Controller
         //$id = 2;
 
         $result = $model->get_loan_data_by_customer_id($id);
+
+        if($result != false){
+            //$data = $model->where('id', $save_data)->first();
+            echo json_encode(array("status" => true , 'data' => $result));
+        }else{
+            echo json_encode(array("status" => false , 'data' => $result));
+        }
+        
+    }
+////
+    function get_payment_data_by_customer_id(){ 
+        helper(['form', 'url']);
+          
+        $model = new PaymentModel();
+
+        $id = $this->session->get('id'); 
+        //$id = 2;
+
+        $result = $model->get_data($id);
 
         if($result != false){
             //$data = $model->where('id', $save_data)->first();

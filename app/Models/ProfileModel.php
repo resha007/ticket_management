@@ -60,8 +60,8 @@ class ProfileModel extends Model
 
 
     public function get_data_by_id($id) {
-        return $this->where('id', $id)->first();
-
+        return $this->where('id', $id)->first(); 
+ 
     }
 
     

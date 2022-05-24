@@ -316,40 +316,76 @@
 			</div>
 		</div><!-- /.row -->
 
-
-		<!-- <div class="row">
-			<div class="col-lg-12">
+		<div class="row">
+			<div class="col-lg-6">
 				<div class="panel panel-default">
-					<div class="panel-heading">Current Customers</div>
+					<div class="panel-heading">Payment History</div>
 					<div class="panel-body">
-						<table id="dataTable" data-click-to-select="true" data-show-export="true" data-toggle="table" data-url="customer/get" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
-							<thead>
+						<table id="dataTable1" data-click-to-select="true" data-show-export="true"  data-toggle="table" data-url="payment/get"  data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
+								<thead>
 								<tr>
 									<th data-field="state" data-checkbox="true"></th>
-									<th data-field="id" data-sortable="true">Emp ID</th>
-									<th data-field="first_name" data-sortable="true">Fisrt Name</th>
-									<th data-field="last_name" data-sortable="true">Last Name</th>
-									<th data-field="address" data-sortable="true">Address</th>
+									<th data-field="id" data-sortable="true">Payment ID</th>
+									<th data-field="loan_id"  data-sortable="true">Loan ID</th>
+									<th data-field="paid_date" data-sortable="true">Paid Date</th>
+									<th data-field="paid_amount"  data-sortable="true">Amount</th>
 									<th data-field="city" data-sortable="true">City</th>
-									<th data-field="dob" data-sortable="true">DoB</th>
+									<!-- <th data-field="dob"  data-sortable="true">DoB</th>
 									<th data-field="nic" data-sortable="true">NIC</th>
-									<th data-field="gender" data-sortable="true">Gender</th>
+									<th data-field="gender"  data-sortable="true">Gender</th>
 									<th data-field="contact_no" data-sortable="true">Contact No</th>
 									<th data-field="email" data-sortable="true">Email</th>
-									<th data-field="line" data-sortable="true">Line</th>
-									<th data-field="status" data-sortable="true">Status</th>
+									<th data-field="username"  data-sortable="true">Username</th>
+									<th data-field="type" data-sortable="true">Type</th>
+									<th data-field="status" data-sortable="true">Status</th> -->
 								</tr>
-							</thead>
-
-
-
-						</table>
+								</thead>
+								
+								
+								
+							</table>
 					</div>
 				</div>
-			</div>
-		</div>
+			</div><!-- /.col-->
+		
 
-	</div> -->
+	
+			<div class="col-lg-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">Payment Schedule</div>
+					<div class="panel-body">
+						<table id="dataTable2" data-click-to-select="true" data-show-export="true"  data-toggle="table" data-url="loanapproval/get_data"  data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
+								<thead>
+								<tr>
+									<th data-field="state" data-checkbox="true"></th>
+									<th data-field="id" data-sortable="true">Payment ID</th>
+									<th data-field="loan_id"  data-sortable="true">Loan ID</th>
+									<th data-field="date" data-sortable="true">Date</th>
+									<th data-field="amount"  data-sortable="true">Amount</th>
+									<th data-field="city" data-sortable="true">City</th>
+									<!-- <th data-field="dob"  data-sortable="true">DoB</th>
+									<th data-field="nic" data-sortable="true">NIC</th>
+									<th data-field="gender"  data-sortable="true">Gender</th>
+									<th data-field="contact_no" data-sortable="true">Contact No</th>
+									<th data-field="email" data-sortable="true">Email</th>
+									<th data-field="username"  data-sortable="true">Username</th>
+									<th data-field="type" data-sortable="true">Type</th>
+									<th data-field="status" data-sortable="true">Status</th> -->
+								</tr>
+								</thead>
+								
+								
+								
+							</table>
+					</div>
+				</div>
+			</div><!-- /.col-->
+
+
+			</div><!-- /.row -->
+		
+
+	</div>
 	<!--/.main-->
 
 	<script src="js/jquery-1.11.1.min.js"></script>

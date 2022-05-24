@@ -17,28 +17,16 @@ class PaymentModel extends Model
         parent::__construct();
     }
 
-    // public function get_data($id = false) {//$id=1;
-    //     if($id === false) {
+    public function get_data($id = false) {//$id=1; //get_payment_data_by_customer_id
             
-    //         $this->join('line', 'line.id = customer.line_id', 'LEFT');
-    //         $this->join('loan', 'customer.id = loan.customer_id', 'LEFT');
-    //         //$this->select('line.line_code','line.name','loan.id','loan.amount','customer.first_name','customer.last_name');
-    //         //$this->select('line.*');
-    //         $this->select("CONCAT(line.id, ' ', line.name) as line");
-    //         $this->select("CONCAT(customer.first_name, ' ', customer.last_name) as customer");
-    //         $this->select("CONCAT(loan.id, ' ', loan.amount) as customer");
-    //         $this->where('loan.status', 1);
-    //         return $this->findAll();
-    //         // $this->select('customer.*');
-    //         // $this->select("CONCAT(line.code, ' - ', line.name) as line");
-    //         // //$this->where('status', 1);
-    //         // return $this->findAll();
-    //         //return $this->join('line', 'line.id = customer.line_id', 'LEFT')->select('customer.*')->select("CONCAT(line.code, ' - ', line.name) as line")->where('customer.status', 1)->orWhere('customer.status', 2)->findAll();
-    //         //return $this->where('status', 1)->orWhere('status', 2)->findAll();
-    //     } else {
-    //         return $this->where('status', 1)->findAll();
-    //     }
-    // }
+            $this->join('loan', 'loan.id = payment.loan_id', 'LEFT');
+            $this->join('customer', 'customer.id = loan.customer_id', 'LEFT');
+            $this->select('payment.*');
+
+            $this->where('customer.id', $id);
+            return $this->findAll();
+   
+    }
 
     public function insert_data($data) {
         if($this->insert($data)){
@@ -69,8 +57,27 @@ class PaymentModel extends Model
 
 
     public function get_data_by_id($id) {
-        return $this->where('id', $id)->first();
+        
 
+    }
+
+    //get_payment_data_by_loan_id
+    public function get_payment_data_by_loan_id($id) {
+        return $this->where('id', $id)->first();
+     
+        // $this->join('customer', 'customer.id = loan.customer_id', 'LEFT'); 
+        // $this->join('customer cust', 'cust.id = loan.guarantor_1', 'LEFT');
+        // $this->join('customer cust1', 'cust1.id = loan.guarantor_2', 'LEFT');
+        // $this->join('employee', 'employee.id = loan.created_by', 'LEFT');
+        // $this->select('loan.*');
+        // $this->select('loan.reason as reason');
+        // $this->select("CONCAT(customer.first_name, ' ', customer.last_name) as customer");
+        //  $this->select('employee.username as username');
+        // // $this->select('customer.*');
+        // $this->select("CONCAT(cust.first_name, ' ', cust.last_name) as guarantor_1");
+        // $this->select("CONCAT(cust1.first_name, ' ', cust1.last_name) as guarantor_2");
+        
+        // return $this->where('loan.id', $id)->first();
     }
 
 }

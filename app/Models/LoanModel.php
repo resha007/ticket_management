@@ -134,7 +134,7 @@ class LoanModel extends Model
 
     public function get_loan_data_by_loan_id($id) {
      
-        $this->join('customer', 'customer.id = loan.customer_id', 'LEFT');
+        $this->join('customer', 'customer.id = loan.customer_id', 'LEFT'); 
         $this->join('customer cust', 'cust.id = loan.guarantor_1', 'LEFT');
         $this->join('customer cust1', 'cust1.id = loan.guarantor_2', 'LEFT');
         $this->join('employee', 'employee.id = loan.created_by', 'LEFT');

@@ -19,6 +19,17 @@ class LoanApproveModel extends Model
         $db = \Config\Database::connect();
         $builder = $db->table('repayment_schedule');
     }
+
+    public function get_data($id = false) {//$id=1; //get_payment_data_by_customer_id
+            
+        $this->join('loan', 'loan.id = repayment_schedule.loan_id', 'LEFT');
+        $this->join('customer', 'customer.id = loan.customer_id', 'LEFT');
+        $this->select('repayment_schedule.*');
+
+        $this->where('customer.id', $id);
+        return $this->findAll();
+
+}
     
 
     //get guartntors in the db
