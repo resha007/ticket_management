@@ -222,7 +222,7 @@
 
 			<div class="col-lg-6">
 				<div class="panel panel-default">
-					<div class="panel-heading">Active Loan Details</div>
+					<div class="panel-heading">Active Loan Details <b><span id="cust_status"></span></b></div>
 					<div class="panel-body">
 						<div class="col-md-12">
 						<form role="form" form method="post" id="loanForm">
@@ -362,7 +362,7 @@
 									<th data-field="loan_id"  data-sortable="true">Loan ID</th>
 									<th data-field="date" data-sortable="true">Date</th>
 									<th data-field="amount"  data-sortable="true">Amount</th>
-									<th data-field="city" data-sortable="true">City</th>
+									<th data-field="status" data-sortable="true">Status</th>
 									<!-- <th data-field="dob"  data-sortable="true">DoB</th>
 									<th data-field="nic" data-sortable="true">NIC</th>
 									<th data-field="gender"  data-sortable="true">Gender</th>

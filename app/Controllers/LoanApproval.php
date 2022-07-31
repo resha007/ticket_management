@@ -70,28 +70,34 @@ class LoanApproval extends Controller
 
     function get_data()
     {
-        $PaymentModel = new LoanApproveModel();
+        $LoanApproveModel = new LoanApproveModel();
 
         $customer_id = $this->session->get('id'); ;
 
         //$data = $CustomerModel->where("status='1' OR status='2'")->orderBy('id', 'ASC')->paginate(10);
-        $data = $PaymentModel->get_data($customer_id);
+        $data = $LoanApproveModel->get_data($customer_id);
+
+        $cust_status = "NORMAL";
 
         // //set numbers to names
-        // for ($i = 0; $i < sizeof($data); $i++) {
+         for ($i = 0; $i < sizeof($data); $i++) {
         //     if ($data[$i]["gender"] == 1) {
         //         $data[$i]["gender"] = "Male";
         //     } else {
         //         $data[$i]["gender"] = "Female"; 
         //     }
 
-        //     if ($data[$i]["status"] == 1) {
-        //         $data[$i]["status"] = "Active";
-        //     } else if ($data[$i]["status"] == 2) {
-        //         $data[$i]["status"] = "Inactive";
-        //     }
-        // }
-
+        
+            if ($data[$i]["status"] == 2 AND $data[$i]["date"] > $date = date('Y-m-d')) {
+                $data[$i]["status"] = "TO BE PAID";
+            } else if ($data[$i]["status"] == 2) {
+                $data[$i]["status"] = "NOT PAID";
+                $cust_status = "ARRIERS";
+            } else if ($data[$i]["status"] == 3) {
+                $data[$i]["status"] = "PAID";
+            }
+        }
+        $data["cust_status"] = $cust_status;
 
         echo json_encode($data);
     }

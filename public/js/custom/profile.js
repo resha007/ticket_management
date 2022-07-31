@@ -306,38 +306,65 @@ $(document).ready(function() {//alert("test123");
         }
     });
     //alert(id);
-});
+    });
 
 
- //alert("ddd");
-  //load lines
-  $("#dataTable1").ajax({
-    type: "POST",
-    url: "payment/get",
-    dataType: "json",
-    async: true,
-    headers: { "X-Requested-With": "XMLHttpRequest" },
-    //data: { id: 1 },
-    success: function (data) {
-      alert(data);
+//  //alert("ddd");
+//   //load lines
+//   $("#dataTable1").ajax({
+//     type: "POST",
+//     url: "payment/get",
+//     dataType: "json",
+//     async: true,
+//     headers: { "X-Requested-With": "XMLHttpRequest" },
+//     //data: { id: 1 },
+//     success: function (data) {
+//       alert(data);
       
-    },
-  });
+//     },
+//   });
 
-  //alert("ddd");
-  //load lines
-  $("#dataTable2").ajax({
-    type: "POST",
-    url: "loanapproval/get_data",
-    dataType: "json",
-    async: true,
-    headers: { "X-Requested-With": "XMLHttpRequest" },
-    //data: { id: 1 },
-    success: function (data) {
-      alert(data);
+//   //alert("ddd");
+//   //load lines
+//   $("#dataTable2").ajax({
+//     type: "POST",
+//     url: "loanapproval/get_data",
+//     dataType: "json",
+//     async: true,
+//     headers: { "X-Requested-With": "XMLHttpRequest" },
+//     //data: { id: 1 },
+//     success: function (data) {
+//       alert(data);
       
-    },
-  });
+//     },
+//   });
+  
+    $.ajax({
+        type : "POST",
+        url		: "loanapproval/get_data",
+        dataType : 'json',
+        async : true,
+        //data	: { id: id },
+        success: function(data) {//alert(data["cust_status"]);
+            if(data){
+                
+                if($("#cust_status").html(data["cust_status"]) == "NORMAL"){
+                    $("#cust_status").css("color", "green");
+                }else{
+                    $("#cust_status").css("color", "red");
+                }
+                $("#cust_status").html("("+data["cust_status"]+")");
+                
+            }else{
+                Toast.fire({
+                    type: 'error',
+                    title: 'Something went wrong. Please try again.'
+                });
+            }
+        }
+    });
+
+  
 
 });
 
