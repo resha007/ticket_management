@@ -35,7 +35,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'microfin',
+        'database' => 'nou',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
