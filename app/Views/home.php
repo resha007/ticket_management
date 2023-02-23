@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LS Lanka Micro Credit</title>
+<title>Network Operation Unit - MoE</title>
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/datepicker3.css" rel="stylesheet">
@@ -53,7 +53,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><span>MICRO</span>CREDIT</a>
+				<a class="navbar-brand" href="#"><span>NOU</span>MOE</a>
 				<ul class="user-menu">
 					<li class="dropdown pull-right">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> User <span class="caret"></span></a>
@@ -76,7 +76,8 @@
 			</div>
 		</form>
 		<ul class="nav menu">
-			<li><a href="<?=base_url()?>/employee" target="pageContent"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Employee</a></li>
+			<li><a href="<?=base_url()?>/dashboard" target="pageContent"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Dashboard</a></li>
+			<li><a href="<?=base_url()?>/ticket" target="pageContent"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Ticket</a></li>
 			<li><a href="<?=base_url()?>/line" target="pageContent"><svg class="glyph stroked user"><use xlink:href="#stroked-dashboard-dial"></use></svg> Line</a></li>
 			<li><a href="<?=base_url()?>/customer" target="pageContent"><svg class="glyph stroked user"><use xlink:href="#stroked-dashboard-dial"></use></svg> Customer</a></li>
 			<li><a href="<?=base_url()?>/loan" target="pageContent"><svg class="glyph stroked user"><use xlink:href="#stroked-dashboard-dial"></use></svg> Loan</a></li>
