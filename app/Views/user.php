@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ticket</title>
+<title>User</title>
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/datepicker3.css" rel="stylesheet">
@@ -18,8 +18,6 @@
 <script src="js/respond.min.js"></script>
 <![endif]-->
 
-
-
 </head>
 
 <body>
@@ -29,13 +27,13 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="home"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-				<li class="active">Ticket</li>
+				<li class="active">User</li>
 			</ol>
 		</div><!--/.row-->
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Ticket</h1>
+				<h1 class="page-header">User</h1>
 			</div>
 		</div><!--/.row-->
 		
@@ -43,61 +41,66 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
-					<div class="panel-heading">Ticket Details</div>
+					<div class="panel-heading">User Details</div>
 						<div class="panel-body">
 							<div class="col-md-12">
 								<form method="post" role="form" id="dataForm">
 									<input type="hidden" class="form-control" name="id" id="id">
 									<div class="form-group col-md-6">
-										<label>Serial No</label>
-										<input class="form-control" name="serial_no" id="serial_no" required>
+										<label>First Name</label>
+										<input class="form-control" name="first_name" id="first_name" required>
 									</div>
+																	
 									<div class="form-group col-md-6">
-										<label>Model</label>
-										<select class="form-control search" name="model" id="model" required>
-											<option disabled selected>Select a model</option>
-											
+										<label>Last Name</label>
+										<input class="form-control" name="last_name" id="last_name" required>
+									</div>
+									<div class="form-group col-md-4">
+										<label>DoB</label>
+										<input type="date" class="form-control" name="dob" id="dob" required>
+									</div>
+									<div class="form-group col-md-4">
+										<label>NIC</label>
+										<input class="form-control" name="nic" id="nic" required>
+									</div>
+									<div class="form-group col-md-4">
+										<label>Gender</label>
+										<select class="form-control" name="gender" id="gender" required>
+											<option value="1">Male</option>
+											<option value="2">Female</option>
 										</select>
-									</div>	
-									<div class="form-group col-md-6">
-										<label>Branch</label>
-										<select class="form-control search" name="branch" id="branch" required>
-											<option disabled selected>Select a branch</option>
-											
+									</div>
+									<div class="form-group col-md-4">
+										<label>Contact Number</label>
+										<input class="form-control" name="contact_no" id="contact_no" required>
+									</div>
+									<div class="form-group col-md-4">
+										<label>Email</label>
+										<input type="email" class="form-control" name="email" id="email">
+									</div>
+									<div class="form-group col-md-4">
+										<label>Username</label>
+										<input class="form-control" name="username" id="username" required>
+									</div>
+									<div class="form-group col-md-4">
+										<label>Password</label>
+										<input class="form-control" name="password" id="password" required>
+									</div>
+									<!-- <div class="form-group col-md-4">
+										<label>Type</label>
+										<select class="form-control" name="type" id="type" required>
+											<option value="1">User</option>
+											<option value="2">Rider</option>
 										</select>
-									</div>			
-									<div class="form-group col-md-6">
-										<label>Category</label>
-										<select class="form-control search" name="category" id="category" required>
-											<option disabled selected>Select a category</option>
-											
+									</div> -->
+									<div class="form-group col-md-4">
+										<label>Status</label>
+										<select class="form-control" name="status" id="status" required>
+											<option value="1">Active</option>
+											<option value="2">Inactive</option>
 										</select>
-									</div>	
-									<div class="form-group col-md-6">
-										<label>Date</label>
-										<input type="date" class="form-control" name="date_time" id="date_time" required>
 									</div>
 
-									<div class="form-group col-md-6">
-										<label>Comment</label>
-										<input class="form-control" name="comment" id="comment" required>
-									</div>
-									<div class="form-group col-md-6">
-										<label>Officer</label>
-										<select class="form-control search" name="assignee" id="assignee" required>
-											<option disabled selected>Select a Officer</option>
-											
-										</select>
-									</div>
-									<div class="form-group col-md-6">
-										<label>Status</label>
-										<select class="form-control search" name="status" id="status" required>
-											<!-- <option disabled selected>Select a Status</option> -->
-											<option value="1">IN</option>
-											<option value="2">COMPLETED</option>
-											<option value="3">RECOMMENDATION</option>
-										</select>
-									</div>	
 
 									<div class="form-group col-md-12">
 										<button type="button" class="btn btn-primary" id="add"><span class="">Add</button>
@@ -117,19 +120,22 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
-					<div class="panel-heading">Current Tickets</div>
+					<div class="panel-heading">Current Users</div>
 					<div class="panel-body">
-						<table id="dataTable" data-click-to-select="true" data-show-export="true"  data-toggle="table" data-url="ticket/get"  data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
+						<table id="dataTable" data-click-to-select="true" data-show-export="true"  data-toggle="table" data-url="User/get"  data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
 								<thead>
 								<tr>
 									<th data-field="state" data-checkbox="true"></th>
-									<th data-field="serial_no" data-sortable="true">Serial No</th>
-									<th data-field="model"  data-sortable="true">Model</th>
-									<th data-field="branch" data-sortable="true">Branch</th>
-									<th data-field="category"  data-sortable="true">Category</th>
-									<th data-field="date_time" data-sortable="true">Date</th>
-									<th data-field="comment"  data-sortable="true">Comment</th>
-									<th data-field="status_id" data-sortable="true">Status</th>
+									<th data-field="id" data-sortable="true">Emp ID</th>
+									<th data-field="first_name"  data-sortable="true">Fisrt Name</th>
+									<th data-field="last_name" data-sortable="true">Last Name</th>
+									<th data-field="dob"  data-sortable="true">DoB</th>
+									<th data-field="nic" data-sortable="true">NIC</th>
+									<th data-field="gender"  data-sortable="true">Gender</th>
+									<th data-field="contact_no" data-sortable="true">Contact No</th>
+									<th data-field="email" data-sortable="true">Email</th>
+									<th data-field="username"  data-sortable="true">Username</th>
+									<th data-field="status" data-sortable="true">Status</th>
 								</tr>
 								</thead>
 								
@@ -152,10 +158,7 @@
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/bootstrap-table.js"></script>
 
-	<script src="js/custom/ticket.js"></script>
-	
-	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<script src="js/custom/User.js"></script>
 
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 

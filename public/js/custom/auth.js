@@ -13,12 +13,12 @@ $(document).ready(function() {//alert("test123");
         if(validate() != '1'){
             $.ajax({
                 type : "POST",
-                url		: "employee/login",
+                url		: "user/auth",
                 dataType : 'json',
                 async : true,
                 headers: {'X-Requested-With': 'XMLHttpRequest'},
                 data	: $('form').serialize(),
-                success: function(data) {//alert(data["status"]);
+                success: function(data) {//alert(data["status"]);//alert(data["status"]);
                     if(data["status"]){
                         window.location.href = "home";
                     }else{
@@ -41,7 +41,7 @@ $(document).ready(function() {//alert("test123");
             if(validate() != '1'){
                 $.ajax({
                     type : "POST",
-                    url		: "employee/login",
+                    url		: "user/login",
                     dataType : 'json',
                     async : true,
                     headers: {'X-Requested-With': 'XMLHttpRequest'},

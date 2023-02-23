@@ -29,7 +29,7 @@ $(document).ready(function() {//alert("test123");
                 $('#category').empty();
                 $('#category').html('<option value="0" selected="selected" disabled="disabled">Select a Category</option>');
                 for(var a=0; a<data.length; a++){
-                    $('#category').append($("<option></option>").attr("value",data[a]['id']).text(data[a]['description']));
+                    $('#category').append($("<option></option>").attr("value",data[a]['id']).text(data[a]['name']+' - '+data[a]['description']));
                 }
             }else{
                 
@@ -50,7 +50,7 @@ $(document).ready(function() {//alert("test123");
                 $('#branch').empty();
                 $('#branch').html('<option value="0" selected="selected" disabled="disabled">Select a branch</option>');
                 for(var a=0; a<data.length; a++){
-                    $('#branch').append($("<option></option>").attr("value",data[a]['id']).text(data[a]['description']));
+                    $('#branch').append($("<option></option>").attr("value",data[a]['id']).text(data[a]['name']+' - '+data[a]['description']));
                 }
             }else{
                 
@@ -130,6 +130,46 @@ $(document).ready(function() {//alert("test123");
                 }
             });
         }
+        
+    });
+
+    $( "#search" ).click(function() {
+            $.ajax({
+                type : "POST",
+                url		: "search/search_by",
+                dataType : 'json',
+                async : true,
+                headers: {'X-Requested-With': 'XMLHttpRequest'},
+                data	: $('form').serialize(),
+                success: function(data) {
+                    if(data){alert(data['data']);
+                        // Toast.fire({
+                        //     type: 'success',
+                        //     title: 'Successfully added'
+                        // });
+                         //$table.bootstrapTable($data);
+                         $("#reset").click();
+                         $('#dataTable').dataTable( {
+                            "aaData": data['data'],
+                            "columns": [
+                                { "data": "id" },
+                                { "data": "name" },
+                                { "data": "detail_alias" },
+                                { "data": "points" }
+                            ]
+                        })
+
+                        // $("#update").prop("disabled",true);
+                        // $("#delete").prop("disabled",true);
+                        // $("#add").prop("disabled",false);
+                    }else{
+                        Toast.fire({
+                            type: 'error',
+                            title: 'Something went wrong. Please try again.'
+                        });
+                    }
+                }
+            });
         
     });
 

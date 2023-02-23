@@ -8,9 +8,20 @@ use CodeIgniter\Controller;
 class Login extends Controller
 {
 
+    function __construct()
+    {
+        $this->session = \Config\Services::session();
+        $this->session->start();
+    }
+
     public function index()
     {
-        return view('login');
+        if($this->session->get('logged_in')){
+            return view('home');
+        }else{
+            return view('login');
+        }
+        
     }
 
     function login(){

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ticket</title>
+<title>Search</title>
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/datepicker3.css" rel="stylesheet">
@@ -29,13 +29,13 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="home"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-				<li class="active">Ticket</li>
+				<li class="active">Search</li>
 			</ol>
 		</div><!--/.row-->
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Ticket</h1>
+				<h1 class="page-header">Search</h1>
 			</div>
 		</div><!--/.row-->
 		
@@ -43,7 +43,7 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
-					<div class="panel-heading">Ticket Details</div>
+					<div class="panel-heading">Search By</div>
 						<div class="panel-body">
 							<div class="col-md-12">
 								<form method="post" role="form" id="dataForm">
@@ -92,7 +92,7 @@
 									<div class="form-group col-md-6">
 										<label>Status</label>
 										<select class="form-control search" name="status" id="status" required>
-											<!-- <option disabled selected>Select a Status</option> -->
+											<option disabled selected>Select a Status</option>
 											<option value="1">IN</option>
 											<option value="2">COMPLETED</option>
 											<option value="3">RECOMMENDATION</option>
@@ -100,10 +100,11 @@
 									</div>	
 
 									<div class="form-group col-md-12">
-										<button type="button" class="btn btn-primary" id="add"><span class="">Add</button>
+										<button type="button" class="btn btn-primary" id="search"><span class="">Search</button>
+										<!-- <button type="button" class="btn btn-primary" id="add"><span class="">Add</button>
 										<button type="button" class="btn btn-success" id="update">Update</button>
-										<button type="button" class="btn btn-danger" id="delete">Delete</button>
-										<button type="reset" class="btn btn-default" id="reset">Reset</button>
+										<button type="button" class="btn btn-danger" id="delete">Delete</button>-->
+										<button type="reset" class="btn btn-default" id="reset">Reset</button> 
 									</div>
 									
 							</div>
@@ -152,7 +153,7 @@
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/bootstrap-table.js"></script>
 
-	<script src="js/custom/ticket.js"></script>
+	<script src="js/custom/search.js"></script>
 	
 	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>

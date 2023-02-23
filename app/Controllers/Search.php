@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Models\TicketModel;
 use CodeIgniter\Controller;
 
-class Ticket extends Controller
+class Search extends Controller
 {
     function __construct()
     {
@@ -15,11 +15,8 @@ class Ticket extends Controller
 
     public function index()
     {
-        if($this->session->get('logged_in')){
-            return view('ticket');
-        }else{
-            return view('login');
-        }
+
+		return view('Search');
     }
 
     function get(){ 
@@ -159,7 +156,34 @@ class Ticket extends Controller
         
     }
 
-    function Ticket_session(){
+    function search_by(){
+        helper(['form', 'url']);
+        
+        $model = new TicketModel();
+        
+        $data = [
+            'serial_no'	        =>	$this->request->getPost('serial_no'),
+            'model_id'	        =>	$this->request->getPost('model'),
+            'branch_id'         =>	$this->request->getPost('branch'),
+            'category_id'	    =>	$this->request->getPost('category'),
+            'date_time'	        =>	$this->request->getPost('date_time'),
+            'comment'           =>	$this->request->getPost('comment'),
+            'status_id'         =>	$this->request->getPost('status')
+
+        ];
+        
+        $result = $model->search($data);
+
+        if($result != false){
+            //$data = $model->where('id', $save_data)->first();
+            echo json_encode(array("status" => true , 'data' => $result));
+        }else{
+            echo json_encode(array("status" => false , 'data' => $result));
+        }
+        
+    }
+
+    function Search_session(){
         helper(['form', 'url']);
 
         $id = $this->request->getPost('id'); 

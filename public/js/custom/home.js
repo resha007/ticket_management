@@ -12,7 +12,7 @@ $(document).ready(function() {//alert("test123");
     $( "#logout" ).click(function() {
             $.ajax({
                 type : "POST",
-                url		: "employee/logout",
+                url		: "user/logout",
                 dataType : 'json',
                 async : true,
                 headers: {'X-Requested-With': 'XMLHttpRequest'},

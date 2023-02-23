@@ -78,11 +78,8 @@
 		<ul class="nav menu">
 			<li><a href="<?=base_url()?>/dashboard" target="pageContent"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Dashboard</a></li>
 			<li><a href="<?=base_url()?>/ticket" target="pageContent"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Ticket</a></li>
-			<li><a href="<?=base_url()?>/line" target="pageContent"><svg class="glyph stroked user"><use xlink:href="#stroked-dashboard-dial"></use></svg> Line</a></li>
-			<li><a href="<?=base_url()?>/customer" target="pageContent"><svg class="glyph stroked user"><use xlink:href="#stroked-dashboard-dial"></use></svg> Customer</a></li>
-			<li><a href="<?=base_url()?>/loan" target="pageContent"><svg class="glyph stroked user"><use xlink:href="#stroked-dashboard-dial"></use></svg> Loan</a></li>
-			<li><a href="<?=base_url()?>/loanApproval" target="pageContent"><svg class="glyph stroked user"><use xlink:href="#stroked-dashboard-dial"></use></svg> Loan Approval</a></li>
-			<li><a href="<?=base_url()?>/payment" target="pageContent"><svg class="glyph stroked user"><use xlink:href="#stroked-dashboard-dial"></use></svg> Payment</a></li>
+			<li><a href="<?=base_url()?>/user" target="pageContent"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> User</a></li>
+			
 			<hr>
 			
 			
