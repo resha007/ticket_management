@@ -41,7 +41,7 @@ $(document).ready(function() {//alert("test123");
             if(validate() != '1'){
                 $.ajax({
                     type : "POST",
-                    url		: "user/login",
+                    url		: "user/auth",
                     dataType : 'json',
                     async : true,
                     headers: {'X-Requested-With': 'XMLHttpRequest'},
