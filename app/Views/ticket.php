@@ -119,7 +119,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading">Current Tickets</div>
 					<div class="panel-body">
-						<table id="dataTable" data-click-to-select="true" data-show-export="true"  data-toggle="table" data-url="ticket/get"  data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
+						<table id="dataTable" data-click-to-select="true" data-show-export="true"  data-toggle="table" data-url="ticket/get"  data-show-refresh="true" data-show-toggle="false" data-show-columns="true" data-search="true" data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name" data-sort-order="desc">
 								<thead>
 								<tr>
 									<th data-field="state" data-checkbox="true"></th>
