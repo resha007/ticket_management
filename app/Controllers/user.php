@@ -191,21 +191,40 @@ class User extends Controller
 
         $result = $model->auth($username);
         
-        if(password_verify($this->request->getPost('password'), $result[0]["password"])){
-            //$data = $model->where('id', $save_data)->first();
-            $newdata = [
-                'id'        => $result[0]["id"],
-                'username'  => $result[0]["username"],
-                'email'     => $result[0]["email"],
-                'logged_in' => TRUE
-            ];
-            //echo json_encode($result[0]['first_name']);
-            $this->session->set($newdata); // setting session data
-
-             echo json_encode(array("status" => true));
+        if($result){
+            if(password_verify($this->request->getPost('password'), $result[0]["password"])){
+                //$data = $model->where('id', $save_data)->first();
+                $newdata = [
+                    'id'        => $result[0]["id"],
+                    'username'  => $result[0]["username"],
+                    'email'     => $result[0]["email"],
+                    'logged_in' => TRUE
+                ];
+                //echo json_encode($result[0]['first_name']);
+                $this->session->set($newdata); // setting session data
+    
+                 echo json_encode(array("status" => true));
+            }else{
+                echo json_encode(array("status" => false));
+            }
         }else{
             echo json_encode(array("status" => false));
         }
+        // if(password_verify($this->request->getPost('password'), $result[0]["password"])){
+        //     //$data = $model->where('id', $save_data)->first();
+        //     $newdata = [
+        //         'id'        => $result[0]["id"],
+        //         'username'  => $result[0]["username"],
+        //         'email'     => $result[0]["email"],
+        //         'logged_in' => TRUE
+        //     ];
+        //     //echo json_encode($result[0]['first_name']);
+        //     $this->session->set($newdata); // setting session data
+
+        //      echo json_encode(array("status" => true));
+        // }else if($result){
+        //     echo json_encode(array("status" => false));
+        // }
     }
 
     function logout(){
