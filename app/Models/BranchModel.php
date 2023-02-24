@@ -27,7 +27,7 @@ class BranchModel extends Model
             $this->orWhere('branch.status', 2);
             return $this->findAll();
         } else {
-            return $this->where('branch.status', 1)->findAll();
+            return $this->where('branch.status', 1)->orderBy("branch.description", "asc")->findAll();
         }
     }
  
