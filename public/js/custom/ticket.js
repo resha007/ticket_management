@@ -10,7 +10,7 @@ $(document).ready(function() {//alert("test123");
 
     const Toast = Swal.mixin({
         toast: true,
-        position: 'top-end',
+        position: 'bottom',
         showConfirmButton: false,
         timer: 3000
     });
@@ -343,7 +343,7 @@ $(document).ready(function() {//alert("test123");
 
         var elem = document.getElementById('dataForm').elements;
         for(var i = 0; i < elem.length; i++){
-            if(elem[i].type != "button" && elem[i].type != "reset" && elem[i].id != "id" && elem[i].id == "comment"){
+            if(elem[i].type != "button" && elem[i].type != "reset" && elem[i].id != "id" && elem[i].id != "comment" && elem[i].id != "assignee"){
                 if(elem[i].value == '' || elem[i].value == '0'){
                     Toast.fire({
                         type: 'warning',
