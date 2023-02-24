@@ -6,13 +6,22 @@ $(document).ready(function() {//alert("test123");
     $("#serial_no").focus();
     var action,data = '';
 
-    //$(".search").select2();
+
+    // $(".search").select2({
+        
+    // });
+
 
     const Toast = Swal.mixin({
         toast: true,
         position: 'bottom',
         showConfirmButton: false,
-        timer: 3000
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)  
+        }
     });
     //alert("test123");
 
@@ -165,7 +174,7 @@ $(document).ready(function() {//alert("test123");
             width:'400px',
             padding:null,
             title: 'Are you sure?',
-            position: 'top-end',
+            position: 'bottom',
             text: "You won't be able to revert this!",
             allowEnterKey: true,
             showCancelButton: true,
@@ -213,7 +222,7 @@ $(document).ready(function() {//alert("test123");
             width:'400px',
             padding:null,
             title: 'Are you sure?',
-            position: 'top-end',
+            position: 'bottom',
             text: "You won't be able to revert this!",
             allowEnterKey: true,
             showCancelButton: true,
