@@ -127,7 +127,7 @@ class Ticket extends Controller
         $id = $this->request->getPost('id');
         
         $data = [
-            'status'        =>	3
+            'status_id'        =>	4
         ];
 
         $result = $model->delete_data($id, $data);

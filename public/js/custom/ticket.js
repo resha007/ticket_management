@@ -208,52 +208,52 @@ $(document).ready(function() {//alert("test123");
     });
 
     
-    // $( "#delete" ).click(function() {
-    //     Swal.fire({
-    //         width:'400px',
-    //         padding:null,
-    //         title: 'Are you sure?',
-    //         position: 'top-end',
-    //         text: "You won't be able to revert this!",
-    //         allowEnterKey: true,
-    //         showCancelButton: true,
-    //         confirmButtonColor: '#3085d6',
-    //         cancelButtonColor: '#d33',
-    //         confirmButtonText: 'Yes, Delete it!'
-    //     }).then((result) => {
-    //         if (result.value) {
-    //             $.ajax({
-    //                 type : "POST",
-    //                 url		: "customer/delete",
-    //                 dataType : 'json',
-    //                 async : true,
-    //                 headers: {'X-Requested-With': 'XMLHttpRequest'},
-    //                 data	: $('form').serialize(),
-    //                 success: function(data) {//alert(data["status"]);
-    //                     if(data){
-    //                         Toast.fire({
-    //                             type: 'success',
-    //                             title: 'Successfully deleted'
-    //                         });
-    //                         $table.bootstrapTable('refresh');
-    //                         $("#reset").click();
+    $( "#delete" ).click(function() {
+        Swal.fire({
+            width:'400px',
+            padding:null,
+            title: 'Are you sure?',
+            position: 'top-end',
+            text: "You won't be able to revert this!",
+            allowEnterKey: true,
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, Delete it!'
+        }).then((result) => {
+            if (result.value) {
+                $.ajax({
+                    type : "POST",
+                    url		: "ticket/delete",
+                    dataType : 'json',
+                    async : true,
+                    headers: {'X-Requested-With': 'XMLHttpRequest'},
+                    data	: $('form').serialize(),
+                    success: function(data) {//alert(data["status"]);
+                        if(data){
+                            Toast.fire({
+                                type: 'success',
+                                title: 'Successfully deleted'
+                            });
+                            $table.bootstrapTable('refresh');
+                            $("#reset").click();
         
-    //                         $("#update").prop("disabled",true);
-    //                         $("#delete").prop("disabled",true);
-    //                         $("#add").prop("disabled",false);
-    //                     }else{
-    //                         Toast.fire({
-    //                             type: 'error',
-    //                             title: 'Something went wrong. Please try again.'
-    //                         });
-    //                     }
-    //                 }
-    //             });
-    //         }
-    //                 //$("#reset").click();
-    //     })
+                            $("#update").prop("disabled",true);
+                            $("#delete").prop("disabled",true);
+                            $("#add").prop("disabled",false);
+                        }else{
+                            Toast.fire({
+                                type: 'error',
+                                title: 'Something went wrong. Please try again.'
+                            });
+                        }
+                    }
+                });
+            }
+                    //$("#reset").click();
+        })
         
-    // });
+    });
 
     // $( "#dataTable" ).click(function() {
     //     var id = getIdSelections();

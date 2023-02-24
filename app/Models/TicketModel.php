@@ -25,7 +25,7 @@ class TicketModel extends Model
              //$this->join('status', 'status.id = ticket.status_id', 'LEFT');
              $this->select('ticket.*');
              $this->select('model.name as model');
-             $this->select('branch.name as branch');
+             $this->select('branch.description as branch');
              $this->select('category.name as category');
              //$this->select('status.name as status');
     
